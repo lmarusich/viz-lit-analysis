@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AO0649,VR,1,SurfacePlotQ1,41603.494,94025.9861,95)% religious homogeneity
+AO0649,VR,2,SurfacePlotQ2,14777.5678,102828.2449,it will influence positive sentiment in a negative manner
+AO0649,VR,3,SurfacePlotQ3,20184.23,66684.389,it will increase positive sentiment towards the US
+AO0649,VR,4,ScatterplotQ1,11885.2835,48387.5281,high income
+AO0649,VR,5,ScatterplotQ2,6349.0357,32280.6974,2010
+AO0649,VR,6,ScatterplotQ3,8512.1777,43718.2017,no relationship
+AO0649,VR,7,ScatterplotQ4,11839.8835,62192.865,not sure
+AO0649,VR,8,ScatterplotQ5,6970.8071,23065.7361,provide more opportunities for lower income people and make sure everyone has more resources
+AO0649,VR,9,LineChartQ1,4557.9803,44277.1421,neighborhoods 1 and 2
+AO0649,VR,10,LineChartQ2,8053.6754,32727.3291,6 months
+AO0649,VR,11,LineChartQ3,6658.3045,28471.5584,neighborhood 3
+AO0649,VR,12,LineChartQ4,5485.424,9472.84,neighborhood 2
+AO0649,VR,13,LineChartQ5,15057.4248,46622.3876,neighborhood 1
+AO0649,VR,14,BarChartQ1,6780.3887,32046.8292,north 2010
+AO0649,VR,15,BarChartQ2,3696.2482,34725.4143,stable over time
+AO0649,VR,16,BarChartQ3,4770.951,9885.7988,north neighborhood
+AO0649,VR,17,BarChartQ4,5484.9006,12979.7467,west neighborhood

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+SI4816,VR,1,ScatterplotQ1,16544.0235,34514.1635,blue
+SI4816,VR,2,ScatterplotQ2,5808.6468,26103.6953,2016
+SI4816,VR,3,ScatterplotQ3,8556.5642,38948.9855,no relationship
+SI4816,VR,4,ScatterplotQ4,9662.0409,29745.0947,remaining stable
+SI4816,VR,5,ScatterplotQ5,10700.841,53313.4013,improve or raise income and balance them out
+SI4816,VR,6,BarChartQ1,5059.8754,28516.5326,north 2010
+SI4816,VR,7,BarChartQ2,5172.463,14029.7719,remains stable over time
+SI4816,VR,8,BarChartQ3,4479.509,21490.5838,north
+SI4816,VR,9,BarChartQ4,4077.0225,16441.6091,west
+SI4816,VR,10,LineChartQ1,4971.2054,31108.3622,1 and 2
+SI4816,VR,11,LineChartQ2,4713.9982,29119.0701,6
+SI4816,VR,12,LineChartQ3,5663.405,46991.3897,1
+SI4816,VR,13,LineChartQ4,6646.1859,12287.2549,2
+SI4816,VR,14,LineChartQ5,16900.6898,75284.4574,1
+SI4816,VR,15,SurfacePlotQ1,4300.7019,39764.063,high crime incidents and high religious homogeneity
+SI4816,VR,16,SurfacePlotQ2,5272.5207,27868.8369,more positive
+SI4816,VR,17,SurfacePlotQ3,4948.7506,32794.3322,keeps it pretty stable

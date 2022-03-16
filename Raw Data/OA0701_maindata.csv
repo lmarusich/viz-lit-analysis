@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OA0701,VR Monitor Stereo,1,LineChartQ1,21810.5894,121811.5444,neighborhood 2
+OA0701,VR Monitor Stereo,2,LineChartQ2,8980.5679,47493.9433,6 months
+OA0701,VR Monitor Stereo,3,LineChartQ3,9137.3041,20452.0468,Neighborhood 3
+OA0701,VR Monitor Stereo,4,LineChartQ4,8031.2249,25802.394,Neighborhood 2
+OA0701,VR Monitor Stereo,5,LineChartQ5,35956.0019,52721.7794,Neighborhood 1
+OA0701,VR Monitor Stereo,6,BarChartQ1,8735.049,30471.2386,2010, north neighborhood had the highest number of crime incidents.
+OA0701,VR Monitor Stereo,7,BarChartQ2,8377.9291,22675.1163,remained stable
+OA0701,VR Monitor Stereo,8,BarChartQ3,9293.5439,19536.4312,north neighborhood
+OA0701,VR Monitor Stereo,9,BarChartQ4,4803.2598,7416.6816,west
+OA0701,VR Monitor Stereo,10,SurfacePlotQ1,5674.7316,62070.3793,when it's 100% religious homogenity and the highest amount of crime incidents
+OA0701,VR Monitor Stereo,11,SurfacePlotQ2,12287.3973,124687.8453,decreases positive sentiment toward the us
+OA0701,VR Monitor Stereo,12,SurfacePlotQ3,13326.0206,54832.2567,keeps it at 50%, so pretty neutral.
+OA0701,VR Monitor Stereo,13,ScatterplotQ1,15302.5783,72033.5221,High Income
+OA0701,VR Monitor Stereo,14,ScatterplotQ2,17280.1296,71844.051,2010
+OA0701,VR Monitor Stereo,15,ScatterplotQ3,11371.2865,46735.0642,no relationship
+OA0701,VR Monitor Stereo,16,ScatterplotQ4,11158.9986,63578.2177,decreasing
+OA0701,VR Monitor Stereo,17,ScatterplotQ5,16084.7698,128429.6661,have everyone be high income

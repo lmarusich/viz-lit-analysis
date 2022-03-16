@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AR9449,VR,1,ScatterplotQ1,11216.1325,59422.8987,BLUE
+AR9449,VR,2,ScatterplotQ2,5987.5708,10500.5654,red
+AR9449,VR,3,ScatterplotQ3,9718.1495,37922.1195,positive
+AR9449,VR,4,ScatterplotQ4,7662.0976,30660.9343,remaining stable
+AR9449,VR,5,ScatterplotQ5,4457.131,193313.6703,increase percentages and have a larger time window of data
+AR9449,VR,6,SurfacePlotQ1,3250.3535,54162.3916,90 percent
+AR9449,VR,7,SurfacePlotQ2,14900.8294,83606.049,the higher that homogeneity get the higher the sentiment percentage gets but also there is a period of time it is stable. 
+AR9449,VR,8,SurfacePlotQ3,8176.7151,80287.3157,remains stable
+AR9449,VR,9,BarChartQ1,3015.9758,9103.7849,west
+AR9449,VR,10,BarChartQ2,7327.5108,33899.8209,decrease
+AR9449,VR,11,BarChartQ3,4869.528,19815.2709,north
+AR9449,VR,12,BarChartQ4,2580.6242,11437.5504,west
+AR9449,VR,13,LineChartQ1,5082.4799,37786.9839,1 and 2
+AR9449,VR,14,LineChartQ2,4892.4989,50017.4129,7
+AR9449,VR,15,LineChartQ3,8008.6904,16900.5122,1
+AR9449,VR,16,LineChartQ4,7896.9855,27142.7861,2
+AR9449,VR,17,LineChartQ5,9472.3047,42869.474,2

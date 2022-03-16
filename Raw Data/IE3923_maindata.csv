@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IE3923,VR Monitor,1,LineChartQ1,18275.3606,47683.6974,60
+IE3923,VR Monitor,2,LineChartQ2,12488.243,45796.653,6
+IE3923,VR Monitor,3,LineChartQ3,4914.9331,29042.2851,1
+IE3923,VR Monitor,4,LineChartQ4,7014.8092,23032.2162,3
+IE3923,VR Monitor,5,LineChartQ5,9047.9532,49426.0255,1
+IE3923,VR Monitor,6,BarChartQ1,6133.1554,65242.5074,north 2010
+IE3923,VR Monitor,7,BarChartQ2,7718.4854,29444.189,stable
+IE3923,VR Monitor,8,BarChartQ3,4702.4951,10902.0197,north
+IE3923,VR Monitor,9,BarChartQ4,3306.2045,12499.2413,west
+IE3923,VR Monitor,10,ScatterplotQ1,9707.1824,78311.6933,2016
+IE3923,VR Monitor,11,ScatterplotQ2,5239.0625,26227.3014,2016
+IE3923,VR Monitor,12,ScatterplotQ3,9975.4705,39887.3953,negative
+IE3923,VR Monitor,13,ScatterplotQ4,6444.8554,43092.4031,decreasing
+IE3923,VR Monitor,14,ScatterplotQ5,4390.3349,42501.4607,have no or less attacks
+IE3923,VR Monitor,15,SurfacePlotQ1,2110.8863,37932.1207,when religious homogeneity is 100%
+IE3923,VR Monitor,16,SurfacePlotQ2,7149.4668,55257.0135,increasing crime decreases positive sentiment
+IE3923,VR Monitor,17,SurfacePlotQ3,4624.213,67397.795,it remains the same

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA0176,VR Monitor,1,LineChartQ1,16001.2998,70294.9553,1
+AA0176,VR Monitor,2,LineChartQ2,14397.5988,98640.1511,6
+AA0176,VR Monitor,3,LineChartQ3,9875.3739,52812.0781,neighborhood 1
+AA0176,VR Monitor,4,LineChartQ4,8779.842,13538.095,Neighborhood 2
+AA0176,VR Monitor,5,LineChartQ5,18755.0017,58350.81,neighborhood 2
+AA0176,VR Monitor,6,ScatterplotQ1,12365.8082,27154.3104,High income
+AA0176,VR Monitor,7,ScatterplotQ2,11325.7893,23702.3974,Low income
+AA0176,VR Monitor,8,ScatterplotQ3,9829.8517,93848.2713,Positive
+AA0176,VR Monitor,9,ScatterplotQ4,19927.3967,94317.7305,Decreasing
+AA0176,VR Monitor,10,ScatterplotQ5,8244.6103,86052.0894,Try cutting the effect of ied and try addressing it in the low income areas
+AA0176,VR Monitor,11,BarChartQ1,4669.4048,21881.8778,North in 2010
+AA0176,VR Monitor,12,BarChartQ2,7003.4621,15782.8873,Remians stable over time
+AA0176,VR Monitor,13,BarChartQ3,6200.0398,10132.1972,North neighborhood
+AA0176,VR Monitor,14,BarChartQ4,5014.9995,11504.4462,West neighborhood
+AA0176,VR Monitor,15,SurfacePlotQ1,5833.8545,77172.2364,When crime incidents are above 600
+AA0176,VR Monitor,16,SurfacePlotQ2,13169.7315,108782.3934,The crime incidents grow higher when reliogious homogeniety is higher
+AA0176,VR Monitor,17,SurfacePlotQ3,21458.4747,62138.0284,When crime is lows religious homogeniety is atble

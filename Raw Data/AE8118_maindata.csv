@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE8118,VR,1,BarChartQ1,27355.651,99822.6001,north 2010
+AE8118,VR,2,BarChartQ2,9148.5636,67934.5064,remain stable
+AE8118,VR,3,BarChartQ3,7897.3781,59724.6906,north
+AE8118,VR,4,BarChartQ4,4155.7098,11728.7017,west
+AE8118,VR,5,ScatterplotQ1,23054.8145,164373.7637,high income
+AE8118,VR,6,ScatterplotQ2,11527.6832,67722.0122,2010
+AE8118,VR,7,ScatterplotQ3,13872.9796,78981.0073,no relationship.
+AE8118,VR,8,ScatterplotQ4,10209.8166,83784.5145,increasing
+AE8118,VR,9,ScatterplotQ5,11638.6459,162184.7802,having higher income and lessening ied attacks
+AE8118,VR,10,SurfacePlotQ1,3642.4979,156421.5603,highest when religious homogeneity is high and crime incidents are high as well
+AE8118,VR,11,SurfacePlotQ2,10790.7812,156622.0209,it increases it
+AE8118,VR,12,SurfacePlotQ3,8523.0629,153662.3358,it remains stable
+AE8118,VR,13,LineChartQ1,9573.1996,103152.4759,neighborhoods 1 and 2
+AE8118,VR,14,LineChartQ2,7640.7268,61311.9602,6 months
+AE8118,VR,15,LineChartQ3,7159.9409,81192.426,neighborhood 3
+AE8118,VR,16,LineChartQ4,9060.0859,67008.3873,neighborhood 2
+AE8118,VR,17,LineChartQ5,24584.4371,101265.0117,neighborhood 2

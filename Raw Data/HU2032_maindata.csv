@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+HU2032,VR Monitor,1,BarChartQ1,6479.9839,48845.1055,2010 north
+HU2032,VR Monitor,2,BarChartQ2,7573.317,30226.026,stayed same
+HU2032,VR Monitor,3,BarChartQ3,9126.5322,28986.2209,north
+HU2032,VR Monitor,4,BarChartQ4,5082.4726,14878.0387,west
+HU2032,VR Monitor,5,ScatterplotQ1,8511.4035,32795.9548,blue
+HU2032,VR Monitor,6,ScatterplotQ2,4490.9901,38849.3224,green
+HU2032,VR Monitor,7,ScatterplotQ3,16598.9272,55212.3534,no relationship
+HU2032,VR Monitor,8,ScatterplotQ4,14711.1896,36524.981,increasing
+HU2032,VR Monitor,9,ScatterplotQ5,11024.8825,57446.3467,the green graph
+HU2032,VR Monitor,10,SurfacePlotQ1,3629.8837,25332.7924,its at its highest at the white part at the top
+HU2032,VR Monitor,11,SurfacePlotQ2,5976.5983,80847.0382,i don't know
+HU2032,VR Monitor,12,SurfacePlotQ3,41785.9219,57837.23,when religion is not forced, people don't act out
+HU2032,VR Monitor,13,LineChartQ1,4892.7163,112781.0706,neighborhood 3
+HU2032,VR Monitor,14,LineChartQ2,8209.4577,40881.1991,5
+HU2032,VR Monitor,15,LineChartQ3,6712.7944,20798.4183,3
+HU2032,VR Monitor,16,LineChartQ4,12332.1186,16632.2128,neighborhood 1
+HU2032,VR Monitor,17,LineChartQ5,43933.6754,54441.5557,neighborhood 1

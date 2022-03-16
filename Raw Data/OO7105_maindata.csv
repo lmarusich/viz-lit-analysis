@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OO7105,VR Monitor,1,LineChartQ1,12122.4654,72658.8175,Neighborhoods 2 and 3
+OO7105,VR Monitor,2,LineChartQ2,2724.8083,56350.6961,5 months
+OO7105,VR Monitor,3,LineChartQ3,1173.4397,31141.5326,Neighborhood 3
+OO7105,VR Monitor,4,LineChartQ4,927.4842,41774.7753,Neighborhood 2
+OO7105,VR Monitor,5,LineChartQ5,760.6099,34860.9221,Neighborhood 3
+OO7105,VR Monitor,6,ScatterplotQ1,4803.1833,35330.6357,High Income
+OO7105,VR Monitor,7,ScatterplotQ2,1006.1996,32213.8521,2010
+OO7105,VR Monitor,8,ScatterplotQ3,1240.4172,48476.1817,No relationship
+OO7105,VR Monitor,9,ScatterplotQ4,637.722,53481.2255,Increasing
+OO7105,VR Monitor,10,ScatterplotQ5,604.2061,53771.5846,The first way to be increase income, second lower ied attacks
+OO7105,VR Monitor,11,SurfacePlotQ1,793.1035,52988.7929,High crime incidents
+OO7105,VR Monitor,12,SurfacePlotQ2,625.4374,47058.4731,It goes down
+OO7105,VR Monitor,13,SurfacePlotQ3,1307.9685,32872.7927,It goes down
+OO7105,VR Monitor,14,BarChartQ1,458.0481,14688.1407,North
+OO7105,VR Monitor,15,BarChartQ2,403.2758,10801.6103,It remained stable
+OO7105,VR Monitor,16,BarChartQ3,604.5814,16599.0547,North
+OO7105,VR Monitor,17,BarChartQ4,458.8864,16073.7862,West

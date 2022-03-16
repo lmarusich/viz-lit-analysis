@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+CA0406,VR,1,ScatterplotQ1,11516.4746,34234.1,blue high income
+CA0406,VR,2,ScatterplotQ2,7451.26,33062.6402,2011
+CA0406,VR,3,ScatterplotQ3,7082.0203,53436.0913,no relationship
+CA0406,VR,4,ScatterplotQ4,9494.6216,46779.0782,decreasing
+CA0406,VR,5,ScatterplotQ5,5238.7194,24438.8899,decrease ied attacks, and increase overall earning/higher income
+CA0406,VR,6,LineChartQ1,4981.6085,38490.831,neighborhoods 1 and 2
+CA0406,VR,7,LineChartQ2,5115.895,28482.8038,6 months
+CA0406,VR,8,LineChartQ3,6557.2171,47962.3031,neighborhood 1
+CA0406,VR,9,LineChartQ4,4959.7233,13951.5223,neighborhood 2
+CA0406,VR,10,LineChartQ5,14252.7801,26941.3976,neighborhood 1
+CA0406,VR,11,SurfacePlotQ1,3507.5706,34503.6775,sentiment is highest when religious homogeneity and crime incidents are both high
+CA0406,VR,12,SurfacePlotQ2,4971.7578,37407.8553,increasing crime incidents increases the positive sentiment towards the US when religious homogeneity is high
+CA0406,VR,13,SurfacePlotQ3,11504.8754,31141.1167,low crime and low religious homogeneity puts the positive sentiment at about half 
+CA0406,VR,14,BarChartQ1,4612.6304,23198.1287,north in 2010
+CA0406,VR,15,BarChartQ2,4579.5875,24976.1132,crime was stable over time
+CA0406,VR,16,BarChartQ3,3922.515,25835.3882,north neighborhood
+CA0406,VR,17,BarChartQ4,3731.715,21625.0496,the west neighborhood

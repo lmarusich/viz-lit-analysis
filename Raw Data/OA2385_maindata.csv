@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OA2385,VR Monitor Stereo,1,LineChartQ1,11975.0912,63712.1932,neighborhood 1 qand 2
+OA2385,VR Monitor Stereo,2,LineChartQ2,4435.0315,16944.1457,6
+OA2385,VR Monitor Stereo,3,LineChartQ3,5652.6936,21737.4667,neighborhood 3
+OA2385,VR Monitor Stereo,4,LineChartQ4,3999.6765,6044.0973,neighborhood 2
+OA2385,VR Monitor Stereo,5,LineChartQ5,11136.9903,53346.9057,neighborhood 2
+OA2385,VR Monitor Stereo,6,SurfacePlotQ1,4379.604,37587.2481,when there is a high percentage of homogeneity
+OA2385,VR Monitor Stereo,7,SurfacePlotQ2,7584.4394,33620.9519,there is less crime
+OA2385,VR Monitor Stereo,8,SurfacePlotQ3,11102.7877,82856.9925,its the same when religious homogeneity is at a high as when crime is low
+OA2385,VR Monitor Stereo,9,ScatterplotQ1,9159.6738,22440.1033,high income
+OA2385,VR Monitor Stereo,10,ScatterplotQ2,4859.1996,46053.7866,2011
+OA2385,VR Monitor Stereo,11,ScatterplotQ3,7595.8133,25020.1978,no relationship
+OA2385,VR Monitor Stereo,12,ScatterplotQ4,6233.8595,27757.5306,remaining stable
+OA2385,VR Monitor Stereo,13,ScatterplotQ5,5518.926,75619.9134,less ied attacks and raising wages
+OA2385,VR Monitor Stereo,14,BarChartQ1,3463.7508,23066.4863,north 2010
+OA2385,VR Monitor Stereo,15,BarChartQ2,4478.6162,8455.4627,stable over time
+OA2385,VR Monitor Stereo,16,BarChartQ3,5204.5606,11314.3543,north
+OA2385,VR Monitor Stereo,17,BarChartQ4,2346.2724,5094.5529,west

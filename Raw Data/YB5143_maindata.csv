@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+YB5143,VR Monitor,1,LineChartQ1,14723.3118,36614.5462,January
+YB5143,VR Monitor,2,LineChartQ2,13147.9664,280795.3252,2 months
+YB5143,VR Monitor,3,LineChartQ3,11249.0617,57189.1519,April
+YB5143,VR Monitor,4,LineChartQ4,5718.7714,48856.4439,January
+YB5143,VR Monitor,5,LineChartQ5,9561.0245,46219.8741,April
+YB5143,VR Monitor,6,BarChartQ1,8377.6919,23222.1827,2010
+YB5143,VR Monitor,7,BarChartQ2,5228.0512,48822.96,Decrease
+YB5143,VR Monitor,8,BarChartQ3,5250.0242,48923.6774,2015
+YB5143,VR Monitor,9,BarChartQ4,3932.0228,64706.1683,West
+YB5143,VR Monitor,10,SurfacePlotQ1,3675.1938,98674.1481,25
+YB5143,VR Monitor,11,SurfacePlotQ2,14331.8116,29946.7216,High
+YB5143,VR Monitor,12,SurfacePlotQ3,4624.1953,23054.1308,Crime goes low
+YB5143,VR Monitor,13,ScatterplotQ1,5585.1104,39172.143,High income
+YB5143,VR Monitor,14,ScatterplotQ2,2022.1294,50095.7237,2010
+YB5143,VR Monitor,15,ScatterplotQ3,1362.8709,33486.817,No relationship
+YB5143,VR Monitor,16,ScatterplotQ4,3462.7857,17201.6896,Decreasing
+YB5143,VR Monitor,17,ScatterplotQ5,5339.2583,114054.1981,No idea

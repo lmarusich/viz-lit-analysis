@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EA9314,VR,1,SurfacePlotQ1,6682.286,19961.0164,highest when religious homogeneity and crime is at its highest
+EA9314,VR,2,SurfacePlotQ2,4870.699,19078.6477,when religious homogeneity is highest, crime will have a positive correlation with sentiment towards the us
+EA9314,VR,3,SurfacePlotQ3,4401.4373,20318.0349,when crime is already low decreasing religious homogeneity doesnt do much, it stays around 50%
+EA9314,VR,4,BarChartQ1,4255.9082,18776.644,north 2010
+EA9314,VR,5,BarChartQ2,6143.3326,14106.3667,remained stable over time
+EA9314,VR,6,BarChartQ3,4076.9908,13292.7962,north
+EA9314,VR,7,BarChartQ4,2647.5895,8209.9469,west
+EA9314,VR,8,LineChartQ1,4088.27,29431.6253,1 and 2
+EA9314,VR,9,LineChartQ2,3452.2436,18095.678,6 months 
+EA9314,VR,10,LineChartQ3,4222.1236,29621.6861,3
+EA9314,VR,11,LineChartQ4,3038.6298,6478.2372,2
+EA9314,VR,12,LineChartQ5,7830.4284,23960.0709,neighborhood 1
+EA9314,VR,13,ScatterplotQ1,6367.7525,21535.8427,high income
+EA9314,VR,14,ScatterplotQ2,6221.9079,28325.986,2010
+EA9314,VR,15,ScatterplotQ3,10265.1029,21490.4978,no relationship
+EA9314,VR,16,ScatterplotQ4,3383.8699,39842.2154,increasing
+EA9314,VR,17,ScatterplotQ5,3195.4874,50855.9816,decreasing ied attacks in high income areas and increase income levels in low income areas

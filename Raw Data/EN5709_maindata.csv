@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EN5709,VR,1,SurfacePlotQ1,9312.2374,77735.7113,under high conditions of religious homogeneity and crime incidents
+EN5709,VR,2,SurfacePlotQ2,7785.7905,89357.8509,increases a lot
+EN5709,VR,3,SurfacePlotQ3,7383.8511,47639.2518,at its highest
+EN5709,VR,4,ScatterplotQ1,4144.9837,24194.1191,high income
+EN5709,VR,5,ScatterplotQ2,6589.9735,27422.0943,2010
+EN5709,VR,6,ScatterplotQ3,4735.8742,36926.8011,no relationship
+EN5709,VR,7,ScatterplotQ4,10634.2315,29656.1446,decreasing
+EN5709,VR,8,ScatterplotQ5,4221.7757,69184.9658,healthcare for lower incomes and reduce violence
+EN5709,VR,9,LineChartQ1,5048.5708,36289.9667,1 and 2
+EN5709,VR,10,LineChartQ2,6546.0468,24707.7195,6
+EN5709,VR,11,LineChartQ3,6768.9998,18474.8325,3
+EN5709,VR,12,LineChartQ4,5864.4112,9929.6076,2
+EN5709,VR,13,LineChartQ5,18475.3408,38747.941,neighborhood 2
+EN5709,VR,14,BarChartQ1,5977.109,15470.8314,north neighborhood 2010
+EN5709,VR,15,BarChartQ2,4323.4969,11314.9075,remain stable
+EN5709,VR,16,BarChartQ3,4311.0243,17759.7285,north
+EN5709,VR,17,BarChartQ4,4702.9979,21971.0647,west

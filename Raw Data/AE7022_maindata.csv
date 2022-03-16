@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE7022,VR,1,BarChartQ1,7149.9867,41439.2595,north
+AE7022,VR,2,BarChartQ2,9974.4899,38759.3967,remained stable
+AE7022,VR,3,BarChartQ3,5809.0428,17738.3253,north
+AE7022,VR,4,BarChartQ4,4647.6345,9807.4007,west
+AE7022,VR,5,ScatterplotQ1,8901.8316,36513.3918,blue
+AE7022,VR,6,ScatterplotQ2,7483.1065,40758.1256,2010
+AE7022,VR,7,ScatterplotQ3,8321.8547,29377.3691,no relationship
+AE7022,VR,8,ScatterplotQ4,6680.7114,45495.0143,increasing
+AE7022,VR,9,ScatterplotQ5,7004.332,96931.6601,try to avoid IED attacks and add security
+AE7022,VR,10,LineChartQ1,6858.7514,35084.6943,neighborhoods 1 & 2
+AE7022,VR,11,LineChartQ2,5853.4441,24528.7676,six
+AE7022,VR,12,LineChartQ3,5015.673,30693.9056,one
+AE7022,VR,13,LineChartQ4,6702.1698,10220.8227,two
+AE7022,VR,14,LineChartQ5,15034.051,35452.268,three
+AE7022,VR,15,SurfacePlotQ1,4714.9556,52063.0386,high crime rate
+AE7022,VR,16,SurfacePlotQ2,14632.1012,57311.6579,everyone has the same views
+AE7022,VR,17,SurfacePlotQ3,8925.2541,52721.3318,less crime being committed

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RL2345,VR,1,ScatterplotQ1,11514.8798,33617.4981,high income
+RL2345,VR,2,ScatterplotQ2,4468.543,25791.3042,2013
+RL2345,VR,3,ScatterplotQ3,7160.2718,24071.401,no relationship
+RL2345,VR,4,ScatterplotQ4,11460.2114,14208.9375,increasing
+RL2345,VR,5,ScatterplotQ5,7908.3344,54396.4962,want to let time pass and go higher social class
+RL2345,VR,6,LineChartQ1,8254.782,59355.8807,neighborhood 2
+RL2345,VR,7,LineChartQ2,5272.4807,29287.2273,6
+RL2345,VR,8,LineChartQ3,9205.2133,29655.9812,neighborhood 1 
+RL2345,VR,9,LineChartQ4,3574.8466,14019.0906,neighborhood 2
+RL2345,VR,10,LineChartQ5,10019.1809,29699.8614,neighborhood 2
+RL2345,VR,11,BarChartQ1,4210.6797,30313.9323,north 2010
+RL2345,VR,12,BarChartQ2,4378.8295,15324.8751,stable
+RL2345,VR,13,BarChartQ3,4021.6513,11438.7297,north
+RL2345,VR,14,BarChartQ4,3630.544,10242.9405,west
+RL2345,VR,15,SurfacePlotQ1,2748.756,29476.9776,religious
+RL2345,VR,16,SurfacePlotQ2,8243.6538,56574.527,makes the % of positive sentiment higher
+RL2345,VR,17,SurfacePlotQ3,7886.7326,31476.6058,makes positive sentiment lower

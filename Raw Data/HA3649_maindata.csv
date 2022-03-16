@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+HA3649,VR Monitor,1,ScatterplotQ1,21803.7278,106312.4725,blue
+HA3649,VR Monitor,2,ScatterplotQ2,9930.0975,102058.6714,2010
+HA3649,VR Monitor,3,ScatterplotQ3,8299.7389,178090.0935,no relationship
+HA3649,VR Monitor,4,ScatterplotQ4,8455.6277,61232.3553,increasing
+HA3649,VR Monitor,5,ScatterplotQ5,6456.3963,212738.0118,middle and low income
+HA3649,VR Monitor,6,BarChartQ1,5864.2143,42109.8979,north 2010
+HA3649,VR Monitor,7,BarChartQ2,3452.1146,32749.7553,stable
+HA3649,VR Monitor,8,BarChartQ3,5038.9433,13593.8129,north
+HA3649,VR Monitor,9,BarChartQ4,3050.1972,7685.214,west
+HA3649,VR Monitor,10,SurfacePlotQ1,6132.4128,182177.6481,100% religious homogeneity
+HA3649,VR Monitor,11,SurfacePlotQ2,10801.367,56831.4369,it decreases positive sentiment
+HA3649,VR Monitor,12,SurfacePlotQ3,13080.1857,32671.8173,remains the same
+HA3649,VR Monitor,13,LineChartQ1,3061.0886,28438.6026,neighborhood 1 and 2
+HA3649,VR Monitor,14,LineChartQ2,5819.4881,54363.3308,6
+HA3649,VR Monitor,15,LineChartQ3,6355.7857,33509.231,neighborhood 1
+HA3649,VR Monitor,16,LineChartQ4,5707.7983,15503.3891,neighborhood 2
+HA3649,VR Monitor,17,LineChartQ5,9561.1222,26517.0046,neighborhood 3

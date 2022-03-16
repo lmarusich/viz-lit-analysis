@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RI5022,VR,1,BarChartQ1,7675.0977,40132.3189,North 2010
+RI5022,VR,2,BarChartQ2,13449.0287,20809.6627,Stayed the same
+RI5022,VR,3,BarChartQ3,6813.5463,20295.3104,The north
+RI5022,VR,4,BarChartQ4,4367.7712,19547.3424,The west
+RI5022,VR,5,ScatterplotQ1,8958.2484,36145.4734,High income
+RI5022,VR,6,ScatterplotQ2,11672.8542,52888.931,2010
+RI5022,VR,7,ScatterplotQ3,5697.0508,40032.6219,No relationship
+RI5022,VR,8,ScatterplotQ4,6389.4671,35307.73,They are increasing
+RI5022,VR,9,ScatterplotQ5,12823.0769,49258.2136,Do something to increase income and try to lower ied attacks
+RI5022,VR,10,LineChartQ1,7305.5779,38803.5348,Neighborhood 2
+RI5022,VR,11,LineChartQ2,3920.8765,24383.3389,6
+RI5022,VR,12,LineChartQ3,5897.9297,17860.4477,Neighborhood one
+RI5022,VR,13,LineChartQ4,8064.9528,17056.4333,Neighborhood 2
+RI5022,VR,14,LineChartQ5,8411.161,46499.96,Neighborhood 2
+RI5022,VR,15,SurfacePlotQ1,3194.7339,28684.1521,Highest with religious and crime incidents
+RI5022,VR,16,SurfacePlotQ2,8265.8329,66683.1759,Yes it goes as the religious homogenity goes up
+RI5022,VR,17,SurfacePlotQ3,5574.5389,57558.2709,Stays the same

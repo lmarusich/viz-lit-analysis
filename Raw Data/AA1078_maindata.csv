@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA1078,VR Monitor Stereo,1,LineChartQ1,11304.9133,108424.2636,60%
+AA1078,VR Monitor Stereo,2,LineChartQ2,9718.6209,139264.3249,4 months
+AA1078,VR Monitor Stereo,3,LineChartQ3,10153.4551,28360.4848,Neighborhood 3
+AA1078,VR Monitor Stereo,4,LineChartQ4,6824.3417,24897.2656,Neighborhood 1
+AA1078,VR Monitor Stereo,5,LineChartQ5,21624.9186,59859.1292,I recommend working with neighborhood 3.
+AA1078,VR Monitor Stereo,6,BarChartQ1,9160.1322,47706.9972,The North neighborhhod had the highest amount of crimes in 2010.
+AA1078,VR Monitor Stereo,7,BarChartQ2,7539.9236,23355.8051,It remains stable.
+AA1078,VR Monitor Stereo,8,BarChartQ3,5115.8809,25042.8224,North neighborhood
+AA1078,VR Monitor Stereo,9,BarChartQ4,4222.752,13269.68,The West neighborhood
+AA1078,VR Monitor Stereo,10,ScatterplotQ1,15682.7404,62852.1343,Blue/High income
+AA1078,VR Monitor Stereo,11,ScatterplotQ2,8734.744,39273.5163,the year of 2010.
+AA1078,VR Monitor Stereo,12,ScatterplotQ3,8176.2483,37865.7444,It's negative.
+AA1078,VR Monitor Stereo,13,ScatterplotQ4,10141.988,26338.3389,Decreasing
+AA1078,VR Monitor Stereo,14,ScatterplotQ5,6591.4263,23792.625,I don't know
+AA1078,VR Monitor Stereo,15,SurfacePlotQ1,5239.5687,39876.8546,Crime incidents
+AA1078,VR Monitor Stereo,16,SurfacePlotQ2,8735.7648,40658.2652,I'm not sure
+AA1078,VR Monitor Stereo,17,SurfacePlotQ3,8869.3664,50834.1336,I'm not sure.

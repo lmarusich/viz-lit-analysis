@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LE1476,VR Monitor Stereo,1,LineChartQ1,24564.7168,107888.9275,neighborhoods 1 and 2
+LE1476,VR Monitor Stereo,2,LineChartQ2,5484.4938,53235.4796,7
+LE1476,VR Monitor Stereo,3,LineChartQ3,6692.2104,34727.1784,3rd one
+LE1476,VR Monitor Stereo,4,LineChartQ4,6735.215,9226.1673,neighborhood 2
+LE1476,VR Monitor Stereo,5,LineChartQ5,13236.2092,39072.4679,1
+LE1476,VR Monitor Stereo,6,BarChartQ1,3619.0006,37876.5714,2010 north
+LE1476,VR Monitor Stereo,7,BarChartQ2,5298.7646,15727.3141,remain stable
+LE1476,VR Monitor Stereo,8,BarChartQ3,5819.5912,25444.8034,north
+LE1476,VR Monitor Stereo,9,BarChartQ4,3417.9956,8868.1059,west
+LE1476,VR Monitor Stereo,10,ScatterplotQ1,27646.1725,69833.5035,high income
+LE1476,VR Monitor Stereo,11,ScatterplotQ2,7818.7556,15592.7971,2010
+LE1476,VR Monitor Stereo,12,ScatterplotQ3,8980.6333,48365.2804,negative
+LE1476,VR Monitor Stereo,13,ScatterplotQ4,7439.1591,21993.1705,decreasing
+LE1476,VR Monitor Stereo,14,ScatterplotQ5,16720.9176,63265.3824,tax the rich and tax poor less
+LE1476,VR Monitor Stereo,15,SurfacePlotQ1,4021.1066,28750.9094,high when religious homogeneity is high and crime is high
+LE1476,VR Monitor Stereo,16,SurfacePlotQ2,8110.0342,25233.521,positive sentiment towards the US is increased
+LE1476,VR Monitor Stereo,17,SurfacePlotQ3,4903.0741,47381.4979,in the middle around 50%

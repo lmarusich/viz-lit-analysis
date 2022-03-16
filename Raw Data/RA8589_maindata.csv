@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RA8589,VR,1,ScatterplotQ1,10836.6951,25522.1257,blue, high income
+RA8589,VR,2,ScatterplotQ2,8656.9929,42142.9407,2010
+RA8589,VR,3,ScatterplotQ3,10935.421,47761.9783,no relationship
+RA8589,VR,4,ScatterplotQ4,10220.8215,26003.8803,remaining stable
+RA8589,VR,5,ScatterplotQ5,6579.467,189673.0643,raise lower income and focus more on higher income.
+RA8589,VR,6,BarChartQ1,5306.8809,20530.4128,north 2010
+RA8589,VR,7,BarChartQ2,5316.8449,33553.7668,crime decreased a little in 2013 but overall remained stable
+RA8589,VR,8,BarChartQ3,4233.7507,15135.7634,north
+RA8589,VR,9,BarChartQ4,2670.3995,6657.2898,West
+RA8589,VR,10,SurfacePlotQ1,3507.6571,62696.2713,higher crime and higher religious homogeneity
+RA8589,VR,11,SurfacePlotQ2,5250.0454,57591.3515,when crime starts increasing, sentiment starts increasing.
+RA8589,VR,12,SurfacePlotQ3,12689.2632,37764.5248,when crime is low, religious homogeneity remains stable
+RA8589,VR,13,LineChartQ1,7461.6597,33487.4487,neighborhood 1 & 2
+RA8589,VR,14,LineChartQ2,6467.7979,38055.2573,first 6 months
+RA8589,VR,15,LineChartQ3,8948.216,25568.5407,neighborhood 2 had the most sporadic homogeneity
+RA8589,VR,16,LineChartQ4,3899.1167,35821.6926,neighborhood remained stable
+RA8589,VR,17,LineChartQ5,13302.6037,66616.324,neighborhood 1

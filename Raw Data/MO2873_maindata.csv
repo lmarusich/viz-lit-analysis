@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+MO2873,VR Monitor,1,LineChartQ1,15728.4575,112031.6809,1 AND 2
+MO2873,VR Monitor,2,LineChartQ2,6189.5314,60227.7095,5 or 6 months
+MO2873,VR Monitor,3,LineChartQ3,6043.4126,26653.0163,neighborhood 1
+MO2873,VR Monitor,4,LineChartQ4,4022.3099,13293.2386,neighborhood 2
+MO2873,VR Monitor,5,LineChartQ5,13626.5923,22372.6973,neighborhood 1
+MO2873,VR Monitor,6,SurfacePlotQ1,5921.2362,48901.3923,religious homogeneity and crime rates are at their highest
+MO2873,VR Monitor,7,SurfacePlotQ2,9359.8852,37328.7557,homogeneity is higher, increasing crime raises positive sentiment
+MO2873,VR Monitor,8,SurfacePlotQ3,7875.2,68425.447,when crime is low, decreasing homogeneity seems to stay pretty level. not a whole lot of effect on positive sentiment. 
+MO2873,VR Monitor,9,ScatterplotQ1,9651.1327,32303.3461,high income
+MO2873,VR Monitor,10,ScatterplotQ2,7900.9792,14923.7329,2010
+MO2873,VR Monitor,11,ScatterplotQ3,7182.0491,21937.8093,no relationship
+MO2873,VR Monitor,12,ScatterplotQ4,5842.4524,69699.3195,decreasing
+MO2873,VR Monitor,13,ScatterplotQ5,8232.2581,39596.5972,lower ied attacks and raise wages of lower income levels
+MO2873,VR Monitor,14,BarChartQ1,3428.9709,27143.077,north 2010
+MO2873,VR Monitor,15,BarChartQ2,3754.5011,8098.335,stable
+MO2873,VR Monitor,16,BarChartQ3,4714.8589,11114.6373,north
+MO2873,VR Monitor,17,BarChartQ4,3585.7994,8365.8803,west

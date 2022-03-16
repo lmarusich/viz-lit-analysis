@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AM6705,VR,1,SurfacePlotQ1,7842.8546,31688.4935,100% religious homogeneity is when it is the highest
+AM6705,VR,2,SurfacePlotQ2,90330.2175,131489.9626,all increase because they are dependent to each other
+AM6705,VR,3,SurfacePlotQ3,8411.3807,35430.3642,when crime is low, so is religious homogeneity. seem to be dependent on each other. 
+AM6705,VR,4,BarChartQ1,4345.3165,17190.4714,north 2010
+AM6705,VR,5,BarChartQ2,7818.7623,13660.3965,remain stable
+AM6705,VR,6,BarChartQ3,5685.8443,20083.134,north
+AM6705,VR,7,BarChartQ4,4524.3018,9840.9836,west
+AM6705,VR,8,ScatterplotQ1,5607.3762,25467.1023,blue
+AM6705,VR,9,ScatterplotQ2,2971.7615,8366.1909,red
+AM6705,VR,10,ScatterplotQ3,7819.1688,64427.371,no relationship
+AM6705,VR,11,ScatterplotQ4,5329.4713,23467.8901,increasing
+AM6705,VR,12,ScatterplotQ5,6177.6862,20563.5464,lower ied attacks and raise the income of people.
+AM6705,VR,13,LineChartQ1,4200.1491,24819.43,3
+AM6705,VR,14,LineChartQ2,7841.4842,21658.0422,5
+AM6705,VR,15,LineChartQ3,5048.7559,27589.3412,3
+AM6705,VR,16,LineChartQ4,4837.3948,16140.7264,2
+AM6705,VR,17,LineChartQ5,7562.0626,20417.8019,1

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AR9517,VR Monitor Stereo,1,LineChartQ1,7406.0882,91308.3284,neighborhood 1 
+AR9517,VR Monitor Stereo,2,LineChartQ2,13727.9273,91357.2524,6 months 
+AR9517,VR Monitor Stereo,3,LineChartQ3,5327.7945,50240.7484,neighborhood 1 
+AR9517,VR Monitor Stereo,4,LineChartQ4,5227.2734,12242.0535,neighborhood 2 
+AR9517,VR Monitor Stereo,5,LineChartQ5,38000.0878,68246.9007,neighborhood 2 
+AR9517,VR Monitor Stereo,6,ScatterplotQ1,10354.5028,59591.1361,the year 2016 
+AR9517,VR Monitor Stereo,7,ScatterplotQ2,4915.4565,35430.4464,2010 
+AR9517,VR Monitor Stereo,8,ScatterplotQ3,6959.4329,31264.844,negative relationship 
+AR9517,VR Monitor Stereo,9,ScatterplotQ4,13928.6807,57200.4175,increasing 
+AR9517,VR Monitor Stereo,10,ScatterplotQ5,10187.5268,138437.4886,decrease IED attacks 
+AR9517,VR Monitor Stereo,11,BarChartQ1,4212.3877,54084.7721,north neighborhood 2010 
+AR9517,VR Monitor Stereo,12,BarChartQ2,6199.9286,24438.9994,remained stable over time 
+AR9517,VR Monitor Stereo,13,BarChartQ3,7093.2217,31420.4369,north neighborhood 
+AR9517,VR Monitor Stereo,14,BarChartQ4,11649.8622,33665.4034,west neighborhood 
+AR9517,VR Monitor Stereo,15,SurfacePlotQ1,8969.1601,40903.5566,when religious homogenity and crime indencences is the highest 
+AR9517,VR Monitor Stereo,16,SurfacePlotQ2,10946.6134,65310.1848,it increases 
+AR9517,VR Monitor Stereo,17,SurfacePlotQ3,3597.1579,14945.2473,it decreases 

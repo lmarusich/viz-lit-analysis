@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RR2012,VR Monitor,1,LineChartQ1,9930.4281,110331.6125,neighborhood 2
+RR2012,VR Monitor,2,LineChartQ2,6356.4347,33610.1705,7 months
+RR2012,VR Monitor,3,LineChartQ3,10445.1657,24864.9593,neighborhood 1
+RR2012,VR Monitor,4,LineChartQ4,7863.1332,13392.5342,neighborhood 2
+RR2012,VR Monitor,5,LineChartQ5,26807.1791,49895.9991,neighborhood 2
+RR2012,VR Monitor,6,BarChartQ1,8858.6435,42792.2191,north 2010
+RR2012,VR Monitor,7,BarChartQ2,6995.1143,16040.022,remained pretty stable
+RR2012,VR Monitor,8,BarChartQ3,4558.6729,17894.2428,north
+RR2012,VR Monitor,9,BarChartQ4,4960.2903,14018.3478,west
+RR2012,VR Monitor,10,ScatterplotQ1,12231.0488,42713.6774,blue
+RR2012,VR Monitor,11,ScatterplotQ2,8411.3324,35430.4631,2010
+RR2012,VR Monitor,12,ScatterplotQ3,8086.1382,34112.2007,positive
+RR2012,VR Monitor,13,ScatterplotQ4,5920.2715,29667.4799,increasing
+RR2012,VR Monitor,14,ScatterplotQ5,14811.6725,122252.2206,to keep the high income the same
+RR2012,VR Monitor,15,SurfacePlotQ1,3038.8066,52475.7938,90%
+RR2012,VR Monitor,16,SurfacePlotQ2,26617.4176,75741.4745,when crime incidents are at 900
+RR2012,VR Monitor,17,SurfacePlotQ3,36658.4969,79818.7029,when crime incidents is at 700

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AO5595,VR,1,LineChartQ1,11897.6353,81013.8631,neighborhoods 1 and 2
+AO5595,VR,2,LineChartQ2,5328.5345,38714.0476,6 months
+AO5595,VR,3,LineChartQ3,7762.2367,20271.8519,neighborhood 3
+AO5595,VR,4,LineChartQ4,6579.4782,17157.6843,neighborhood 2
+AO5595,VR,5,LineChartQ5,24540.7739,40311.8335,neighborhood 1
+AO5595,VR,6,BarChartQ1,5775.1582,97656.9884,north in 2010
+AO5595,VR,7,BarChartQ2,4143.7276,12845.7632,stable over time
+AO5595,VR,8,BarChartQ3,5406.9444,40189.1065,north
+AO5595,VR,9,BarChartQ4,4167.4877,8757.7165,west 
+AO5595,VR,10,SurfacePlotQ1,5149.4454,39530.0416,religious homogeneity is highest
+AO5595,VR,11,SurfacePlotQ2,9205.0215,141888.9984,doesnt really affect it at all
+AO5595,VR,12,SurfacePlotQ3,9583.1914,31173.3816,stayed around 50 for sentiment
+AO5595,VR,13,ScatterplotQ1,6757.9669,20430.2451,high income
+AO5595,VR,14,ScatterplotQ2,4236.6502,10108.7129,2010
+AO5595,VR,15,ScatterplotQ3,12197.517,47371.0447,no relationship
+AO5595,VR,16,ScatterplotQ4,7685.5571,22105.5774,decreasing
+AO5595,VR,17,ScatterplotQ5,5026.1381,144781.7737,lessen ied attacks and try to cater towards low income community

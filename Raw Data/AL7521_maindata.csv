@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AL7521,VR Monitor Stereo,1,ScatterplotQ1,19495.1838,95234.3735,blue
+AL7521,VR Monitor Stereo,2,ScatterplotQ2,5953.7695,74066.6814,2010
+AL7521,VR Monitor Stereo,3,ScatterplotQ3,13694.7873,72347.2464,negative
+AL7521,VR Monitor Stereo,4,ScatterplotQ4,18697.7323,58708.0209,increasing
+AL7521,VR Monitor Stereo,5,ScatterplotQ5,40825.2479,81236.9043,increase ied attacks 
+AL7521,VR Monitor Stereo,6,LineChartQ1,11561.164,43684.9995,neighborhoods 1 and 2
+AL7521,VR Monitor Stereo,7,LineChartQ2,10712.3929,25265.9621,6 months
+AL7521,VR Monitor Stereo,8,LineChartQ3,7707.7174,38090.1536,neighborhood 3
+AL7521,VR Monitor Stereo,9,LineChartQ4,13381.576,31085.6129,neighborhood 2
+AL7521,VR Monitor Stereo,10,LineChartQ5,40434.0381,48621.9517,neighborhood 1
+AL7521,VR Monitor Stereo,11,SurfacePlotQ1,5954.57,70727.7439,at the highest crime rate and highest religious homogeneity
+AL7521,VR Monitor Stereo,12,SurfacePlotQ2,17246.9942,22071.7053,the more crime, the more people want to be religious, giving people a positive sentiment towards the us
+AL7521,VR Monitor Stereo,13,SurfacePlotQ3,9885.6957,123168.9807,it doesn't
+AL7521,VR Monitor Stereo,14,BarChartQ1,5283.3453,31230.9703,north 2010
+AL7521,VR Monitor Stereo,15,BarChartQ2,11639.1955,17168.4147,remained stable over time
+AL7521,VR Monitor Stereo,16,BarChartQ3,7248.784,33922.5067,north
+AL7521,VR Monitor Stereo,17,BarChartQ4,6613.2987,18440.9514,west

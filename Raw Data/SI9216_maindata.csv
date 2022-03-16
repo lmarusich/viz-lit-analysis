@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+SI9216,VR Monitor Stereo,1,ScatterplotQ1,18460.7377,36553.5525,high income
+SI9216,VR Monitor Stereo,2,ScatterplotQ2,7797.4198,22742.6368,2010
+SI9216,VR Monitor Stereo,3,ScatterplotQ3,13482.5709,60004.4723,positive
+SI9216,VR Monitor Stereo,4,ScatterplotQ4,7283.0173,43204.8128,stable
+SI9216,VR Monitor Stereo,5,ScatterplotQ5,7149.3166,64896.8214,decreasing IED attacks and increasing time
+SI9216,VR Monitor Stereo,6,SurfacePlotQ1,3016.2226,36582.4058,high homogeneity and high crime 
+SI9216,VR Monitor Stereo,7,SurfacePlotQ2,10165.1824,28248.6523,increases positive sentiment
+SI9216,VR Monitor Stereo,8,SurfacePlotQ3,8533.3383,20898.6859,remains stable
+SI9216,VR Monitor Stereo,9,LineChartQ1,8701.4932,41540.1554,neighborhoods 1 and 2
+SI9216,VR Monitor Stereo,10,LineChartQ2,7707.7689,29689.6303,6 
+SI9216,VR Monitor Stereo,11,LineChartQ3,4490.7135,11639.2253,neighborhood 3
+SI9216,VR Monitor Stereo,12,LineChartQ4,6490.1121,12030.7137,neighborhood 2
+SI9216,VR Monitor Stereo,13,LineChartQ5,11951.8197,48387.8354,neighborhood 3
+SI9216,VR Monitor Stereo,14,BarChartQ1,5338.9722,14007.1049,north neighborhood 2010
+SI9216,VR Monitor Stereo,15,BarChartQ2,5775.162,34782.6837,stable
+SI9216,VR Monitor Stereo,16,BarChartQ3,3351.619,8076.1252,north
+SI9216,VR Monitor Stereo,17,BarChartQ4,3116.7554,5462.096,west

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+UK0825,VR,1,LineChartQ1,12780.0425,173834.3626,except july, august, sep, oct, december, they all have 90%
+UK0825,VR,2,LineChartQ2,9840.3259,86062.6544,5
+UK0825,VR,3,LineChartQ3,8656.9735,41305.2217,neighborhood 2
+UK0825,VR,4,LineChartQ4,13862.1549,77808.6201,2
+UK0825,VR,5,LineChartQ5,13884.0831,59021.0724,3
+UK0825,VR,6,ScatterplotQ1,15537.2002,51861.6268,blue
+UK0825,VR,7,ScatterplotQ2,14219.1827,58383.7679,2016
+UK0825,VR,8,ScatterplotQ3,21938.1714,126374.4741,positive
+UK0825,VR,9,ScatterplotQ4,16609.806,67174.8444,increasing
+UK0825,VR,10,ScatterplotQ5,9896.1998,85571.4565,work on the low incomes
+UK0825,VR,11,BarChartQ1,6433.9045,24752.2102,north 2010
+UK0825,VR,12,BarChartQ2,8590.6321,80031.7243,first it was last, then it become constant, and then in 2014
+UK0825,VR,13,BarChartQ3,6645.3059,39105.0291,east
+UK0825,VR,14,BarChartQ4,5876.3353,25277.7455,there is no 2016
+UK0825,VR,15,SurfacePlotQ1,6656.7974,72558.076,religious
+UK0825,VR,16,SurfacePlotQ2,9171.1332,82008.9161,when religious homogeneity was high and crime was high
+UK0825,VR,17,SurfacePlotQ3,10935.9043,69152.1089,when the crime was low, religious homogeneity was higher

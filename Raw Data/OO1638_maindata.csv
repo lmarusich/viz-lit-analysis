@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OO1638,VR Monitor,1,ScatterplotQ1,23300.8983,44164.5248,blue
+OO1638,VR Monitor,2,ScatterplotQ2,14565.6016,29677.4551,2010
+OO1638,VR Monitor,3,ScatterplotQ3,18240.8173,49158.2299,no relationship
+OO1638,VR Monitor,4,ScatterplotQ4,8109.2763,31419.8798,stable
+OO1638,VR Monitor,5,ScatterplotQ5,20373.4562,105799.2793,increase positive sentiment and decrease attacks
+OO1638,VR Monitor,6,LineChartQ1,8578.7562,56027.5122,2
+OO1638,VR Monitor,7,LineChartQ2,6746.4272,43774.0352,7
+OO1638,VR Monitor,8,LineChartQ3,9472.0368,28493.9736,1
+OO1638,VR Monitor,9,LineChartQ4,5986.7499,10008.5489,2
+OO1638,VR Monitor,10,LineChartQ5,19099.8791,55759.4624,1
+OO1638,VR Monitor,11,SurfacePlotQ1,5708.6166,92853.5404,increase religious homogeneity and increase crime incidents
+OO1638,VR Monitor,12,SurfacePlotQ2,19503.1133,75507.9315,more united
+OO1638,VR Monitor,13,SurfacePlotQ3,21222.9661,22998.8872,more diversity
+OO1638,VR Monitor,14,BarChartQ1,3486.0439,17391.4227,north 2010
+OO1638,VR Monitor,15,BarChartQ2,4479.879,13382.0278,stable
+OO1638,VR Monitor,16,BarChartQ3,4390.593,13103.2189,north
+OO1638,VR Monitor,17,BarChartQ4,2625.4256,6545.9572,west

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA9143,VR Monitor,1,ScatterplotQ1,25508.6699,48516.4516,blue
+AA9143,VR Monitor,2,ScatterplotQ2,18541.6768,84241.4264,2010
+AA9143,VR Monitor,3,ScatterplotQ3,23211.7419,122297.7252,No relationship
+AA9143,VR Monitor,4,ScatterplotQ4,20452.0541,63645.1561,stable
+AA9143,VR Monitor,5,ScatterplotQ5,17034.6448,127145.3418,go back to what we were doing in 2013, becuase it seemed to be the same then.
+AA9143,VR Monitor,6,BarChartQ1,8053.5673,44399.912,north 2010
+AA9143,VR Monitor,7,BarChartQ2,6098.7889,24584.5865,remains stable
+AA9143,VR Monitor,8,BarChartQ3,6255.3701,22484.6851,north
+AA9143,VR Monitor,9,BarChartQ4,5920.2617,16464.2261,west
+AA9143,VR Monitor,10,LineChartQ1,8076.5139,41239.3199,neighborhood 1
+AA9143,VR Monitor,11,LineChartQ2,8411.6071,113339.4661,6 months
+AA9143,VR Monitor,12,LineChartQ3,14755.771,35988.7421,neighborhood 3
+AA9143,VR Monitor,13,LineChartQ4,8924.766,44545.0672,neighborhood 2
+AA9143,VR Monitor,14,LineChartQ5,20139.4142,122029.3957,3
+AA9143,VR Monitor,15,SurfacePlotQ1,8802.5631,67990.6194,crime
+AA9143,VR Monitor,16,SurfacePlotQ2,30505.32,159492.7703,no clue
+AA9143,VR Monitor,17,SurfacePlotQ3,22015.9147,183261.5568,when crime is low, religious homogeneity is high

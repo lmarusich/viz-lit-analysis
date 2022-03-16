@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE2314,VR Monitor Stereo,1,BarChartQ1,12935.6467,59131.7838,North and 2010
+AE2314,VR Monitor Stereo,2,BarChartQ2,5015.639,72290.7979,The Eastern neighborhoods were stable and increased once.
+AE2314,VR Monitor Stereo,3,BarChartQ3,6790.9632,35988.311,North would have the least
+AE2314,VR Monitor Stereo,4,BarChartQ4,4613.7368,12577.55,West had the most
+AE2314,VR Monitor Stereo,5,LineChartQ1,7383.3768,54742.9229,1 and 2 have less
+AE2314,VR Monitor Stereo,6,LineChartQ2,12287.3136,55703.3207,5 months
+AE2314,VR Monitor Stereo,7,LineChartQ3,16174.0035,49738.7172,1
+AE2314,VR Monitor Stereo,8,LineChartQ4,8321.8929,23601.2873,neighborhood 2
+AE2314,VR Monitor Stereo,9,LineChartQ5,10086.1814,58239.6359,Neighborhood 2
+AE2314,VR Monitor Stereo,10,ScatterplotQ1,15089.8777,65275.4539,Blue
+AE2314,VR Monitor Stereo,11,ScatterplotQ2,6623.3889,28572.0118,2010
+AE2314,VR Monitor Stereo,12,ScatterplotQ3,8500.909,49292.9469,There is no relationship
+AE2314,VR Monitor Stereo,13,ScatterplotQ4,12689.7736,49404.655,They're increasing
+AE2314,VR Monitor Stereo,14,ScatterplotQ5,6724.1028,61623.6049,No idea
+AE2314,VR Monitor Stereo,15,SurfacePlotQ1,6948.5264,70091.1541,1000, not sure how to answer this question
+AE2314,VR Monitor Stereo,16,SurfacePlotQ2,8947.2064,114936.8862,More crime is better for the U.S
+AE2314,VR Monitor Stereo,17,SurfacePlotQ3,4691.0351,51660.1583,When crime is low, religion is stable for the U.S

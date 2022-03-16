@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LO3861,VR Monitor Stereo,1,ScatterplotQ1,21481.2269,38713.6781,BLUE
+LO3861,VR Monitor Stereo,2,ScatterplotQ2,8445.2201,63857.5546,2010
+LO3861,VR Monitor Stereo,3,ScatterplotQ3,13516.4263,42289.3241,no relationship
+LO3861,VR Monitor Stereo,4,ScatterplotQ4,5964.8275,51135.3267,increasing
+LO3861,VR Monitor Stereo,5,ScatterplotQ5,11763.0946,33286.6286,increase number of attacks 
+LO3861,VR Monitor Stereo,6,LineChartQ1,4299.8756,61891.6583,1 and 2
+LO3861,VR Monitor Stereo,7,LineChartQ2,6612.9663,29823.0057,6 months
+LO3861,VR Monitor Stereo,8,LineChartQ3,9986.3792,70001.1717,1
+LO3861,VR Monitor Stereo,9,LineChartQ4,4747.9027,9885.2452,2
+LO3861,VR Monitor Stereo,10,LineChartQ5,11225.7722,38871.0405,neighborhood 3
+LO3861,VR Monitor Stereo,11,SurfacePlotQ1,3551.8282,50710.3548,when religious homogeneity and crime are at the highest
+LO3861,VR Monitor Stereo,12,SurfacePlotQ2,5115.5047,35631.1694,move up or increase
+LO3861,VR Monitor Stereo,13,SurfacePlotQ3,6255.9574,51113.102,increases sentiment slightly
+LO3861,VR Monitor Stereo,14,BarChartQ1,3563.657,34135.2181,north 2010
+LO3861,VR Monitor Stereo,15,BarChartQ2,5373.2539,14319.7024,remain stable
+LO3861,VR Monitor Stereo,16,BarChartQ3,3383.938,17257.6232,north
+LO3861,VR Monitor Stereo,17,BarChartQ4,3574.5891,18586.2559,west

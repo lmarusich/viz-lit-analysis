@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA1358,VR Monitor,1,BarChartQ1,19759.5407,58650.5527,north 2010
+AA1358,VR Monitor,2,BarChartQ2,12499.5526,23657.5702,remained stable
+AA1358,VR Monitor,3,BarChartQ3,8846.4081,30860.6379,north
+AA1358,VR Monitor,4,BarChartQ4,5886.8075,16364.6339,west
+AA1358,VR Monitor,5,SurfacePlotQ1,8812.3182,100436.9748,crime incidents
+AA1358,VR Monitor,6,SurfacePlotQ2,17056.3871,116802.3439,they both increase at the same time
+AA1358,VR Monitor,7,SurfacePlotQ3,19391.1601,141476.3041,it doesn't influence positive sentiment
+AA1358,VR Monitor,8,LineChartQ1,5787.304,38089.3171,neighborhoods 2 and 3
+AA1358,VR Monitor,9,LineChartQ2,5753.3047,76211.1637,february through august
+AA1358,VR Monitor,10,LineChartQ3,9695.9277,32951.7951,neighborhood 3 
+AA1358,VR Monitor,11,LineChartQ4,5104.7129,20942.8029,neighborhood 1
+AA1358,VR Monitor,12,LineChartQ5,19692.2477,56440.7045,neighborhood 2
+AA1358,VR Monitor,13,ScatterplotQ1,9103.41,75194.3799,income 2016
+AA1358,VR Monitor,14,ScatterplotQ2,7461.7998,34101.409,2016
+AA1358,VR Monitor,15,ScatterplotQ3,10244.2697,46657.0249,negative
+AA1358,VR Monitor,16,ScatterplotQ4,11448.7111,34604.1414,decreasing
+AA1358,VR Monitor,17,ScatterplotQ5,15883.2534,59613.2059,decrease ied attacks and increase income 

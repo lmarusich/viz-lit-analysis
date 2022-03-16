@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RG8876,VR,1,BarChartQ1,13696.1024,35586.2613,north neighborhood 2010
+RG8876,VR,2,BarChartQ2,10332.6751,21681.1182,remains stable over time
+RG8876,VR,3,BarChartQ3,5641.629,13783.6136,north neighborhood
+RG8876,VR,4,BarChartQ4,5361.9448,18006.1396,west neighborhood
+RG8876,VR,5,SurfacePlotQ1,7729.3105,47426.9787,high religious homogeneity and high crime incidents
+RG8876,VR,6,SurfacePlotQ2,13337.1118,59277.5757,increases positive sentiment towards US
+RG8876,VR,7,SurfacePlotQ3,9405.9869,150456.9303,puts positive sentiment at about 50% to the US
+RG8876,VR,8,LineChartQ1,5585.8046,30694.5862,neighborhood 1 and 2
+RG8876,VR,9,LineChartQ2,7740.9636,38279.1168,6 months
+RG8876,VR,10,LineChartQ3,7226.8496,25991.6374,neighborhood 3
+RG8876,VR,11,LineChartQ4,8624.2433,22072.0608,neighborhood 2
+RG8876,VR,12,LineChartQ5,23534.5346,59077.0176,neighborhood 1 
+RG8876,VR,13,ScatterplotQ1,14989.9036,32079.5923,high income
+RG8876,VR,14,ScatterplotQ2,6265.7131,31408.7432,2010
+RG8876,VR,15,ScatterplotQ3,11795.5117,103833.6122,no relationship
+RG8876,VR,16,ScatterplotQ4,13225.6337,40044.605,increasing
+RG8876,VR,17,ScatterplotQ5,11673.9822,93245.0074,more income and give it more time

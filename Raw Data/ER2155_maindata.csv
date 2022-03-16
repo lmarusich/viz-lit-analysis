@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+ER2155,VR,1,BarChartQ1,26049.6781,57311.979,north 2010
+ER2155,VR,2,BarChartQ2,6031.9656,28930.0581,remains stable
+ER2155,VR,3,BarChartQ3,11538.3088,22160.5885,north
+ER2155,VR,4,BarChartQ4,4602.2546,18854.3538,south
+ER2155,VR,5,SurfacePlotQ1,4088.6043,49962.1057,when both homogeneity and crime are high percentages
+ER2155,VR,6,SurfacePlotQ2,2669.9052,38212.3676,creates a higher percentage
+ER2155,VR,7,SurfacePlotQ3,6456.8291,36860.4015,higher
+ER2155,VR,8,LineChartQ1,2871.3691,17280.014,neighborhood 2
+ER2155,VR,9,LineChartQ2,7149.9955,57156.0639,five
+ER2155,VR,10,LineChartQ3,4926.3993,41484.6583,neighborhood 3 from april to august
+ER2155,VR,11,LineChartQ4,4345.425,11505.3852,neighborhood 2
+ER2155,VR,12,LineChartQ5,12062.9238,28247.8742,neighborhood 2
+ER2155,VR,13,ScatterplotQ1,7048.2672,27466.4487,blue
+ER2155,VR,14,ScatterplotQ2,4367.847,44936.4243,2012
+ER2155,VR,15,ScatterplotQ3,8176.7657,38948.8968,no relationship
+ER2155,VR,16,ScatterplotQ4,9785.4838,63355.5022,remaining stable
+ER2155,VR,17,ScatterplotQ5,11035.6483,75005.0234,not sure

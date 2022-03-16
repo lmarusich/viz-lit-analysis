@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+MU0632,VR Monitor,1,ScatterplotQ1,20008.2722,61692.4324,blue
+MU0632,VR Monitor,2,ScatterplotQ2,8098.4542,22619.2918,red
+MU0632,VR Monitor,3,ScatterplotQ3,11158.8267,19972.3883,no relationship
+MU0632,VR Monitor,4,ScatterplotQ4,6054.9001,41138.5696,remaining stable
+MU0632,VR Monitor,5,ScatterplotQ5,10200.8699,53872.2248,less IED attacks
+MU0632,VR Monitor,6,LineChartQ1,6590.4677,59523.1853,1 and 2
+MU0632,VR Monitor,7,LineChartQ2,10555.926,63969.8023,6
+MU0632,VR Monitor,8,LineChartQ3,5104.4194,15380.6045,3
+MU0632,VR Monitor,9,LineChartQ4,3987.9095,17547.8428,2
+MU0632,VR Monitor,10,LineChartQ5,14376.2799,53983.9113,1
+MU0632,VR Monitor,11,SurfacePlotQ1,3686.198,50029.4344,religious groups and crime
+MU0632,VR Monitor,12,SurfacePlotQ2,16654.208,45058.6564,makes it higher or bigger
+MU0632,VR Monitor,13,SurfacePlotQ3,4043.7492,48946.8037,when crime is low, religious homogeneity is high
+MU0632,VR Monitor,14,BarChartQ1,3642.3045,29421.2454,north 2010
+MU0632,VR Monitor,15,BarChartQ2,4233.2452,12129.7476,remain stable
+MU0632,VR Monitor,16,BarChartQ3,5116.3861,13214.8666,north
+MU0632,VR Monitor,17,BarChartQ4,5160.2355,9817.3217,west

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RA5840,VR Monitor Stereo,1,SurfacePlotQ1,4670.5822,33061.5516,95
+RA5840,VR Monitor Stereo,2,SurfacePlotQ2,8020.6531,43506.7599,95
+RA5840,VR Monitor Stereo,3,SurfacePlotQ3,7239.2507,33811.0894,95
+RA5840,VR Monitor Stereo,4,BarChartQ1,3607.9181,17224.1516,2010
+RA5840,VR Monitor Stereo,5,BarChartQ2,6501.7067,43618.4609,stable over time
+RA5840,VR Monitor Stereo,6,BarChartQ3,4155.9706,20128.4996,north
+RA5840,VR Monitor Stereo,7,BarChartQ4,3216.4423,10342.9735,west
+RA5840,VR Monitor Stereo,8,ScatterplotQ1,2457.4616,54352.3865,blue
+RA5840,VR Monitor Stereo,9,ScatterplotQ2,2804.0413,36089.5546,2016
+RA5840,VR Monitor Stereo,10,ScatterplotQ3,6802.8993,63544.9436,no relationship
+RA5840,VR Monitor Stereo,11,ScatterplotQ4,8556.2344,16653.725,increasing
+RA5840,VR Monitor Stereo,12,ScatterplotQ5,6914.6252,31007.5344,I don't know
+RA5840,VR Monitor Stereo,13,LineChartQ1,6098.7867,33543.2133,neighborhoods 1 and 2
+RA5840,VR Monitor Stereo,14,LineChartQ2,6232.4262,40211.0012,11 months
+RA5840,VR Monitor Stereo,15,LineChartQ3,8143.3153,30974.0826,neighborhood 2
+RA5840,VR Monitor Stereo,16,LineChartQ4,6680.2059,10500.0229,neighborhood 1
+RA5840,VR Monitor Stereo,17,LineChartQ5,27444.5373,59244.4019,neighborhood 2

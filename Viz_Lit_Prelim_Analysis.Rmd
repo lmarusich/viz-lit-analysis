@@ -1,0 +1,129 @@
+---
+title: "Visualization Literacy Analysis"
+author: "Laura Marusich"
+date: "3/8/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, knitr
+               # knitr, rmarkdown, yaml, tidyverse, plyr, psych, foreign, stats, lme4,
+               #              RColorBrewer, pals, car, ez, devtools, MBESS, apaTables, gridExtra, plyr,
+               #              cowplot, Rmisc, afex, lsmeans, emmeans, ggsignif, effsize, TOSTER
+) 
+
+knitr::opts_chunk$set(echo = TRUE, tidy = FALSE)
+options(width = 90)
+
+dir.create(file.path(getwd(),"/plots"), showWarnings = F)
+```
+
+<!-- ## Grab raw files from Google Drive (only have to do this once) -->
+
+<!-- ```{r cars} -->
+<!-- data_folder_names <- drive_ls(path = "Viz Lit Data 2019 to Current", pattern = "Lit Data") -->
+
+<!-- for (i in 1:4){ -->
+<!--   temp_files <- drive_ls(top_files$name[i], recursive = T, type = "csv") -->
+<!--   n_files <- dim(temp_files)[1] -->
+<!--   for (j in 1:n_files){ -->
+<!--     drive_download(temp_files[j,], overwrite = T) -->
+<!--   } -->
+<!-- } -->
+<!-- ``` -->
+
+## Read in data files
+
+```{r, warning=F, message=F}
+#get the first 6? characters of each data file
+#get unique values of these
+# this is list of subject ids
+
+raw_file_names <- list.files("Raw Data")
+first_six <- substr(raw_file_names, 1, 6)
+sub_ids <- unique(first_six)
+
+length(sub_ids)
+
+states <- c("WaitingToReadyUp","ReadingQuestion","ProducingAnswer","WaitingToEnterAnswer")
+
+fast_RTs <- data.frame(ParticipantId = character(),
+                       TrialName = character(),
+                       type = character(),
+                       time = numeric()
+)
+
+read_question_RTs <- list()
+begin_input_RTs <- list()
+
+
+for (i in 1:length(sub_ids)){
+  # temp_hmd_file <- read.csv(paste0("Raw Data/", sub_ids[i], "_hmdandinputlog.csv"))
+  # 
+  # trial_names <- unique(temp_hmd_file$TrialName)
+  # 
+  # temp_hmd_file %>%
+  #   mutate(TrialName = fct_inorder(factor(TrialName)),
+  #     State = factor(State, levels = states)) %>%
+  #   group_by(TrialName, State) %>%
+  #   summarize(first_time = first(Time..ms.),
+  #             last_time = last(Time..ms.))
+  
+  temp_main_file <- read_csv(paste0("Raw Data/", sub_ids[i], "_maindata.csv"))
+  
+  if (any(temp_main_file$TimeToReadQuestion < 2000, na.rm = T)){
+    which_index <- which(temp_main_file$TimeToReadQuestion < 2000)
+    for (j in which_index){
+      fast_RTs <- add_row(fast_RTs, ParticipantId = sub_ids[i],
+                          TrialName = temp_main_file$TrialName[j],
+                          type = "TimeToReadQuestion",
+                          time = temp_main_file$TimeToReadQuestion[j])
+    }
+  }
+  
+  if (any(temp_main_file$TimeToBeginInput < 2000, na.rm = T)){
+    which_index <- which(temp_main_file$TimeToBeginInput < 2000)
+    for (j in which_index) {
+      fast_RTs <- add_row(fast_RTs, ParticipantId = sub_ids[i],
+                          TrialName = temp_main_file$TrialName[j],
+                          type = "TimeToBeginInput",
+                          time = temp_main_file$TimeToBeginInput[j])
+    }
+  }
+  
+
+  read_question_RTs[[i]] <- as_tibble(matrix(temp_main_file$TimeToReadQuestion, 
+                                             nrow = 1, 
+                                             dimnames=list("",temp_main_file$TrialName))) %>%
+    add_column(Participant = temp_main_file$ParticipantId[1], 
+               Condition = temp_main_file$Condition[1], 
+               .before = "LineChartQ1")
+  
+  begin_input_RTs[[i]] <- as_tibble(matrix(temp_main_file$TimeToBeginInput, 
+                                             nrow = 1, 
+                                             dimnames=list("",temp_main_file$TrialName))) %>%
+    add_column(Participant = temp_main_file$ParticipantId[1], 
+               Condition = temp_main_file$Condition[1], 
+               .before = "LineChartQ1")
+  
+  
+}
+
+read_question_RT <- bind_rows(read_question_RTs)
+begin_input_RT <- bind_rows(begin_input_RTs)
+
+#look at RTs for reading question or for input that are < 2 sec
+kable(fast_RTs, caption = "Fast RTs")
+
+#get means/SDs for RTs 
+mean_read_question_RTs <- read_question_RT %>%
+  summarise(across(LineChartQ1:SurfacePlotQ3, list(mean = mean, sd=sd)))
+
+mean_begin_input_RTs
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IO2253,VR Monitor,1,LineChartQ1,18465.354,41484.1066,neighborhood 1
+IO2253,VR Monitor,2,LineChartQ2,9561.5846,26238.2054,6 months
+IO2253,VR Monitor,3,LineChartQ3,7821.2027,38379.3974,neighborhood 3
+IO2253,VR Monitor,4,LineChartQ4,5886.3528,9092.8283,neighborhood 2
+IO2253,VR Monitor,5,LineChartQ5,21379.611,31912.6121,neighborhood 3
+IO2253,VR Monitor,6,SurfacePlotQ1,13359.4672,73038.8072,100 percent religious homogeneity and 1000 crime incidents
+IO2253,VR Monitor,7,SurfacePlotQ2,8668.4158,49504.3022,directly influences it
+IO2253,VR Monitor,8,SurfacePlotQ3,6356.1015,18910.7272,no effect
+IO2253,VR Monitor,9,ScatterplotQ1,7070.6838,35688.081,high income
+IO2253,VR Monitor,10,ScatterplotQ2,6567.995,15213.0232,2010
+IO2253,VR Monitor,11,ScatterplotQ3,7461.671,21747.6886,no relationship
+IO2253,VR Monitor,12,ScatterplotQ4,9483.757,66091.7458,decreasing
+IO2253,VR Monitor,13,ScatterplotQ5,4970.7765,30058.053,increase income and decrease ied attacks
+IO2253,VR Monitor,14,BarChartQ1,4323.004,16810.302,2010 north neighborhood
+IO2253,VR Monitor,15,BarChartQ2,3741.5568,8276.5039,remains stable over time
+IO2253,VR Monitor,16,BarChartQ3,5507.355,11907.3439,North neighborhood
+IO2253,VR Monitor,17,BarChartQ4,4635.6614,8265.0029,West neighborhood

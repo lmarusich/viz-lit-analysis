@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+DA6527,VR Monitor Stereo,1,SurfacePlotQ1,10902.9442,62427.1082,when its at 100
+DA6527,VR Monitor Stereo,2,SurfacePlotQ2,5150.2916,32682.9794,becomes higher
+DA6527,VR Monitor Stereo,3,SurfacePlotQ3,5205.6354,24316.7122,becomes more consistent
+DA6527,VR Monitor Stereo,4,LineChartQ1,4970.2537,38122.4331,neighborhood 2
+DA6527,VR Monitor Stereo,5,LineChartQ2,3463.2813,18553.5608,five months
+DA6527,VR Monitor Stereo,6,LineChartQ3,4400.282,37731.4953,neighborhood one from may to december
+DA6527,VR Monitor Stereo,7,LineChartQ4,3541.0729,16587.3236,neighborhood 2
+DA6527,VR Monitor Stereo,8,LineChartQ5,6277.7694,45729.6641,neighborhood 2
+DA6527,VR Monitor Stereo,9,BarChartQ1,2592.1079,41015.6782,North
+DA6527,VR Monitor Stereo,10,BarChartQ2,2983.0496,37732.0098,remains stable
+DA6527,VR Monitor Stereo,11,BarChartQ3,2558.6772,26885.8974,The north neighborhood
+DA6527,VR Monitor Stereo,12,BarChartQ4,3954.9564,12867.7135,the west neighborhood
+DA6527,VR Monitor Stereo,13,ScatterplotQ1,6814.3484,47997.1862,the blue
+DA6527,VR Monitor Stereo,14,ScatterplotQ2,4278.0918,17313.855,2011
+DA6527,VR Monitor Stereo,15,ScatterplotQ3,5361.7024,5406.5822,no relationship
+DA6527,VR Monitor Stereo,16,ScatterplotQ4,1508.4729,24897.1508,increasing
+DA6527,VR Monitor Stereo,17,ScatterplotQ5,3541.5684,31499.0818,tackling low income

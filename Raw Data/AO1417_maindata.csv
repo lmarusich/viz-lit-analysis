@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AO1417,VR,1,BarChartQ1,12400.0422,35786.8591,north 2010
+AO1417,VR,2,BarChartQ2,8678.936,22093.7894,remains stable
+AO1417,VR,3,BarChartQ3,5250.0438,11794.6554,north
+AO1417,VR,4,BarChartQ4,4344.443,16151.0761,west
+AO1417,VR,5,SurfacePlotQ1,4590.794,30258.5375,religious homogeneity
+AO1417,VR,6,SurfacePlotQ2,14599.1838,84175.1734,lower
+AO1417,VR,7,SurfacePlotQ3,8712.8451,92942.8751,decreases
+AO1417,VR,8,LineChartQ1,4925.8985,43047.5449,1 and 2
+AO1417,VR,9,LineChartQ2,5574.6742,46566.6853,6
+AO1417,VR,10,LineChartQ3,11918.7811,32884.02,neighborhood 3
+AO1417,VR,11,LineChartQ4,6556.577,13414.8397,neighborhood 2
+AO1417,VR,12,LineChartQ5,8746.2156,23244.6428,neighborhood 3
+AO1417,VR,13,ScatterplotQ1,9204.531,22004.9342,high income
+AO1417,VR,14,ScatterplotQ2,5262.0038,146838.0992,2012 and 2016
+AO1417,VR,15,ScatterplotQ3,10667.0681,138839.8151,stays the same
+AO1417,VR,16,ScatterplotQ4,6567.5236,39897.8964,increasing
+AO1417,VR,17,ScatterplotQ5,14231.1888,47627.8525,control the IED attacks and address the differences between the income groups

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+SU6398,VR,1,SurfacePlotQ1,12231.5852,45795.5293,the positive sentiment towards the US
+SU6398,VR,2,SurfacePlotQ2,15224.6981,131098.9751,not sure
+SU6398,VR,3,SurfacePlotQ3,10700.7874,40010.1534,itll make the positive sentiment towards the US rise/raise
+SU6398,VR,4,BarChartQ1,5205.2527,30839.0883,north 2010
+SU6398,VR,5,BarChartQ2,6701.8636,16977.6121,it remains stable
+SU6398,VR,6,BarChartQ3,6043.8982,16364.7907,north neighborhood
+SU6398,VR,7,BarChartQ4,4780.9611,9807.1834,the west
+SU6398,VR,8,ScatterplotQ1,9572.1963,31520.9408,the high income/blue
+SU6398,VR,9,ScatterplotQ2,7863.9629,34860.5686,2010
+SU6398,VR,10,ScatterplotQ3,12297.835,52654.4643,positive relationship
+SU6398,VR,11,ScatterplotQ4,9125.2513,33799.9563,increasing
+SU6398,VR,12,ScatterplotQ5,8366.7412,39261.6809,not sure
+SU6398,VR,13,LineChartQ1,8467.1089,54642.6877,1 and 2
+SU6398,VR,14,LineChartQ2,7137.9316,36313.1559,
+SU6398,VR,15,LineChartQ3,6334.8523,27835.8944,neighborhood 1
+SU6398,VR,16,LineChartQ4,7093.6601,16721.1594,neighborhood 2
+SU6398,VR,17,LineChartQ5,14329.9141,31553.5888,neighborhood 3

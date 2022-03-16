@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AO7880,VR,1,BarChartQ1,4804.16,24449.7334,north 2010
+AO7880,VR,2,BarChartQ2,10209.9575,41104.639,stable over time
+AO7880,VR,3,BarChartQ3,5239.6876,31164.0612,north neighborhood
+AO7880,VR,4,BarChartQ4,5898.9776,16599.0789,west
+AO7880,VR,5,LineChartQ1,6501.068,34424.8316,1 and 2
+AO7880,VR,6,LineChartQ2,5596.3495,21077.973,6
+AO7880,VR,7,LineChartQ3,4871.2708,13471.2346,3
+AO7880,VR,8,LineChartQ4,8914.5161,12666.9562,2
+AO7880,VR,9,LineChartQ5,12845.8476,29779.2484,2
+AO7880,VR,10,ScatterplotQ1,9204.071,77786.003,high income
+AO7880,VR,11,ScatterplotQ2,8901.9423,26795.7181,2010
+AO7880,VR,12,ScatterplotQ3,1552.3461,70569.4399,negative
+AO7880,VR,13,ScatterplotQ4,11349.023,39251.0645,decreasing
+AO7880,VR,14,ScatterplotQ5,1463.6176,51236.0598,get everyone on the same page through societal discourse and goal setting; try and provide assitance aid where needed, low and middle incomes should need more assitance than high
+AO7880,VR,15,SurfacePlotQ1,2313.2709,83304.1584,when r. h.is at 100% 
+AO7880,VR,16,SurfacePlotQ2,6278.0189,211152.8233,as crime increases, positive sentiment is decreasing
+AO7880,VR,17,SurfacePlotQ3,3217.3345,59344.8354,no relationship

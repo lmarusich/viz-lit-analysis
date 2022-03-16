@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IL8872,VR Monitor,1,BarChartQ1,16153.2295,56932.0938,north 2010 
+IL8872,VR Monitor,2,BarChartQ2,8344.7734,20407.8716,relatively stable 
+IL8872,VR Monitor,3,BarChartQ3,6724.9558,35642.7313,north 
+IL8872,VR Monitor,4,BarChartQ4,11550.7709,66538.0089,South 
+IL8872,VR Monitor,5,SurfacePlotQ1,5361.9209,77563.3496,when religious homogentity is at 100% and crime is at 1000 
+IL8872,VR Monitor,6,SurfacePlotQ2,12923.0918,37306.4717,positive sentiment increases 
+IL8872,VR Monitor,7,SurfacePlotQ3,16576.0358,36503.2381,remains stable 
+IL8872,VR Monitor,8,LineChartQ1,15638.3121,64862.7402,neighborhoods 1 and 2 
+IL8872,VR Monitor,9,LineChartQ2,14319.9196,80745.6311,six and a half months 
+IL8872,VR Monitor,10,LineChartQ3,12878.4098,23768.831,neighborhood 2 
+IL8872,VR Monitor,11,LineChartQ4,10221.3114,12342.7971,neighborhood 1 
+IL8872,VR Monitor,12,LineChartQ5,25601.2713,55335.4804,neighborhood 2 
+IL8872,VR Monitor,13,ScatterplotQ1,16620.9061,66683.4851,high income 
+IL8872,VR Monitor,14,ScatterplotQ2,11638.7046,22339.4663,low income 
+IL8872,VR Monitor,15,ScatterplotQ3,28114.8624,123448.2913,no relationship 
+IL8872,VR Monitor,16,ScatterplotQ4,11359.9455,34145.8993,decreasing 
+IL8872,VR Monitor,17,ScatterplotQ5,23412.9913,127011.1461,removing IEDs from both middle and low income areas 

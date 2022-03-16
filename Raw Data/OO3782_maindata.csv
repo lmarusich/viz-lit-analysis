@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OO3782,VR,1,LineChartQ1,4417.8313,28776.6083,neighborhood 1 and 2
+OO3782,VR,2,LineChartQ2,6445.2498,27353.907,6
+OO3782,VR,3,LineChartQ3,4858.864,20273.185,3
+OO3782,VR,4,LineChartQ4,3452.1694,9751.8931,2
+OO3782,VR,5,LineChartQ5,9896.3286,29120.6316,3
+OO3782,VR,6,SurfacePlotQ1,4166.8061,33151.3824,100% religious homogeneity and crime incidents of 0
+OO3782,VR,7,SurfacePlotQ2,14821.5408,55344.6221,doesn't have a major impact
+OO3782,VR,8,SurfacePlotQ3,7338.747,49570.4554,causes it to decrease
+OO3782,VR,9,ScatterplotQ1,6222.5128,23244.217,high income
+OO3782,VR,10,ScatterplotQ2,9662.5514,24473.6489,2010
+OO3782,VR,11,ScatterplotQ3,7496.0107,23211.6124,no relationship
+OO3782,VR,12,ScatterplotQ4,7953.0776,47146.9702,decreasing
+OO3782,VR,13,ScatterplotQ5,4769.9055,18575.4321,increase income levels and decrease ied attacks
+OO3782,VR,14,BarChartQ1,3866.2724,18084.3874,2010 north neighborhood
+OO3782,VR,15,BarChartQ2,4479.3815,11270.224,remained the same/stable
+OO3782,VR,16,BarChartQ3,3508.9796,13571.656,north
+OO3782,VR,17,BarChartQ4,3485.3518,10264.7,west

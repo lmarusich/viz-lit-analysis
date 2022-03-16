@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+II3615,VR Monitor Stereo,1,SurfacePlotQ1,8814.0375,224833.5827,95
+II3615,VR Monitor Stereo,2,SurfacePlotQ2,18005.0526,90004.9662,The lower it gets
+II3615,VR Monitor Stereo,3,SurfacePlotQ3,7148.811,23187.3335,It's high
+II3615,VR Monitor Stereo,4,BarChartQ1,4457.6586,45752.1174,2010
+II3615,VR Monitor Stereo,5,BarChartQ2,5607.6014,40613.5709,It remained stable over time
+II3615,VR Monitor Stereo,6,BarChartQ3,4021.724,42914.4669,North
+II3615,VR Monitor Stereo,7,BarChartQ4,4579.7463,18218.5906,West neighborhoo
+II3615,VR Monitor Stereo,8,ScatterplotQ1,11125.1985,60372.5415,Blue
+II3615,VR Monitor Stereo,9,ScatterplotQ2,5484.379,10712.2645,Red
+II3615,VR Monitor Stereo,10,ScatterplotQ3,3865.02,41406.6796,No relationship
+II3615,VR Monitor Stereo,11,ScatterplotQ4,6032.19,27042.6221,They're decreasing
+II3615,VR Monitor Stereo,12,ScatterplotQ5,8298.7411,59422.4854,Increase blue and green
+II3615,VR Monitor Stereo,13,LineChartQ1,5685.5995,100785.0429,Neighborhood 1
+II3615,VR Monitor Stereo,14,LineChartQ2,6567.8341,69519.8446,5
+II3615,VR Monitor Stereo,15,LineChartQ3,5541.2584,44757.2331,Neighborhood one
+II3615,VR Monitor Stereo,16,LineChartQ4,4523.3999,13973.5828,Neighborhood3
+II3615,VR Monitor Stereo,17,LineChartQ5,12231.8777,60485.38,Neighborhood 1

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EA4934,VR Monitor Stereo,1,SurfacePlotQ1,15829.1417,22875.8247,90
+EA4934,VR Monitor Stereo,2,SurfacePlotQ2,6423.4874,19301.8536,100
+EA4934,VR Monitor Stereo,3,SurfacePlotQ3,5607.1286,31677.255,13
+EA4934,VR Monitor Stereo,4,LineChartQ1,5227.5288,29991.5111,1
+EA4934,VR Monitor Stereo,5,LineChartQ2,5496.582,38771.158,6
+EA4934,VR Monitor Stereo,6,LineChartQ3,5138.574,23244.9394,1
+EA4934,VR Monitor Stereo,7,LineChartQ4,5395.2294,12912.3962,2
+EA4934,VR Monitor Stereo,8,LineChartQ5,19224.2051,42188.3186,2
+EA4934,VR Monitor Stereo,9,ScatterplotQ1,8287.9669,18430.3195,blue
+EA4934,VR Monitor Stereo,10,ScatterplotQ2,7339.2065,18653.6994,2013
+EA4934,VR Monitor Stereo,11,ScatterplotQ3,8667.9441,49794.9738,no relationship
+EA4934,VR Monitor Stereo,12,ScatterplotQ4,5574.1564,18843.4764,increasing
+EA4934,VR Monitor Stereo,13,ScatterplotQ5,9271.6467,49683.6846,decrease ied attacks and do it soon
+EA4934,VR Monitor Stereo,14,BarChartQ1,3865.3998,21535.9502,north 2010
+EA4934,VR Monitor Stereo,15,BarChartQ2,5261.4785,11783.4944,remain stable
+EA4934,VR Monitor Stereo,16,BarChartQ3,4948.5297,10634.6957,north
+EA4934,VR Monitor Stereo,17,BarChartQ4,5797.0915,10097.2851,west

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LE9083,VR Monitor,1,LineChartQ1,15802.4631,101494.9639,Number 2
+LE9083,VR Monitor,2,LineChartQ2,10098.1354,26125.9319,six
+LE9083,VR Monitor,3,LineChartQ3,7819.2082,24964.6023,One
+LE9083,VR Monitor,4,LineChartQ4,6020.9513,13862.1086,two
+LE9083,VR Monitor,5,LineChartQ5,19737.4989,30784.5856,Three
+LE9083,VR Monitor,6,BarChartQ1,6478.7779,23813.6613,East in 2010
+LE9083,VR Monitor,7,BarChartQ2,7963.8116,27711.2726,Remain the same
+LE9083,VR Monitor,8,BarChartQ3,5495.3786,10946.8786,North
+LE9083,VR Monitor,9,BarChartQ4,4401.299,9204.495,West
+LE9083,VR Monitor,10,SurfacePlotQ1,6758.0496,92339.8917,Religious
+LE9083,VR Monitor,11,SurfacePlotQ2,11784.6577,43651.3706,It has a lower impact...no idea.
+LE9083,VR Monitor,12,SurfacePlotQ3,8209.1678,63722.9225,It goes up.
+LE9083,VR Monitor,13,ScatterplotQ1,13627.7372,19234.8195,Blue
+LE9083,VR Monitor,14,ScatterplotQ2,8131.8559,46253.4418,2011
+LE9083,VR Monitor,15,ScatterplotQ3,10801.2762,32448.1642,no relationship
+LE9083,VR Monitor,16,ScatterplotQ4,9784.9637,54921.8735,They're increasing
+LE9083,VR Monitor,17,ScatterplotQ5,10645.1674,24316.8117,To increase the income and decrease the IED's.

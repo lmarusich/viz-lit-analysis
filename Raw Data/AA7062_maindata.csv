@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA7062,VR,1,LineChartQ1,9707.2029,32637.1869,neighborhood 2
+AA7062,VR,2,LineChartQ2,5809.0048,46723.2141,5
+AA7062,VR,3,LineChartQ3,1844.0963,40725.6644,neighborhood 1
+AA7062,VR,4,LineChartQ4,3150.1069,15537.6559,neighborhood 3
+AA7062,VR,5,LineChartQ5,5473.4652,20518.9637,neighborhood 2
+AA7062,VR,6,SurfacePlotQ1,3518.6585,49906.2626,when the crime rate was at 1000
+AA7062,VR,7,SurfacePlotQ2,1083.1256,79550.924,increases it
+AA7062,VR,8,SurfacePlotQ3,4255.1824,15313.2888,it decreases it
+AA7062,VR,9,ScatterplotQ1,3687.1757,30203.6416,high income
+AA7062,VR,10,ScatterplotQ2,1541.8894,69509.55,2010
+AA7062,VR,11,ScatterplotQ3,1821.1526,51984.2348,negative
+AA7062,VR,12,ScatterplotQ4,1117.0356,41327.5994,increasing
+AA7062,VR,13,ScatterplotQ5,848.7406,54028.296,you can lower ied attacks in high income and raise ied attacks in lower income
+AA7062,VR,14,BarChartQ1,1363.8805,24384.6028,2010 north had highest crimes
+AA7062,VR,15,BarChartQ2,2289.9202,10019.3675,stable
+AA7062,VR,16,BarChartQ3,3283.7461,20764.7458,north
+AA7062,VR,17,BarChartQ4,3139.6492,8244.0718,the west

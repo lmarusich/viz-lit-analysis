@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EI3019,VR,1,SurfacePlotQ1,25422.9382,138402.2754,positive sentiment towards us percent is around a 95 and the religious homogeneity is at 100
+EI3019,VR,2,SurfacePlotQ2,16620.3223,198295.2896,the positive sentiment decreases
+EI3019,VR,3,SurfacePlotQ3,7751.8429,171857.3664,slight decrease in positive sentiment towards the us
+EI3019,VR,4,BarChartQ1,5529.3868,37027.2843,north 2010
+EI3019,VR,5,BarChartQ2,7171.0046,23724.5334,stable over time
+EI3019,VR,6,BarChartQ3,7830.4387,38837.6732,north
+EI3019,VR,7,BarChartQ4,5988.4337,31264.7068,west
+EI3019,VR,8,ScatterplotQ1,11427.4836,42780.445,blue
+EI3019,VR,9,ScatterplotQ2,8690.4637,36580.352,2010
+EI3019,VR,10,ScatterplotQ3,18451.9651,174269.809,no relationship
+EI3019,VR,11,ScatterplotQ4,7719.006,89525.6939,slightly decreasing
+EI3019,VR,12,ScatterplotQ5,10600.0936,179932.8927,move to more organic materials or componds and lock up those causing explosions
+EI3019,VR,13,LineChartQ1,6534.9255,49136.6375,1 and 2
+EI3019,VR,14,LineChartQ2,6233.3982,40289.5129,6 months
+EI3019,VR,15,LineChartQ3,6211.2231,86521.6502,1
+EI3019,VR,16,LineChartQ4,8210.2161,26863.2503,2
+EI3019,VR,17,LineChartQ5,15169.2652,84689.7815,3

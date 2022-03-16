@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+CC7455,VR Monitor,1,BarChartQ1,10534.6287,45549.6779,north 2010
+CC7455,VR Monitor,2,BarChartQ2,7495.5005,17658.6631,pretty stable
+CC7455,VR Monitor,3,BarChartQ3,11415.9251,25646.5765,north neighborhood
+CC7455,VR Monitor,4,BarChartQ4,4077.0026,14163.2127,west neighborhood
+CC7455,VR Monitor,5,ScatterplotQ1,15292.1671,87057.1968,blue
+CC7455,VR Monitor,6,ScatterplotQ2,6913.5786,12733.2026,red
+CC7455,VR Monitor,7,ScatterplotQ3,14833.6995,26137.4969,no relationship
+CC7455,VR Monitor,8,ScatterplotQ4,9751.2861,63533.49,decreasing
+CC7455,VR Monitor,9,ScatterplotQ5,7764.0935,38391.1418,to have more people and to create more ieds
+CC7455,VR Monitor,10,SurfacePlotQ1,6772.6112,84477.7333,when religious homogeneity is high and crime is high
+CC7455,VR Monitor,11,SurfacePlotQ2,9371.9689,56106.1198,religious homogeneity would go up
+CC7455,VR Monitor,12,SurfacePlotQ3,12779.5121,115729.7054,crime goes up
+CC7455,VR Monitor,13,LineChartQ1,5898.3837,42132.1035,neighborhoods 1 and 2
+CC7455,VR Monitor,14,LineChartQ2,4848.2793,38882.3529,7 months
+CC7455,VR Monitor,15,LineChartQ3,7394.9494,29522.1395,neighborhood 1
+CC7455,VR Monitor,16,LineChartQ4,9025.1045,17982.8421,neighborhood 2
+CC7455,VR Monitor,17,LineChartQ5,18721.292,34659.7959,neighborhood 3

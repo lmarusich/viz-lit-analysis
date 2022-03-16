@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IA2513,VR Monitor Stereo,1,ScatterplotQ1,19201.6317,83816.9847,blue
+IA2513,VR Monitor Stereo,2,ScatterplotQ2,10142.6955,47460.7121,2010
+IA2513,VR Monitor Stereo,3,ScatterplotQ3,9718.1196,134539.885,positive
+IA2513,VR Monitor Stereo,4,ScatterplotQ4,8299.5614,52777.3314,stable
+IA2513,VR Monitor Stereo,5,ScatterplotQ5,10287.5272,66102.8558,Focus more on middle and low income and have the high income incorporate knowledge about where the low income sentiment is
+IA2513,VR Monitor Stereo,6,BarChartQ1,5373.1636,28985.7189,north neighborhood 2010
+IA2513,VR Monitor Stereo,7,BarChartQ2,5194.6037,15426.0831,remain stable
+IA2513,VR Monitor Stereo,8,BarChartQ3,4982.316,14107.7159,north
+IA2513,VR Monitor Stereo,9,BarChartQ4,4166.8933,10019.6876,west
+IA2513,VR Monitor Stereo,10,SurfacePlotQ1,4043.8849,72502.7382,whenever crime incidents and religious homogeneity is highest
+IA2513,VR Monitor Stereo,11,SurfacePlotQ2,8154.233,46097.7046,whenever religious homogeneity is high and the increase of crime happens it makes more people aware.
+IA2513,VR Monitor Stereo,12,SurfacePlotQ3,8053.5451,45393.881,decreases sentiment
+IA2513,VR Monitor Stereo,13,LineChartQ1,5741.6916,54943.8585,both neighborhood 1 and 2
+IA2513,VR Monitor Stereo,14,LineChartQ2,8411.1607,43763.5303,6 months
+IA2513,VR Monitor Stereo,15,LineChartQ3,6590.3464,49426.3578,neighborhood 3
+IA2513,VR Monitor Stereo,16,LineChartQ4,5138.5559,17369.4094,neighborhood 2
+IA2513,VR Monitor Stereo,17,LineChartQ5,11684.2618,63265.7383,neighborhood 3

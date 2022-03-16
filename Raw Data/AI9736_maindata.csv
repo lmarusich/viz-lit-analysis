@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AI9736,VR Monitor Stereo,1,ScatterplotQ1,13259.9857,125044.6126,Blue
+AI9736,VR Monitor Stereo,2,ScatterplotQ2,8020.4681,13950.8938,Red
+AI9736,VR Monitor Stereo,3,ScatterplotQ3,8814.1884,18777.8626,No relationship
+AI9736,VR Monitor Stereo,4,ScatterplotQ4,8187.567,16844.0339,Pretty stable
+AI9736,VR Monitor Stereo,5,ScatterplotQ5,7964.9305,17949.9877,Does not know 
+AI9736,VR Monitor Stereo,6,LineChartQ1,7562.5721,47483.3044,Number 1
+AI9736,VR Monitor Stereo,7,LineChartQ2,5964.5322,30638.7025,6 months
+AI9736,VR Monitor Stereo,8,LineChartQ3,6490.048,24853.1556,neighborhood 1
+AI9736,VR Monitor Stereo,9,LineChartQ4,6110.314,27198.6977,2
+AI9736,VR Monitor Stereo,10,LineChartQ5,13717.3043,24484.3436,neighborhood 3
+AI9736,VR Monitor Stereo,11,BarChartQ1,3530.1182,25769.6481,The North in 2010
+AI9736,VR Monitor Stereo,12,BarChartQ2,4177.428,13202.271,stable
+AI9736,VR Monitor Stereo,13,BarChartQ3,4948.3141,15112.9087,The north
+AI9736,VR Monitor Stereo,14,BarChartQ4,5685.1577,9472.0652,The west
+AI9736,VR Monitor Stereo,15,SurfacePlotQ1,3333.0872,28885.2188,when crime high and homogeniety is high
+AI9736,VR Monitor Stereo,16,SurfacePlotQ2,13872.4018,27075.1258,The sentiment is higher
+AI9736,VR Monitor Stereo,17,SurfacePlotQ3,10043.0178,21792.6211,The sentiment is lower

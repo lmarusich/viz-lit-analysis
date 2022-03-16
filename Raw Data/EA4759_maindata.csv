@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EA4759,VR Monitor Stereo,1,BarChartQ1,8867.0342,44261.1934,north 2010
+EA4759,VR Monitor Stereo,2,BarChartQ2,4077.8328,20832.102,remain stable
+EA4759,VR Monitor Stereo,3,BarChartQ3,3395.9908,14063.6192,north
+EA4759,VR Monitor Stereo,4,BarChartQ4,2993.6218,10633.6775,west
+EA4759,VR Monitor Stereo,5,SurfacePlotQ1,2714.73,34056.4034,high religious homogeneity and high crime incidents
+EA4759,VR Monitor Stereo,6,SurfacePlotQ2,5071.6316,20898.816,positive sentiment towards the us increases as crime incidents increase 
+EA4759,VR Monitor Stereo,7,SurfacePlotQ3,5148.5514,64471.7114,positive remains about the same
+EA4759,VR Monitor Stereo,8,ScatterplotQ1,6847.8842,19468.4952,high income
+EA4759,VR Monitor Stereo,9,ScatterplotQ2,3530.1474,7841.1234,2010
+EA4759,VR Monitor Stereo,10,ScatterplotQ3,8847.2988,52353.689,negative relationship
+EA4759,VR Monitor Stereo,11,ScatterplotQ4,6489.9454,35911.6624,decreasing
+EA4759,VR Monitor Stereo,12,ScatterplotQ5,7204.6059,56407.3034,increasing wages and stopping IED attacks
+EA4759,VR Monitor Stereo,13,LineChartQ1,3976.9915,59255.8985,1 and 2
+EA4759,VR Monitor Stereo,14,LineChartQ2,4267.6311,25065.3639,6 months
+EA4759,VR Monitor Stereo,15,LineChartQ3,4345.0482,17592.9841,neighborhood 3
+EA4759,VR Monitor Stereo,16,LineChartQ4,3575.5188,11293.1518,neighborhood 2
+EA4759,VR Monitor Stereo,17,LineChartQ5,7942.1324,14275.4408,neighborhood 1

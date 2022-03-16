@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AR7862,VR Monitor,1,ScatterplotQ1,25022.0894,68067.6201,blue
+AR7862,VR Monitor,2,ScatterplotQ2,12666.8238,34983.7917,2016
+AR7862,VR Monitor,3,ScatterplotQ3,13112.8719,76634.8027,no relationship
+AR7862,VR Monitor,4,ScatterplotQ4,6713.3619,43886.4661,decreasing
+AR7862,VR Monitor,5,ScatterplotQ5,7562.1737,95064.7313,i would decrease ied attacks and study each year to make sure it is on track.
+AR7862,VR Monitor,6,LineChartQ1,8165.8102,37676.1148,neighborhood 2 and 3
+AR7862,VR Monitor,7,LineChartQ2,5975.7304,42076.7875,7 months
+AR7862,VR Monitor,8,LineChartQ3,6970.1195,35788.2575,neighborhood 1
+AR7862,VR Monitor,9,LineChartQ4,8433.4381,32001.7608,neighborhood 2
+AR7862,VR Monitor,10,LineChartQ5,22384.3486,47963.0449,neighborhood 2
+AR7862,VR Monitor,11,SurfacePlotQ1,3820.4321,74134.4021,crime incidents
+AR7862,VR Monitor,12,SurfacePlotQ2,15459.7902,99187.4144,not sure
+AR7862,VR Monitor,13,SurfacePlotQ3,6868.9663,38367.0054,positive sentiment us would increase
+AR7862,VR Monitor,14,BarChartQ1,3585.9131,23300.2833,north 2010
+AR7862,VR Monitor,15,BarChartQ2,5149.1947,13638.4777,remain the same
+AR7862,VR Monitor,16,BarChartQ3,7361.2462,18787.605,east neighborhood
+AR7862,VR Monitor,17,BarChartQ4,3217.8292,6747.3528,west 

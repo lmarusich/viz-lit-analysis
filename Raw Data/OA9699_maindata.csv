@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OA9699,VR Monitor,1,SurfacePlotQ1,7975.9259,60739.9019,75
+OA9699,VR Monitor,2,SurfacePlotQ2,10991.2331,92273.9713,50
+OA9699,VR Monitor,3,SurfacePlotQ3,10801.7094,138069.788,increases positive sentiment towards us
+OA9699,VR Monitor,4,ScatterplotQ1,11237.3815,40367.1516,blue
+OA9699,VR Monitor,5,ScatterplotQ2,7384.2196,22965.6001,2010
+OA9699,VR Monitor,6,ScatterplotQ3,13605.5964,106962.0484,no relationship
+OA9699,VR Monitor,7,ScatterplotQ4,10589.6031,40110.3431,increasing
+OA9699,VR Monitor,8,ScatterplotQ5,9450.4279,124062.2974,lower ied attacks and diversify income
+OA9699,VR Monitor,9,LineChartQ1,7451.2679,59145.0227,neighborhoods 1 and 2
+OA9699,VR Monitor,10,LineChartQ2,7192.0833,64660.4733,6 months
+OA9699,VR Monitor,11,LineChartQ3,8388.954,43394.4733,1
+OA9699,VR Monitor,12,LineChartQ4,7137.7443,14184.8618,neighborhood 2
+OA9699,VR Monitor,13,LineChartQ5,14096.717,41630.3969,3
+OA9699,VR Monitor,14,BarChartQ1,5595.5724,24438.2001,north 2010
+OA9699,VR Monitor,15,BarChartQ2,7338.262,22406.051,remain the same/stable
+OA9699,VR Monitor,16,BarChartQ3,5875.9995,29320.409,north
+OA9699,VR Monitor,17,BarChartQ4,4783.357,19725.2616,west

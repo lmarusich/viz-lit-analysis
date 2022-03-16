@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LA2620,VR,1,SurfacePlotQ1,4604.4361,59902.3282,highest at 95% religious homogeneity and 90% sentiment towards us
+LA2620,VR,2,SurfacePlotQ2,9260.1297,47349.0618,when religious homogeneity is high and increasing crime, the positive sentiment towards the us is lower
+LA2620,VR,3,SurfacePlotQ3,7786.9357,102092.6143,when crime is low, decreasing religious homogeneity makes the positive sentiment towards the us lower
+LA2620,VR,4,ScatterplotQ1,9048.2047,26305.8634,high income has greatest sentiment towards us
+LA2620,VR,5,ScatterplotQ2,6568.2255,48410.2098,2010 sentiment was lowest on average across all income levels
+LA2620,VR,6,ScatterplotQ3,20932.4085,82790.7298,negative
+LA2620,VR,7,ScatterplotQ4,10153.2818,41250.0631,remaining stable
+LA2620,VR,8,ScatterplotQ5,58015.7015,143519.7536,decrease ied attacks and increase income to get closer to higher income groups
+LA2620,VR,9,LineChartQ1,5775.3726,49973.7568,neighborhoods 1 and 2
+LA2620,VR,10,LineChartQ2,5607.353,50029.3334,6 months
+LA2620,VR,11,LineChartQ3,6233.5148,18598.2891,neighborhood 2
+LA2620,VR,12,LineChartQ4,5998.8514,13158.7182,neighborhood 2
+LA2620,VR,13,LineChartQ5,6892.1413,29431.8824,neighborhood 1
+LA2620,VR,14,BarChartQ1,4814.2865,24070.8143,north 2010
+LA2620,VR,15,BarChartQ2,3016.0868,9951.3052,remain stable
+LA2620,VR,16,BarChartQ3,3541.0909,9985.7712,north
+LA2620,VR,17,BarChartQ4,5965.2118,12030.0721,west

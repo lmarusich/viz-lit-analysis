@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+PO0892,VR,1,ScatterplotQ1,72758.9574,144712.6053,High income
+PO0892,VR,2,ScatterplotQ2,11214.1854,16966.8965,Middle Income
+PO0892,VR,3,ScatterplotQ3,13303.6324,38134.0171,There is no relation
+PO0892,VR,4,ScatterplotQ4,15704.6822,65800.9294,Increasing as it goes down. High class to low.
+PO0892,VR,5,ScatterplotQ5,11952.2202,37474.3062,Have a bigger police force, and tax the people with a higher income.
+PO0892,VR,6,BarChartQ1,5428.5482,23244.1754,North in 2010
+PO0892,VR,7,BarChartQ2,7640.6434,14208.1855,It remains stable.
+PO0892,VR,8,BarChartQ3,8466.4948,15101.8202,The north.
+PO0892,VR,9,BarChartQ4,5608.0966,8243.0826,The west.
+PO0892,VR,10,SurfacePlotQ1,5239.5647,47683.6955,When the religious homegeneity in 100% and then the crime incidents are 1000.
+PO0892,VR,11,SurfacePlotQ2,28795.4438,98494.5091,People feel bad for them.
+PO0892,VR,12,SurfacePlotQ3,9237.8909,41719.565,It lowers it.
+PO0892,VR,13,LineChartQ1,10689.5523,32604.8012,Neighborhood 1 and 2.
+PO0892,VR,14,LineChartQ2,5372.6815,22987.8463,6.
+PO0892,VR,15,LineChartQ3,5283.4117,12822.8593,3.
+PO0892,VR,16,LineChartQ4,4389.3347,6578.503,2.
+PO0892,VR,17,LineChartQ5,17301.4296,35866.0374,2.

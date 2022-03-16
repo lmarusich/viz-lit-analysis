@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IE8843,VR Monitor Stereo,1,SurfacePlotQ1,11521.1408,56824.7722,under the highest levels of religious homogeneity
+IE8843,VR Monitor Stereo,2,SurfacePlotQ2,19693.1441,56541.1959,positive sentiment increases
+IE8843,VR Monitor Stereo,3,SurfacePlotQ3,10655.2099,51123.1432,neutral/stable manner 
+IE8843,VR Monitor Stereo,4,LineChartQ1,6379.4701,36346.6036,1 and 2
+IE8843,VR Monitor Stereo,5,LineChartQ2,5563.4597,29622.6147,6
+IE8843,VR Monitor Stereo,6,LineChartQ3,6958.375,61277.0093,neighborhood 3
+IE8843,VR Monitor Stereo,7,LineChartQ4,4949.8819,12209.0847,neighborhood 2
+IE8843,VR Monitor Stereo,8,LineChartQ5,8612.2643,24507.0099,neighborhood 1
+IE8843,VR Monitor Stereo,9,ScatterplotQ1,11461.2491,21838.0346,high income
+IE8843,VR Monitor Stereo,10,ScatterplotQ2,5942.0663,20128.4253,2011
+IE8843,VR Monitor Stereo,11,ScatterplotQ3,8803.2422,23747.3889,no relationship
+IE8843,VR Monitor Stereo,12,ScatterplotQ4,5507.3331,76456.8679,decreasing 
+IE8843,VR Monitor Stereo,13,ScatterplotQ5,7762.6127,29967.8109,decrease IED attacks and attempt to increase income
+IE8843,VR Monitor Stereo,14,BarChartQ1,4211.3213,21657.831,north neighborhood 2010
+IE8843,VR Monitor Stereo,15,BarChartQ2,3374.1743,10020.2047,remained stable over time
+IE8843,VR Monitor Stereo,16,BarChartQ3,4557.517,15928.2589,north neighborhood
+IE8843,VR Monitor Stereo,17,BarChartQ4,3473.5634,12410.334,west neighborhood

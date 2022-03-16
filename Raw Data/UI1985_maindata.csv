@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+UI1985,VR,1,ScatterplotQ1,15192.1232,38992.8064,high income
+UI1985,VR,2,ScatterplotQ2,10154.0138,40468.4168,2010
+UI1985,VR,3,ScatterplotQ3,13638.7431,68203.1534,no correlation
+UI1985,VR,4,ScatterplotQ4,7875.0505,39417.7181,increasing
+UI1985,VR,5,ScatterplotQ5,5764.1412,86264.1041,increase income as it correlates with a decrease in IED attacks and create measures to prevent and detect IED attacks.
+UI1985,VR,6,LineChartQ1,6691.2144,27365.7105,neighborhood 2
+UI1985,VR,7,LineChartQ2,10321.0651,48666.6447,almost 7
+UI1985,VR,8,LineChartQ3,3921.0452,19547.011,neighborhood 3
+UI1985,VR,9,LineChartQ4,3876.1893,5372.2129,neighborhood 2
+UI1985,VR,10,LineChartQ5,18753.6277,30884.3814,neighborhood 3
+UI1985,VR,11,SurfacePlotQ1,2011.6461,50219.9702,highest when religeous homogenity and crime incidents are at 1000
+UI1985,VR,12,SurfacePlotQ2,4557.891,24619.0343,because crime is increasing, sentiment increases out of fear.
+UI1985,VR,13,SurfacePlotQ3,5987.5764,58719.3922,homogeneity doesn't influence sentiment
+UI1985,VR,14,BarChartQ1,1943.8489,10935.4338,north
+UI1985,VR,15,BarChartQ2,1754.3328,9383.0334,east stayed stable over time
+UI1985,VR,16,BarChartQ3,2915.2515,18631.4986,north
+UI1985,VR,17,BarChartQ4,3753.9978,6669.2262,west

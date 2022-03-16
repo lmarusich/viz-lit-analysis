@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IB9297,VR,1,LineChartQ1,15940.0671,62013.9542,Neighborhood 3
+IB9297,VR,2,LineChartQ2,4099.5971,84655.7662,6
+IB9297,VR,3,LineChartQ3,5607.0816,33419.1002,2
+IB9297,VR,4,LineChartQ4,3998.8695,52766.6109,2
+IB9297,VR,5,LineChartQ5,3228.424,59222.3561,3
+IB9297,VR,6,ScatterplotQ1,2647.4495,75976.3612,2016
+IB9297,VR,7,ScatterplotQ2,5540.2386,82656.4888,2016
+IB9297,VR,8,ScatterplotQ3,3451.331,73620.0929,No relationship
+IB9297,VR,9,ScatterplotQ4,2546.7058,39787.1271,Increasing
+IB9297,VR,10,ScatterplotQ5,15012.534,90754.4623,Less IED attacks, and high income
+IB9297,VR,11,BarChartQ1,1988.7143,21613.964,North in 2010
+IB9297,VR,12,BarChartQ2,2501.8483,7527.9645,Remains stable
+IB9297,VR,13,BarChartQ3,3564.008,7785.2927,North neighborhood
+IB9297,VR,14,BarChartQ4,1374.8286,13146.9712,the West
+IB9297,VR,15,SurfacePlotQ1,5127.3784,43227.4721,Higher religious homogenity and higher crime
+IB9297,VR,16,SurfacePlotQ2,4792.7455,99846.2568,I don't know.
+IB9297,VR,17,SurfacePlotQ3,6411.9412,206048.114,All of these groups, regarding their feelings towards the US will have the same homogenity.

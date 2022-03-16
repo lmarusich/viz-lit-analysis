@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA4432,VR Monitor,1,LineChartQ1,17995.5503,68078.9226,1 and 2
+AA4432,VR Monitor,2,LineChartQ2,12926.5418,62105.9054,6 months
+AA4432,VR Monitor,3,LineChartQ3,24586.279,77216.7125,neighborhood 1
+AA4432,VR Monitor,4,LineChartQ4,19648.6351,39105.2272,neighborhood 2
+AA4432,VR Monitor,5,LineChartQ5,44042.7421,61746.3413,neighborhood 1
+AA4432,VR Monitor,6,ScatterplotQ1,25835.8113,35240.3077,high income
+AA4432,VR Monitor,7,ScatterplotQ2,9606.6728,25534.2326,low income
+AA4432,VR Monitor,8,ScatterplotQ3,22016.0445,48108.586,no relationship
+AA4432,VR Monitor,9,ScatterplotQ4,13560.6433,61421.948,decreasing
+AA4432,VR Monitor,10,ScatterplotQ5,10209.4534,159224.4516,lower amount of ied attacks and implement financial programs for lower income households
+AA4432,VR Monitor,11,BarChartQ1,7126.7988,31432.1978,north 2010
+AA4432,VR Monitor,12,BarChartQ2,6066.3094,14398.0526,remain stable over time
+AA4432,VR Monitor,13,BarChartQ3,9862.6973,27265.3409,north
+AA4432,VR Monitor,14,BarChartQ4,6255.3259,14364.5658,west
+AA4432,VR Monitor,15,SurfacePlotQ1,4668.2306,21936.9478,higher crime and more religious homogeneity
+AA4432,VR Monitor,16,SurfacePlotQ2,13605.2871,49907.044,increasing crime increases positive sentiment towards the US
+AA4432,VR Monitor,17,SurfacePlotQ3,19535.6727,40646.6309,when crime is low, religious homogeneity has no effect on poitive us sentiment

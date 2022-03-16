@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE1290,VR Monitor Stereo,1,BarChartQ1,8629.7705,30867.4435,NORTH 2010
+AE1290,VR Monitor Stereo,2,BarChartQ2,9483.1817,17268.8535,stayed stable
+AE1290,VR Monitor Stereo,3,BarChartQ3,6144.0103,12130.7945,north
+AE1290,VR Monitor Stereo,4,BarChartQ4,5597.5607,10500.9343,west
+AE1290,VR Monitor Stereo,5,LineChartQ1,7975.4703,19614.3229,3
+AE1290,VR Monitor Stereo,6,LineChartQ2,6289.0614,21144.3455,6
+AE1290,VR Monitor Stereo,7,LineChartQ3,5540.1272,19401.8045,neighborhood 2
+AE1290,VR Monitor Stereo,8,LineChartQ4,6232.6569,14609.7246,neighborhood 1
+AE1290,VR Monitor Stereo,9,LineChartQ5,16754.8085,41362.5645,1
+AE1290,VR Monitor Stereo,10,ScatterplotQ1,9964.2503,24027.617,high
+AE1290,VR Monitor Stereo,11,ScatterplotQ2,8042.8556,17179.7174,2010
+AE1290,VR Monitor Stereo,12,ScatterplotQ3,15928.3109,33956.3042,no relationship
+AE1290,VR Monitor Stereo,13,ScatterplotQ4,8031.2835,26930.1309,remain stable
+AE1290,VR Monitor Stereo,14,ScatterplotQ5,5964.8474,57625.4592,focus on lower income households
+AE1290,VR Monitor Stereo,15,SurfacePlotQ1,3652.7763,26059.4283,when crime and religious homogeneity are highest
+AE1290,VR Monitor Stereo,16,SurfacePlotQ2,13984.7698,114779.7943,increasing religious homogenerity increases crime incidents which increases positive sentimet
+AE1290,VR Monitor Stereo,17,SurfacePlotQ3,12052.6252,55782.4156,when crime incidents are lower, it also lowers positive sentiment of us

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE7577,VR Monitor Stereo,1,LineChartQ1,11561.5336,41661.8296,neighborhood 1
+AE7577,VR Monitor Stereo,2,LineChartQ2,12967.7872,30146.3856,6
+AE7577,VR Monitor Stereo,3,LineChartQ3,16554.3262,44053.4784,3
+AE7577,VR Monitor Stereo,4,LineChartQ4,6545.0831,9516.585,2
+AE7577,VR Monitor Stereo,5,LineChartQ5,28405.0227,69342.129,1
+AE7577,VR Monitor Stereo,6,ScatterplotQ1,14754.9115,55948.8565,blue
+AE7577,VR Monitor Stereo,7,ScatterplotQ2,11907.8775,25155.308,2010
+AE7577,VR Monitor Stereo,8,ScatterplotQ3,23837.0492,45204.8525,negarive
+AE7577,VR Monitor Stereo,9,ScatterplotQ4,12611.2908,57569.5845,increasing
+AE7577,VR Monitor Stereo,10,ScatterplotQ5,16800.0042,69654.9778,increasing social infrastructure and 
+AE7577,VR Monitor Stereo,11,SurfacePlotQ1,3976.629,29968.7198,100% positive sentiment
+AE7577,VR Monitor Stereo,12,SurfacePlotQ2,23903.9905,116232.794,im unsure
+AE7577,VR Monitor Stereo,13,SurfacePlotQ3,8936.5218,48086.1681,crime is low, then people look positively towardcs the us
+AE7577,VR Monitor Stereo,14,BarChartQ1,5394.8627,42824.8114,north 2010
+AE7577,VR Monitor Stereo,15,BarChartQ2,5875.4052,13090.8938,mostly stable
+AE7577,VR Monitor Stereo,16,BarChartQ3,8668.5418,23791.4844,north neighborhood
+AE7577,VR Monitor Stereo,17,BarChartQ4,4658.1919,8064.0123,west neighborhood

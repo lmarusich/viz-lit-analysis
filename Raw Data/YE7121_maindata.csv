@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+YE7121,VR Monitor Stereo,1,SurfacePlotQ1,35018.4651,136794.9303,sentiment is hgihest under more crime incidents
+YE7121,VR Monitor Stereo,2,SurfacePlotQ2,24608.7807,154747.1769,when crime is high positive sentiment increases 
+YE7121,VR Monitor Stereo,3,SurfacePlotQ3,8490.0949,36581.3604,decreases positive sentiment towards the US
+YE7121,VR Monitor Stereo,4,LineChartQ1,6378.6874,57613.9473,neighborhood 1
+YE7121,VR Monitor Stereo,5,LineChartQ2,7417.3714,80913.543,6 months
+YE7121,VR Monitor Stereo,6,LineChartQ3,6567.945,45348.976,neighborhood 1
+YE7121,VR Monitor Stereo,7,LineChartQ4,6087.8081,85368.4428,neighborhood 1
+YE7121,VR Monitor Stereo,8,LineChartQ5,19849.3745,48499.741,neighborhood 1
+YE7121,VR Monitor Stereo,9,BarChartQ1,5573.9395,42445.4635,north neighborhood 2010
+YE7121,VR Monitor Stereo,10,BarChartQ2,6423.3086,48119.7859,remained stable over time
+YE7121,VR Monitor Stereo,11,BarChartQ3,5942.8312,17559.459,north neighborhood
+YE7121,VR Monitor Stereo,12,BarChartQ4,5462.608,11516.6606,west neighborhood
+YE7121,VR Monitor Stereo,13,ScatterplotQ1,10879.968,29566.9261,blue
+YE7121,VR Monitor Stereo,14,ScatterplotQ2,5372.7399,51325.2933,2010
+YE7121,VR Monitor Stereo,15,ScatterplotQ3,13314.9954,85035.348,no relationship
+YE7121,VR Monitor Stereo,16,ScatterplotQ4,11839.0486,33418.8153,remaining stable
+YE7121,VR Monitor Stereo,17,ScatterplotQ5,9360.885,36614.7429,decrease ied attacks even more and do things/events in each community to bring community together or increase religious homogeneity

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+SC0288,VR Monitor Stereo,1,SurfacePlotQ1,6557.2689,141061.2331,when there is high religious homogeneity
+SC0288,VR Monitor Stereo,2,SurfacePlotQ2,21513.5906,160732.8797,positive sentiment towards us goes down
+SC0288,VR Monitor Stereo,3,SurfacePlotQ3,5562.6766,95668.8619,it goes down
+SC0288,VR Monitor Stereo,4,ScatterplotQ1,7551.8456,18688.2797,high income
+SC0288,VR Monitor Stereo,5,ScatterplotQ2,5809.2477,31186.8297,2010
+SC0288,VR Monitor Stereo,6,ScatterplotQ3,6825.3065,112356.9492,no relationship
+SC0288,VR Monitor Stereo,7,ScatterplotQ4,6635.7311,60964.019,increasing
+SC0288,VR Monitor Stereo,8,ScatterplotQ5,6847.4072,76769.5185,raise income and decrease ied attacks
+SC0288,VR Monitor Stereo,9,LineChartQ1,3853.1248,37139.1084,1 and 2
+SC0288,VR Monitor Stereo,10,LineChartQ2,5629.5593,29231.5944,6
+SC0288,VR Monitor Stereo,11,LineChartQ3,5841.9862,33375.1529,3
+SC0288,VR Monitor Stereo,12,LineChartQ4,6534.9392,9528.7198,2
+SC0288,VR Monitor Stereo,13,LineChartQ5,11493.6604,50933.3362,1
+SC0288,VR Monitor Stereo,14,BarChartQ1,4394.0686,22183.7324,north 2010
+SC0288,VR Monitor Stereo,15,BarChartQ2,4066.3632,24596.8998,stable
+SC0288,VR Monitor Stereo,16,BarChartQ3,4813.8337,17469.4143,north
+SC0288,VR Monitor Stereo,17,BarChartQ4,7360.5035,23043.2389,west

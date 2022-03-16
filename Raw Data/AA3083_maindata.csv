@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA3083,VR Monitor,1,BarChartQ1,9981.6064,53698.8332,north 2010
+AA3083,VR Monitor,2,BarChartQ2,8891.7369,39138.7455,stable
+AA3083,VR Monitor,3,BarChartQ3,3976.8512,9349.4179,north
+AA3083,VR Monitor,4,BarChartQ4,7327.3119,18128.6576,west
+AA3083,VR Monitor,5,ScatterplotQ1,10823.9594,44802.9341,high income
+AA3083,VR Monitor,6,ScatterplotQ2,7394.8247,26517.7628,2010
+AA3083,VR Monitor,7,ScatterplotQ3,8288.5656,72212.3914,no relationship
+AA3083,VR Monitor,8,ScatterplotQ4,6972.5996,27253.9607,increasing
+AA3083,VR Monitor,9,ScatterplotQ5,6947.9794,79740.9746,raise income or preventing ied attacks
+AA3083,VR Monitor,10,SurfacePlotQ1,3507.8607,56228.6212,higher crime incidents and higher religious homogeneity
+AA3083,VR Monitor,11,SurfacePlotQ2,8221.7615,35542.3795,higher positive sentiment
+AA3083,VR Monitor,12,SurfacePlotQ3,6947.6276,21771.1975,it lowers positive sentiment
+AA3083,VR Monitor,13,LineChartQ1,4378.8084,56263.1175,neighborhoods 1 and 2
+AA3083,VR Monitor,14,LineChartQ2,5016.3275,19414.1484,6 months
+AA3083,VR Monitor,15,LineChartQ3,5764.492,21234.4304,neighborhood 3
+AA3083,VR Monitor,16,LineChartQ4,3786.9394,6902.851,neighborhood 2
+AA3083,VR Monitor,17,LineChartQ5,9338.2577,17312.8535,neighborhood 3

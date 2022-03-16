@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE2423,VR Monitor Stereo,1,ScatterplotQ1,17592.7701,39573.1642,blue
+AE2423,VR Monitor Stereo,2,ScatterplotQ2,64449.114,95523.5467,low income, red
+AE2423,VR Monitor Stereo,3,ScatterplotQ3,24127.5661,48432.3469,green, middle income
+AE2423,VR Monitor Stereo,4,ScatterplotQ4,13382.5427,40479.7391,increasing
+AE2423,VR Monitor Stereo,5,ScatterplotQ5,18596.7523,119369.238,increase minimum wage and change income/property taxes
+AE2423,VR Monitor Stereo,6,LineChartQ1,9830.1325,52754.8572,1 and 2
+AE2423,VR Monitor Stereo,7,LineChartQ2,6232.6201,32068.4216,6
+AE2423,VR Monitor Stereo,8,LineChartQ3,5596.3041,46075.0649,neighborhood 1
+AE2423,VR Monitor Stereo,9,LineChartQ4,4914.6625,62863.0255,1
+AE2423,VR Monitor Stereo,10,LineChartQ5,10220.2936,58194.4195,1
+AE2423,VR Monitor Stereo,11,SurfacePlotQ1,2926.4298,63421.4388,crime incidents
+AE2423,VR Monitor Stereo,12,SurfacePlotQ2,11605.0985,282146.6779,crime is going to be high, positive sentiment will 
+AE2423,VR Monitor Stereo,13,SurfacePlotQ3,5495.5303,41451.0564,decreases positive sentiment
+AE2423,VR Monitor Stereo,14,BarChartQ1,3384.8981,47628.4379,north 2010
+AE2423,VR Monitor Stereo,15,BarChartQ2,5473.7828,30717.2412,stable
+AE2423,VR Monitor Stereo,16,BarChartQ3,6121.5244,25455.4939,north
+AE2423,VR Monitor Stereo,17,BarChartQ4,4580.7315,16320.1736,west

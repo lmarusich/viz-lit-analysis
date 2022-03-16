@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OI7107,VR,1,SurfacePlotQ1,3911.1011,28449.2999,90
+OI7107,VR,2,SurfacePlotQ2,5953.6502,56932.4729,I don't know
+OI7107,VR,3,SurfacePlotQ3,7149.4734,56720.5365,It increases
+OI7107,VR,4,ScatterplotQ1,5171.7308,26796.675,blue
+OI7107,VR,5,ScatterplotQ2,3719.6025,13202.863,green
+OI7107,VR,6,ScatterplotQ3,6724.59,30371.6639,no relationship
+OI7107,VR,7,ScatterplotQ4,5082.9595,23936.7946,remaining stable
+OI7107,VR,8,ScatterplotQ5,6489.701,28070.2565,do not know the answer to this
+OI7107,VR,9,BarChartQ1,4569.3418,16945.4125,west in 2015
+OI7107,VR,10,BarChartQ2,4334.9601,9606.9296,remained stable
+OI7107,VR,11,BarChartQ3,4579.8317,10399.3477,East
+OI7107,VR,12,BarChartQ4,3161.5917,17212.6564,West
+OI7107,VR,13,LineChartQ1,3630.3251,24484.7739,one and two
+OI7107,VR,14,LineChartQ2,4646.6279,26249.0771,six
+OI7107,VR,15,LineChartQ3,4769.8052,21669.8261,one
+OI7107,VR,16,LineChartQ4,4065.6608,8176.7364,two
+OI7107,VR,17,LineChartQ5,8042.0896,15503.7074,three

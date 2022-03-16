@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+YI8949,VR,1,BarChartQ1,9152.7923,32160.2849,neighborhhood north, 2010 
+YI8949,VR,2,BarChartQ2,6088.7321,22708.2463,stable
+YI8949,VR,3,BarChartQ3,5295.3234,22116.019,north
+YI8949,VR,4,BarChartQ4,3127.9889,7393.6393,west
+YI8949,VR,5,LineChartQ1,7719.3529,46589.1524,1 and 2
+YI8949,VR,6,LineChartQ2,4547.0612,35364.0865,6 months
+YI8949,VR,7,LineChartQ3,9439.3663,56664.1475,3
+YI8949,VR,8,LineChartQ4,5015.483,16139.7198,2
+YI8949,VR,9,LineChartQ5,24853.3693,46488.5693,1
+YI8949,VR,10,SurfacePlotQ1,3027.4453,30694.6864,100% religious homogeneity and high crime
+YI8949,VR,11,SurfacePlotQ2,6109.821,22149.0502,increases positive sentiment
+YI8949,VR,12,SurfacePlotQ3,9248.9126,25188.0876,positive sentiment remains stable
+YI8949,VR,13,ScatterplotQ1,6187.5807,22965.2929,high income
+YI8949,VR,14,ScatterplotQ2,7371.3821,37038.3256,2010
+YI8949,VR,15,ScatterplotQ3,6290.0091,40400.907,no relationship
+YI8949,VR,16,ScatterplotQ4,7751.7561,44633.8862,decreasing
+YI8949,VR,17,ScatterplotQ5,4725.2181,31398.3785,reduce ied attacks and increase income

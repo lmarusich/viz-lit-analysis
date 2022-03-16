@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+HY4562,VR Monitor Stereo,1,ScatterplotQ1,17846.4415,33304.2243,blue
+HY4562,VR Monitor Stereo,2,ScatterplotQ2,11684.1087,18330.5043,red
+HY4562,VR Monitor Stereo,3,ScatterplotQ3,13661.1044,36625.6324,no relationship
+HY4562,VR Monitor Stereo,4,ScatterplotQ4,10064.7291,50677.9296,decreasing
+HY4562,VR Monitor Stereo,5,ScatterplotQ5,9628.7812,70503.1192,better security and better knowledge in preventing attacks
+HY4562,VR Monitor Stereo,6,LineChartQ1,8936.2104,79238.4776,2
+HY4562,VR Monitor Stereo,7,LineChartQ2,7930.5742,35720.8688,6
+HY4562,VR Monitor Stereo,8,LineChartQ3,6122.2055,17090.85,1
+HY4562,VR Monitor Stereo,9,LineChartQ4,5518.3253,12521.7511,2
+HY4562,VR Monitor Stereo,10,LineChartQ5,18039.0211,51291.9227,3
+HY4562,VR Monitor Stereo,11,SurfacePlotQ1,4836.5127,42031.7992,crime at 0 and positive towards 95% and religious homogeneity is at one hundred
+HY4562,VR Monitor Stereo,12,SurfacePlotQ2,8187.127,69452.9842,religion was relatively the same it decrease, a difference in religion in crimes and it affects the positive feelings of the us and dont like different religions than their own
+HY4562,VR Monitor Stereo,13,SurfacePlotQ3,10197.9616,46934.8971,when at 0, the sentiment was pretty average and religious homogeneity was at 50%, that balance that doesn't really affect crime.
+HY4562,VR Monitor Stereo,14,BarChartQ1,8198.1328,21803.3037,north 
+HY4562,VR Monitor Stereo,15,BarChartQ2,6455.8872,14375.4343,remain stable
+HY4562,VR Monitor Stereo,16,BarChartQ3,8657.1832,18575.4478,north
+HY4562,VR Monitor Stereo,17,BarChartQ4,4211.2007,8589.4245,west

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+HH7776,VR Monitor,1,ScatterplotQ1,17705.6116,34760.1645,blue
+HH7776,VR Monitor,2,ScatterplotQ2,14900.8674,22999.3869,2013
+HH7776,VR Monitor,3,ScatterplotQ3,22473.9064,58149.4635,positive
+HH7776,VR Monitor,4,ScatterplotQ4,6478.6355,45583.8353,increasing
+HH7776,VR Monitor,5,ScatterplotQ5,8287.9459,72882.0684,not sure
+HH7776,VR Monitor,6,LineChartQ1,7305.7446,179006.0067,neighborhoods 1 and 3
+HH7776,VR Monitor,7,LineChartQ2,10042.607,72167.4129,7 months
+HH7776,VR Monitor,8,LineChartQ3,6423.5741,56631.1837,neighborhood 3
+HH7776,VR Monitor,9,LineChartQ4,5405.8991,24885.7433,neighborhood 1
+HH7776,VR Monitor,10,LineChartQ5,11047.0985,57714.1462,neighborhood 2
+HH7776,VR Monitor,11,SurfacePlotQ1,3832.342,53716.1193,positive
+HH7776,VR Monitor,12,SurfacePlotQ2,11336.9838,60059.5094,more crime people were more scared, so decrease them
+HH7776,VR Monitor,13,SurfacePlotQ3,16163.7689,27188.1906,if there is less crime people will be able to go out more and that would increase sentiment
+HH7776,VR Monitor,14,BarChartQ1,5473.3435,75027.2187,north 2010
+HH7776,VR Monitor,15,BarChartQ2,5026.5122,25757.5808,stable
+HH7776,VR Monitor,16,BarChartQ3,5517.2725,15157.0197,north
+HH7776,VR Monitor,17,BarChartQ4,4144.5615,12432.2254,west

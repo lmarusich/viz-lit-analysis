@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+HA0288,VR Monitor,1,SurfacePlotQ1,8887.5834,121721.8274,when there are crime incidents, sentiment is higher.
+HA0288,VR Monitor,2,SurfacePlotQ2,27253.6991,163658.0993,when religious homogeneity is high, increasing crime lowers positive sentiment
+HA0288,VR Monitor,3,SurfacePlotQ3,17078.597,150199.834,positive is higher but as homogeneity decreases, positive sentiment stays about the same 
+HA0288,VR Monitor,4,LineChartQ1,11450.0044,77942.9531,neighborhood 1 and 2
+HA0288,VR Monitor,5,LineChartQ2,6533.6959,81516.2263,6
+HA0288,VR Monitor,6,LineChartQ3,6881.1336,60853.294,3
+HA0288,VR Monitor,7,LineChartQ4,10498.3387,83492.645,2
+HA0288,VR Monitor,8,LineChartQ5,19413.9168,69799.3665,1
+HA0288,VR Monitor,9,ScatterplotQ1,16599.063,48052.7145,high income 
+HA0288,VR Monitor,10,ScatterplotQ2,13125.4792,69866.5642,2010
+HA0288,VR Monitor,11,ScatterplotQ3,12801.179,124041.0812,norelationship
+HA0288,VR Monitor,12,ScatterplotQ4,10589.4396,147027.3244,decreasing
+HA0288,VR Monitor,13,ScatterplotQ5,11516.2588,101800.6921,increase preventive measures against bombs attacks and distribute wealth across all social classes
+HA0288,VR Monitor,14,BarChartQ1,9148.8851,30951.5175,north 2010
+HA0288,VR Monitor,15,BarChartQ2,4323.6161,21658.1486,stable over time
+HA0288,VR Monitor,16,BarChartQ3,5306.0601,34391.6048,north
+HA0288,VR Monitor,17,BarChartQ4,3687.14,41808.5455,west

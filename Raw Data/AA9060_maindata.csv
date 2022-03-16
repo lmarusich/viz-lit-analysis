@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA9060,VR,1,BarChartQ1,7815.1588,44897.0546,north 2010
+AA9060,VR,2,BarChartQ2,8076.0794,57981.5526,stable over time
+AA9060,VR,3,BarChartQ3,5852.6935,26316.0599,north
+AA9060,VR,4,BarChartQ4,3596.7203,15638.425,west
+AA9060,VR,5,SurfacePlotQ1,6099.3206,53078.8226,100
+AA9060,VR,6,SurfacePlotQ2,6679.7141,50331.0889,anytime religious homogeneity is high, crime incidents and positive sentiment towards usa will also be high
+AA9060,VR,7,SurfacePlotQ3,5204.7106,29834.6918,anytime that religious homogeneity is low, crime incidents decrease
+AA9060,VR,8,ScatterplotQ1,10175.5737,41194.2714,high income
+AA9060,VR,9,ScatterplotQ2,3050.0576,9159.3336,low income
+AA9060,VR,10,ScatterplotQ3,8589.4553,102013.7748,negative relationship
+AA9060,VR,11,ScatterplotQ4,7886.6399,67230.6913,increasing
+AA9060,VR,12,ScatterplotQ5,9985.9955,102919.2495,discourage use of ied attacks over time
+AA9060,VR,13,LineChartQ1,4837.1934,41418.169,neighborhood 2
+AA9060,VR,14,LineChartQ2,7518.302,42367.7543,7
+AA9060,VR,15,LineChartQ3,3954.1714,95277.485,1
+AA9060,VR,16,LineChartQ4,5238.8584,15716.6568,2
+AA9060,VR,17,LineChartQ5,8735.2338,35810.7023,3

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AA6335,VR Monitor,1,BarChartQ1,16745.1645,77907.5101,north 2010
+AA6335,VR Monitor,2,BarChartQ2,7260.7814,39250.9794,remaining stable
+AA6335,VR Monitor,3,BarChartQ3,6658.0829,20095.1321,north neighborhood
+AA6335,VR Monitor,4,BarChartQ4,6255.2449,19870.8015,west
+AA6335,VR Monitor,5,LineChartQ1,10421.2674,58696.9773,neighborhoods 1 and 2
+AA6335,VR Monitor,6,LineChartQ2,11013.2966,34402.8376,6
+AA6335,VR Monitor,7,LineChartQ3,13749.9342,38512.4628,neighborhood 3
+AA6335,VR Monitor,8,LineChartQ4,8176.0617,22473.5414,neighborhood 2
+AA6335,VR Monitor,9,LineChartQ5,27075.1918,101733.7195,neighborhood 1
+AA6335,VR Monitor,10,ScatterplotQ1,10465.9822,38837.1919,high income/blue
+AA6335,VR Monitor,11,ScatterplotQ2,12856.2949,40165.9822,2010
+AA6335,VR Monitor,12,ScatterplotQ3,8456.0916,40726.3482,no relationship
+AA6335,VR Monitor,13,ScatterplotQ4,6993.245,60473.2809,increasing
+AA6335,VR Monitor,14,ScatterplotQ5,7841.0305,42768.3008,increasing income and lowering IED attacks
+AA6335,VR Monitor,15,SurfacePlotQ1,7439.4687,50689.0609,high religious homogeneity and high crime incidents
+AA6335,VR Monitor,16,SurfacePlotQ2,7707.0042,100348.718,they probably all think the us will protect them
+AA6335,VR Monitor,17,SurfacePlotQ3,10945.4509,72725.5755,less decline in positive sentiment towards the US

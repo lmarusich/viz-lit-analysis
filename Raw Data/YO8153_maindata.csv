@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+YO8153,VR Monitor,1,BarChartQ1,5179.2404,40942.1673,2010
+YO8153,VR Monitor,2,BarChartQ2,5763.6862,20574.7984,Increase
+YO8153,VR Monitor,3,BarChartQ3,5942.2135,55334.9033,South neighborhood
+YO8153,VR Monitor,4,BarChartQ4,4256.69,33577.229,West neighborhood
+YO8153,VR Monitor,5,SurfacePlotQ1,3507.6737,86777.7991,80 percent
+YO8153,VR Monitor,6,SurfacePlotQ2,8913.8088,81662.397,Lowers
+YO8153,VR Monitor,7,SurfacePlotQ3,8488.9542,40076.4841,Increases
+YO8153,VR Monitor,8,ScatterplotQ1,10566.9068,31621.9612,Blue the high income
+YO8153,VR Monitor,9,ScatterplotQ2,9003.5491,50733.6524,2012
+YO8153,VR Monitor,10,ScatterplotQ3,11315.3987,53257.8503,No relationship
+YO8153,VR Monitor,11,ScatterplotQ4,7886.5428,40166.711,Increasing
+YO8153,VR Monitor,12,ScatterplotQ5,5597.1163,87437.0954,decrease ied and increase income
+YO8153,VR Monitor,13,LineChartQ1,7159.9549,55994.1401,Neighborhoods 1 and 2
+YO8153,VR Monitor,14,LineChartQ2,8801.6017,41987.4206,six months
+YO8153,VR Monitor,15,LineChartQ3,7886.0391,31375.5841,Neighborhood 3
+YO8153,VR Monitor,16,LineChartQ4,5228.094,24439.5366,Neighborhood 2
+YO8153,VR Monitor,17,LineChartQ5,12096.8332,41887.1443,Neighborhood 2

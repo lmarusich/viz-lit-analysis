@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LA0250,VR,1,LineChartQ1,12478.1439,70972.8603,1 and 2
+LA0250,VR,2,LineChartQ2,5651.9165,64113.917,6 months
+LA0250,VR,3,LineChartQ3,6914.4785,89256.7496,neighborhood 2
+LA0250,VR,4,LineChartQ4,6880.6532,61555.52,neighborhood 2
+LA0250,VR,5,LineChartQ5,14431.0103,68046.2803,2
+LA0250,VR,6,SurfacePlotQ1,3720.6334,141856.4487,1000 crime incidents and 100% religious homogeneity
+LA0250,VR,7,SurfacePlotQ2,25110.8257,125023.5785,
+LA0250,VR,8,SurfacePlotQ3,4948.1253,77227.4045,50% sentiment towards usa
+LA0250,VR,9,ScatterplotQ1,5518.0331,34972.6885,blue, high income
+LA0250,VR,10,ScatterplotQ2,3742.7784,56329.3153,2010
+LA0250,VR,11,ScatterplotQ3,14196.253,81973.3832,no relationship
+LA0250,VR,12,ScatterplotQ4,11325.9027,112735.906,they are remaining stable in low and middle income but increasing in high income
+LA0250,VR,13,ScatterplotQ5,7416.8202,63957.7716,i dont know
+LA0250,VR,14,BarChartQ1,9193.3061,38670.3014,north neighborhood 2010
+LA0250,VR,15,BarChartQ2,5060.2468,21166.787,remain stable over time
+LA0250,VR,16,BarChartQ3,3463.8351,40971.2721,north neighborhood
+LA0250,VR,17,BarChartQ4,3541.2166,13649.9894,west neighborhood

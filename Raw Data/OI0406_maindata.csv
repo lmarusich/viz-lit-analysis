@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OI0406,VR Monitor Stereo,1,SurfacePlotQ1,10472.7288,34652.9835,80
+OI0406,VR Monitor Stereo,2,SurfacePlotQ2,9964.2596,28238.2731,50
+OI0406,VR Monitor Stereo,3,SurfacePlotQ3,7935.4459,45253.5491,100
+OI0406,VR Monitor Stereo,4,BarChartQ1,3831.2279,17491.7805,West
+OI0406,VR Monitor Stereo,5,BarChartQ2,4010.5888,23479.524,Stayed the same
+OI0406,VR Monitor Stereo,6,BarChartQ3,4166.2012,20317.9948,north
+OI0406,VR Monitor Stereo,7,BarChartQ4,4024.3904,15276.1306,West
+OI0406,VR Monitor Stereo,8,ScatterplotQ1,8131.4148,38133.2649,2016
+OI0406,VR Monitor Stereo,9,ScatterplotQ2,3921.1562,11483.5853,2010
+OI0406,VR Monitor Stereo,10,ScatterplotQ3,7227.4077,23467.9893,No relation
+OI0406,VR Monitor Stereo,11,ScatterplotQ4,7048.7639,15906.2411,Decreasing
+OI0406,VR Monitor Stereo,12,ScatterplotQ5,5775.3883,5809.2963,High income
+OI0406,VR Monitor Stereo,13,LineChartQ1,4044.0992,37374.7029,number 1
+OI0406,VR Monitor Stereo,14,LineChartQ2,7551.8155,25601.4771,4 months
+OI0406,VR Monitor Stereo,15,LineChartQ3,5809.0001,21446.5779,Neighborhood 3
+OI0406,VR Monitor Stereo,16,LineChartQ4,23.9377,1597.2944,neighborhood 1
+OI0406,VR Monitor Stereo,17,LineChartQ5,9449.3093,13526.2442,Neighborhood 1

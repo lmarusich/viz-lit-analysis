@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+MU9517,VR Monitor Stereo,1,LineChartQ1,9463.27,41149.0009,neighborhood 2
+MU9517,VR Monitor Stereo,2,LineChartQ2,7170.7183,38747.2773,6
+MU9517,VR Monitor Stereo,3,LineChartQ3,5294.8902,25065.0815,neighborhood 2
+MU9517,VR Monitor Stereo,4,LineChartQ4,6008.8695,11974.0848,neighborhood 3
+MU9517,VR Monitor Stereo,5,LineChartQ5,15883.3313,38669.9302,neighborhood 1
+MU9517,VR Monitor Stereo,6,BarChartQ1,5250.2451,25623.4631,north 2010
+MU9517,VR Monitor Stereo,7,BarChartQ2,7506.5869,17251.1242,stable
+MU9517,VR Monitor Stereo,8,BarChartQ3,5365.3678,11918.5446,north
+MU9517,VR Monitor Stereo,9,BarChartQ4,5049.79,9785.6091,west
+MU9517,VR Monitor Stereo,10,SurfacePlotQ1,4166.8727,38100.8339,high religious and crime rate
+MU9517,VR Monitor Stereo,11,SurfacePlotQ2,12723.2062,35497.4803,its higher
+MU9517,VR Monitor Stereo,12,SurfacePlotQ3,8299.5259,36637.01,it kind of flattens out or stabilizes
+MU9517,VR Monitor Stereo,13,ScatterplotQ1,9550.3521,20921.4493,high income
+MU9517,VR Monitor Stereo,14,ScatterplotQ2,5072.22,13795.7358,2010
+MU9517,VR Monitor Stereo,15,ScatterplotQ3,10901.8975,30058.5046,no relationship
+MU9517,VR Monitor Stereo,16,ScatterplotQ4,6947.585,33632.3232,increasing
+MU9517,VR Monitor Stereo,17,ScatterplotQ5,5785.5691,36189.33,lower amount of ied attacks and make more people have higher income

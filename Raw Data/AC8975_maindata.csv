@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AC8975,VR Monitor,1,BarChartQ1,15951.1697,39261.3045,north 2010
+AC8975,VR Monitor,2,BarChartQ2,9718.4228,34828.0118,remain stable
+AC8975,VR Monitor,3,BarChartQ3,4926.8191,13024.8386,north
+AC8975,VR Monitor,4,BarChartQ4,4122.5614,15392.4019,west
+AC8975,VR Monitor,5,SurfacePlotQ1,6468.1481,88118.5166,high crime rate
+AC8975,VR Monitor,6,SurfacePlotQ2,19067.3761,96886.5781,im not sure
+AC8975,VR Monitor,7,SurfacePlotQ3,16654.0672,81818.1958,makes positive sentiment go down
+AC8975,VR Monitor,8,ScatterplotQ1,12934.7639,25120.2605,high income
+AC8975,VR Monitor,9,ScatterplotQ2,6568.8651,43306.7965,2010
+AC8975,VR Monitor,10,ScatterplotQ3,15280.8204,45104.0114,no relationship
+AC8975,VR Monitor,11,ScatterplotQ4,7394.3877,116030.9405,increasin g
+AC8975,VR Monitor,12,ScatterplotQ5,8936.7251,61690.7199,have a high income and less ied attacks
+AC8975,VR Monitor,13,LineChartQ1,6422.9879,48644.0543,1 and 2
+AC8975,VR Monitor,14,LineChartQ2,4367.7863,39798.5097,6
+AC8975,VR Monitor,15,LineChartQ3,5953.8183,28628.485,neighborhood 3
+AC8975,VR Monitor,16,LineChartQ4,6210.3555,12108.7143,2
+AC8975,VR Monitor,17,LineChartQ5,9941.5568,40099.8973,2

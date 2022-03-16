@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+ER1898,VR Monitor Stereo,1,SurfacePlotQ1,9797.2997,63298.313,religious homogeneity being at 100
+ER1898,VR Monitor Stereo,2,SurfacePlotQ2,16843.5774,176223.904,not sure
+ER1898,VR Monitor Stereo,3,SurfacePlotQ3,11917.9879,77986.3163,it negatively influences it
+ER1898,VR Monitor Stereo,4,BarChartQ1,11337.9879,45327.363,north 2010
+ER1898,VR Monitor Stereo,5,BarChartQ2,7964.2072,28259.8123,overall it remained the same
+ER1898,VR Monitor Stereo,6,BarChartQ3,6724.4374,28382.3882,north
+ER1898,VR Monitor Stereo,7,BarChartQ4,4870.1067,9807.0397,west
+ER1898,VR Monitor Stereo,8,ScatterplotQ1,12365.5653,78087.951,10
+ER1898,VR Monitor Stereo,9,ScatterplotQ2,16988.5709,47315.1106,2010
+ER1898,VR Monitor Stereo,10,ScatterplotQ3,16408.3458,27075.563,positive relationship
+ER1898,VR Monitor Stereo,11,ScatterplotQ4,11840.7277,47797.2791,remaining stable
+ER1898,VR Monitor Stereo,12,ScatterplotQ5,8222.3546,119918.8148,lowering ied attacks and repeat what they did in 2016
+ER1898,VR Monitor Stereo,13,LineChartQ1,6434.0931,48219.9377,1 and 2
+ER1898,VR Monitor Stereo,14,LineChartQ2,10700.8621,27355.4493,6
+ER1898,VR Monitor Stereo,15,LineChartQ3,19000.8883,44869.1583,neighborhood 3
+ER1898,VR Monitor Stereo,16,LineChartQ4,7852.8461,15247.2703,neighborhood 2
+ER1898,VR Monitor Stereo,17,LineChartQ5,12978.4757,39506.8479,neighborhood 3

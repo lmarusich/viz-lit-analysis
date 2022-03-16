@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+hr4364,VR Monitor Stereo,1,ScatterplotQ1,17235.9667,36547.2144,Blue
+hr4364,VR Monitor Stereo,2,ScatterplotQ2,8031.2253,16799.5056,Red
+hr4364,VR Monitor Stereo,3,ScatterplotQ3,15046.1473,76870.5105,No relationshi[
+hr4364,VR Monitor Stereo,4,ScatterplotQ4,5283.8833,26327.6575,Remains stable
+hr4364,VR Monitor Stereo,5,ScatterplotQ5,5495.6741,14934.5465,Keep using higher income
+hr4364,VR Monitor Stereo,6,SurfacePlotQ1,2669.9661,47940.8397,The crime is highest
+hr4364,VR Monitor Stereo,7,SurfacePlotQ2,10555.8633,49895.574,It will increase crime
+hr4364,VR Monitor Stereo,8,SurfacePlotQ3,9997.3676,90319.043,Increasing sentiment
+hr4364,VR Monitor Stereo,9,BarChartQ1,3329.1489,32548.9806,North neighborhood 2010
+hr4364,VR Monitor Stereo,10,BarChartQ2,4267.084,20898.9422,Remains stable
+hr4364,VR Monitor Stereo,11,BarChartQ3,2803.8856,24585.2111,North
+hr4364,VR Monitor Stereo,12,BarChartQ4,4468.4603,17559.3776,west
+hr4364,VR Monitor Stereo,13,LineChartQ1,3798.364,45762.9047,one and two
+hr4364,VR Monitor Stereo,14,LineChartQ2,4379.1798,33174.4356,6 months
+hr4364,VR Monitor Stereo,15,LineChartQ3,3753.2289,23825.3399,neighborhood 2
+hr4364,VR Monitor Stereo,16,LineChartQ4,3563.7571,16978.5616,neighborhood 1
+hr4364,VR Monitor Stereo,17,LineChartQ5,7584.3295,18184.8323,neighboor 3

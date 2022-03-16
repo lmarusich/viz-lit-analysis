@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RL9680,VR Monitor,1,LineChartQ1,31042.3733,168516.4703,neighborhood 2
+RL9680,VR Monitor,2,LineChartQ2,4077.2078,118666.8478,5 months
+RL9680,VR Monitor,3,LineChartQ3,10254.3699,40233.6937,neighborhood 1
+RL9680,VR Monitor,4,LineChartQ4,6636.0075,19761.2627,neighborhood 2
+RL9680,VR Monitor,5,LineChartQ5,12387.4003,34526.3045,neighborhood 2
+RL9680,VR Monitor,6,SurfacePlotQ1,5551.8772,92161.7918,not sure
+RL9680,VR Monitor,7,SurfacePlotQ2,7204.711,109944.3755,its not positive
+RL9680,VR Monitor,8,SurfacePlotQ3,9728.6786,62762.8963,not sure
+RL9680,VR Monitor,9,ScatterplotQ1,10421.7116,48197.685,high income 
+RL9680,VR Monitor,10,ScatterplotQ2,1341.427,67801.2145,2012
+RL9680,VR Monitor,11,ScatterplotQ3,6892.4584,92485.2411,not sure
+RL9680,VR Monitor,12,ScatterplotQ4,1877.5769,69498.487,remain stable
+RL9680,VR Monitor,13,ScatterplotQ5,9518.2209,19983.1264,have more positive sentiment
+RL9680,VR Monitor,14,BarChartQ1,7126.3783,28002.7171,north 2010
+RL9680,VR Monitor,15,BarChartQ2,6847.9079,26908.1627,decrease
+RL9680,VR Monitor,16,BarChartQ3,35642.86,52988.7608,north
+RL9680,VR Monitor,17,BarChartQ4,3306.5073,12421.3749,south

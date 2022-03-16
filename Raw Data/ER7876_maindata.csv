@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+ER7876,VR Monitor,1,BarChartQ1,6591.6948,72167.298,north 2010
+ER7876,VR Monitor,2,BarChartQ2,6423.0739,35049.931,stable
+ER7876,VR Monitor,3,BarChartQ3,12666.3571,28772.4228,north
+ER7876,VR Monitor,4,BarChartQ4,5350.6803,12767.4382,west
+ER7876,VR Monitor,5,LineChartQ1,8388.4825,51089.607,1 and 2
+ER7876,VR Monitor,6,LineChartQ2,8276.7144,44555.5559,6
+ER7876,VR Monitor,7,LineChartQ3,7517.3644,24674.4932,2
+ER7876,VR Monitor,8,LineChartQ4,5383.9788,13637.4591,2
+ER7876,VR Monitor,9,LineChartQ5,16798.7267,29577.1602,3
+ER7876,VR Monitor,10,ScatterplotQ1,12812.2094,26885.1125,high income
+ER7876,VR Monitor,11,ScatterplotQ2,6523.0336,10610.922,red
+ER7876,VR Monitor,12,ScatterplotQ3,7180.944,42555.4128,no relationship
+ER7876,VR Monitor,13,ScatterplotQ4,8511.9307,36167.5234,decreasing
+ER7876,VR Monitor,14,ScatterplotQ5,7327.2723,45740.1463,increase peoples income and decrease ied attacks
+ER7876,VR Monitor,15,SurfacePlotQ1,4591.8788,38312.6701,among those with high religious homogeneity and low crime rate
+ER7876,VR Monitor,16,SurfacePlotQ2,11862.9108,41875.839,lower positive sentiment
+ER7876,VR Monitor,17,SurfacePlotQ3,7360.254,63276.2804,when crime is low, positive sentiment goes up as religious homogeneity goes up

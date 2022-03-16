@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IK0518,VR Monitor,1,SurfacePlotQ1,15416.563,56317.1937,sentiment is highest when religious homogenity is highest
+IK0518,VR Monitor,2,SurfacePlotQ2,6154.9323,96127.5218,higher the crime incident the higher the positive sentiment in the united states
+IK0518,VR Monitor,3,SurfacePlotQ3,7252.5122,111812.219,decreased religious homogenity makes the positive sentiment towards the united states go down
+IK0518,VR Monitor,4,LineChartQ1,4591.317,48063.4755,neighborhoods 1 and 2 
+IK0518,VR Monitor,5,LineChartQ2,5249.4865,47046.5528,6 months 
+IK0518,VR Monitor,6,LineChartQ3,6121.5189,22417.5729,neighborhood 1 
+IK0518,VR Monitor,7,LineChartQ4,4803.5954,11661.7092,neighborhood 2 
+IK0518,VR Monitor,8,LineChartQ5,15648.8685,36759.9762,neighborhood 3 
+IK0518,VR Monitor,9,ScatterplotQ1,5272.4549,20183.6569,high income 
+IK0518,VR Monitor,10,ScatterplotQ2,5473.6934,21524.0705,2010 
+IK0518,VR Monitor,11,ScatterplotQ3,5853.4587,26483.8999,no relationship 
+IK0518,VR Monitor,12,ScatterplotQ4,4234.2041,20094.8268,decreasing 
+IK0518,VR Monitor,13,ScatterplotQ5,4339.2082,65080.1644,less IED attacks and if people have higher incomes, positive sentiment increases 
+IK0518,VR Monitor,14,BarChartQ1,2591.4914,28031.632,north neighborhood in 2010 
+IK0518,VR Monitor,15,BarChartQ2,2614.0328,14867.9021,east neighborhood remained stable 
+IK0518,VR Monitor,16,BarChartQ3,2781.7517,14108.0695,north neighborhood 
+IK0518,VR Monitor,17,BarChartQ4,2837.504,12521.5291,west neighborhood 

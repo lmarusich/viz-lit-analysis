@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AN7725,VR,1,LineChartQ1,32583.8381,114243.8623,1
+AN7725,VR,2,LineChartQ2,9873.7749,36368.3297,five
+AN7725,VR,3,LineChartQ3,5239.07,18295.8518,three
+AN7725,VR,4,LineChartQ4,4814.2163,36871.0393,one
+AN7725,VR,5,LineChartQ5,7004.3727,16018.4,neighborhood 3
+AN7725,VR,6,SurfacePlotQ1,4244.7369,49605.1539,amount of crime incidents
+AN7725,VR,7,SurfacePlotQ2,11147.8735,39194.8322,i don't know
+AN7725,VR,8,SurfacePlotQ3,10846.1724,15649.4019,i don't know
+AN7725,VR,9,ScatterplotQ1,4401.293,11303.948,blue
+AN7725,VR,10,ScatterplotQ2,4523.9897,10611.8192,red
+AN7725,VR,11,ScatterplotQ3,2435.5511,31868.304,negative relationship
+AN7725,VR,12,ScatterplotQ4,6880.7134,17905.927,decreasing
+AN7725,VR,13,ScatterplotQ5,5774.6457,33654.5604,more ied attacks
+AN7725,VR,14,BarChartQ1,3943.5303,18073.4674,2010 north
+AN7725,VR,15,BarChartQ2,1340.4397,19245.8472,remain stable over time
+AN7725,VR,16,BarChartQ3,2524.7838,20061.1131,north
+AN7725,VR,17,BarChartQ4,3440.3595,8355.811,west

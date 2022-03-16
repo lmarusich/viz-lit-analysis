@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+UG4668,VR,1,ScatterplotQ1,28618.8148,136113.2881,blue
+UG4668,VR,2,ScatterplotQ2,7753.1744,59032.1946,red
+UG4668,VR,3,ScatterplotQ3,8534.1627,182893.5842,no relationship
+UG4668,VR,4,ScatterplotQ4,8076.3569,35788.0682,increasing
+UG4668,VR,5,ScatterplotQ5,8667.4326,40847.4473,free healthcare and us should stop bothering other places
+UG4668,VR,6,SurfacePlotQ1,4670.5788,115684.696,crime incidients
+UG4668,VR,7,SurfacePlotQ2,31565.944,193056.3842,increasing
+UG4668,VR,8,SurfacePlotQ3,6088.2131,53324.131,decreasing
+UG4668,VR,9,LineChartQ1,5160.8741,79350.1833,neighborhood 1 and 2
+UG4668,VR,10,LineChartQ2,6301.0548,34738.7508,6 months
+UG4668,VR,11,LineChartQ3,6188.4068,35117.7963,neighborhood 3
+UG4668,VR,12,LineChartQ4,6154.8473,9874.0893,neighborhood 2
+UG4668,VR,13,LineChartQ5,15895.0908,61623.8532,neighborhood 3
+UG4668,VR,14,BarChartQ1,3195.5719,28929.5822,north 2010
+UG4668,VR,15,BarChartQ2,4635.9533,45014.3089,stable
+UG4668,VR,16,BarChartQ3,4010.3352,19122.7019,north
+UG4668,VR,17,BarChartQ4,3038.7175,13715.6914,west

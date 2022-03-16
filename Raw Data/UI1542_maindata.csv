@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+UI1542,VR Monitor,1,SurfacePlotQ1,15985.2272,54150.0247,religious homogeneity is highest or closest to 100
+UI1542,VR Monitor,2,SurfacePlotQ2,22353.0967,62494.7912,as crime increases it positively influences positive sentiment
+UI1542,VR Monitor,3,SurfacePlotQ3,12242.4238,45215.438,when crime is low, decreasing homogeneity increases positive sentiment slightly
+UI1542,VR Monitor,4,LineChartQ1,12175.4826,50800.3506,1 and 2
+UI1542,VR Monitor,5,LineChartQ2,7974.9349,27991.3114,6
+UI1542,VR Monitor,6,LineChartQ3,12053.8616,31186.7685,neighborhood 3
+UI1542,VR Monitor,7,LineChartQ4,7025.9194,11828.5741,neighborhood 2
+UI1542,VR Monitor,8,LineChartQ5,25736.7089,45126.5313,neighborhood 12
+UI1542,VR Monitor,9,BarChartQ1,6456.9467,16253.1833,north 2010
+UI1542,VR Monitor,10,BarChartQ2,10074.9448,18140.1853,fairly stable over time
+UI1542,VR Monitor,11,BarChartQ3,5822.8303,19145.6971,north neighborhood
+UI1542,VR Monitor,12,BarChartQ4,3194.7732,7551.2011,west
+UI1542,VR Monitor,13,ScatterplotQ1,30861.8794,41975.0661,high income
+UI1542,VR Monitor,14,ScatterplotQ2,8421.6118,30225.5216,2010
+UI1542,VR Monitor,15,ScatterplotQ3,10578.812,35832.9982,no relationship
+UI1542,VR Monitor,16,ScatterplotQ4,19279.1294,46365.76,decreasing
+UI1542,VR Monitor,17,ScatterplotQ5,4702.9685,28248.4229,even out income between classes and increase counter terrorism to decrease ied attacks

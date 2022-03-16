@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+DR3453,VR Monitor Stereo,1,ScatterplotQ1,41831.7693,55870.9889,blue
+DR3453,VR Monitor Stereo,2,ScatterplotQ2,8344.5053,73687.031,2011
+DR3453,VR Monitor Stereo,3,ScatterplotQ3,14308.8341,38759.5622,no relationship
+DR3453,VR Monitor Stereo,4,ScatterplotQ4,9014.8008,21759.1708,low and middle are stable and high is increasing 
+DR3453,VR Monitor Stereo,5,ScatterplotQ5,11147.5473,48521.2099,give lower income people more money
+DR3453,VR Monitor Stereo,6,LineChartQ1,7294.2941,61456.1062,1 and 2
+DR3453,VR Monitor Stereo,7,LineChartQ2,11740.4778,48913.5946,6 months
+DR3453,VR Monitor Stereo,8,LineChartQ3,6658.2591,19424.709,neighborhood 1
+DR3453,VR Monitor Stereo,9,LineChartQ4,5608.33,11986.0052,neighborhood 2
+DR3453,VR Monitor Stereo,10,LineChartQ5,20686.5421,34738.5435,neighborhood 2
+DR3453,VR Monitor Stereo,11,BarChartQ1,4501.8246,34458.5226,north 2010
+DR3453,VR Monitor Stereo,12,BarChartQ2,5395.7941,12109.1913,remained stable
+DR3453,VR Monitor Stereo,13,BarChartQ3,6567.9145,23311.1911,north
+DR3453,VR Monitor Stereo,14,BarChartQ4,3909.879,14029.9138,west
+DR3453,VR Monitor Stereo,15,SurfacePlotQ1,4022.0853,37977.6298,when religious homogeneity is at 100 and crime is high 
+DR3453,VR Monitor Stereo,16,SurfacePlotQ2,8846.2996,28583.6731,positive sentiment goes up
+DR3453,VR Monitor Stereo,17,SurfacePlotQ3,12354.677,44724.4606,positive sentiment is lower

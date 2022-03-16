@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EB2765,VR,1,LineChartQ1,8300.8797,123760.3388,neighborhoods 1 and 2
+EB2765,VR,2,LineChartQ2,7395.1991,123034.8746,6 months
+EB2765,VR,3,LineChartQ3,4780.616,85527.0836,neighborhood 2
+EB2765,VR,4,LineChartQ4,10879.0704,53156.3814,neighborhood 2
+EB2765,VR,5,LineChartQ5,11394.3129,41395.5264,neighborhood 1
+EB2765,VR,6,SurfacePlotQ1,17874.9241,191337.5359,when religious homogeneity is high and crime is high 
+EB2765,VR,7,SurfacePlotQ2,6546.0703,205734.8083,help the community rally together if they have trust in each other
+EB2765,VR,8,SurfacePlotQ3,6635.6939,51538.7539,there is more difference of opinion
+EB2765,VR,9,ScatterplotQ1,7171.5952,24618.364,high income
+EB2765,VR,10,ScatterplotQ2,5172.7491,57278.6076,2010
+EB2765,VR,11,ScatterplotQ3,8779.0898,61232.1743,no relationship
+EB2765,VR,12,ScatterplotQ4,6322.6377,155605.8028,remaining stable
+EB2765,VR,13,ScatterplotQ5,7517.8803,61433.863,giving funding to lower income classes and stop the bombing
+EB2765,VR,14,BarChartQ1,8367.0256,34068.0766,north 2010
+EB2765,VR,15,BarChartQ2,4871.1949,11159.2875,remain stable
+EB2765,VR,16,BarChartQ3,8244.4684,28618.0003,north
+EB2765,VR,17,BarChartQ4,5037.3331,22775.2124,west

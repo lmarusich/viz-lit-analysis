@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+IR1101,VR Monitor,1,ScatterplotQ1,11472.9925,78421.9364,blue
+IR1101,VR Monitor,2,ScatterplotQ2,11315.9104,54977.7728,2010
+IR1101,VR Monitor,3,ScatterplotQ3,7149.0007,22071.2896,no relationship
+IR1101,VR Monitor,4,ScatterplotQ4,7338.4906,15972.5437,decreasing
+IR1101,VR Monitor,5,ScatterplotQ5,9237.9277,39619.6702,best way to increase sentiment is to decrease ied attacks
+IR1101,VR Monitor,6,LineChartQ1,10700.511,49470.8628,neighborhood 2 and 1
+IR1101,VR Monitor,7,LineChartQ2,13816.7765,29711.4596,6 months
+IR1101,VR Monitor,8,LineChartQ3,4803.2355,9046.964,neighborhood 3
+IR1101,VR Monitor,9,LineChartQ4,3607.9023,9181.0934,neighborhood 2
+IR1101,VR Monitor,10,LineChartQ5,21234.031,28851.7324,neighborhood 1
+IR1101,VR Monitor,11,BarChartQ1,4055.227,20597.2826,north neighborhood had the highest number of crimes in 2010
+IR1101,VR Monitor,12,BarChartQ2,3999.3737,8533.3339,remain stable
+IR1101,VR Monitor,13,BarChartQ3,4612.7384,12532.6444,north
+IR1101,VR Monitor,14,BarChartQ4,3206.4603,11996.0961,west
+IR1101,VR Monitor,15,SurfacePlotQ1,8880.3773,40870.2885,100% religious homogeneity
+IR1101,VR Monitor,16,SurfacePlotQ2,10924.9603,82600.8045,positively
+IR1101,VR Monitor,17,SurfacePlotQ3,6020.9681,35206.8738,stable

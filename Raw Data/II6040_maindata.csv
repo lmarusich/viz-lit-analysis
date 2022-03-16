@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+II6040,VR,1,ScatterplotQ1,15426.1958,53525.6583,high income
+II6040,VR,2,ScatterplotQ2,8166.068,36694.1782,2010
+II6040,VR,3,ScatterplotQ3,12466.3219,116657.5412,positive
+II6040,VR,4,ScatterplotQ4,7696.1841,50631.9138,remaining stable
+II6040,VR,5,ScatterplotQ5,5183.9816,46946.9104,decrease ied attacks and study why high income has a higher sentiment 
+II6040,VR,6,BarChartQ1,3060.969,31376.0059,north in 2010
+II6040,VR,7,BarChartQ2,5841.6718,13738.5329,stable
+II6040,VR,8,BarChartQ3,5641.2866,16542.5681,north
+II6040,VR,9,BarChartQ4,4167.0229,8276.7083,west
+II6040,VR,10,SurfacePlotQ1,2814.748,52854.6838,religous homogeneity at 100
+II6040,VR,11,SurfacePlotQ2,10314.9795,195447.5802,religious homogeneity is taking attention away from crime incidents
+II6040,VR,12,SurfacePlotQ3,5081.9311,171175.5538,less religious crime incidents gives a more positive outlook towards the usa
+II6040,VR,13,LineChartQ1,4791.1656,32693.2739,neighborhoods 1 and 2
+II6040,VR,14,LineChartQ2,4223.2831,35564.8664,6 months
+II6040,VR,15,LineChartQ3,4211.1983,30270.1123,neighborhood 3
+II6040,VR,16,LineChartQ4,4368.0091,10130.7685,neighborhood 2
+II6040,VR,17,LineChartQ5,10835.3318,35709.2711,neighborhood 3

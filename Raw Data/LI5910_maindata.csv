@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LI5910,VR,1,LineChartQ1,9405.8351,48609.4149,1 and 2
+LI5910,VR,2,LineChartQ2,9293.4113,47873.554,6 months
+LI5910,VR,3,LineChartQ3,6166.0201,17637.2699,3
+LI5910,VR,4,LineChartQ4,7015.1965,12231.5868,2
+LI5910,VR,5,LineChartQ5,17123.9973,29689.5912,1
+LI5910,VR,6,BarChartQ1,6411.6717,36793.3159,north 2010
+LI5910,VR,7,BarChartQ2,5763.7868,21088.0241,remain stable
+LI5910,VR,8,BarChartQ3,10008.713,17815.2056,north
+LI5910,VR,9,BarChartQ4,4859.1822,8220.7868,west
+LI5910,VR,10,SurfacePlotQ1,6266.1931,65041.6406,100% religious homogeneity and 0 crime incidents
+LI5910,VR,11,SurfacePlotQ2,7618.0696,38826.5719,it decreases positive sentiment towards US
+LI5910,VR,12,SurfacePlotQ3,6300.8978,25701.5003,drastically decreases positive sentiment towards US
+LI5910,VR,13,ScatterplotQ1,9829.864,26628.8336,high income status
+LI5910,VR,14,ScatterplotQ2,7238.4307,29666.1968,2010
+LI5910,VR,15,ScatterplotQ3,9684.3494,51682.6357,no relationship
+LI5910,VR,16,ScatterplotQ4,10868.3559,29074.6594,decreasing
+LI5910,VR,17,ScatterplotQ5,5898.278,37140.2675,decrease ied attacks and help people achieve higher income levels

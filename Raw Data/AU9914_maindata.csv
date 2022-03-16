@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AU9914,VR,1,SurfacePlotQ1,8949.3634,72624.8431,in between 50 to 60%
+AU9914,VR,2,SurfacePlotQ2,10074.6051,70748.4349,yes
+AU9914,VR,3,SurfacePlotQ3,7103.9758,23344.7606,when crime is low it doesnt increase positive sentiment towards US
+AU9914,VR,4,BarChartQ1,3373.416,19591.9769,north 
+AU9914,VR,5,BarChartQ2,6109.8597,14331.11,remain stable
+AU9914,VR,6,BarChartQ3,5745.0349,14888.9701,east neighborhood
+AU9914,VR,7,BarChartQ4,5965.4815,18720.6229,north
+AU9914,VR,8,LineChartQ1,5719.7327,33006.2527,neighborhood 1
+AU9914,VR,9,LineChartQ2,7283.1109,29901.3598,4 months
+AU9914,VR,10,LineChartQ3,4445.1493,15324.8763,neighborhood 2
+AU9914,VR,11,LineChartQ4,6454.8784,49916.9212,neighborhood 3
+AU9914,VR,12,LineChartQ5,10029.416,17301.008,neighborhood 2
+AU9914,VR,13,ScatterplotQ1,9975.8086,52375.8639,blue 
+AU9914,VR,14,ScatterplotQ2,6143.8834,23937.2039,2012
+AU9914,VR,15,ScatterplotQ3,8277.6045,36882.7541,positive
+AU9914,VR,16,ScatterplotQ4,6892.4987,10366.4488,increasing
+AU9914,VR,17,ScatterplotQ5,8657.1172,37497.7956,tracking income level, how people are using money, and figuring out how often people make their own bomb at home

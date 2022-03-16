@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+RS1080,VR,1,LineChartQ1,12779.5891,43963.2037,neighborhood 1
+RS1080,VR,2,LineChartQ2,7953.4522,61969.014,6 months
+RS1080,VR,3,LineChartQ3,7192.4455,41416.9434,neighbirhood 3
+RS1080,VR,4,LineChartQ4,8969.158,12432.3724,neighborhood 2
+RS1080,VR,5,LineChartQ5,24205.6703,55301.9527,neighborhood 3
+RS1080,VR,6,ScatterplotQ1,23144.3338,134528.1399,high income
+RS1080,VR,7,ScatterplotQ2,6669.0348,60182.1671,2010
+RS1080,VR,8,ScatterplotQ3,7663.4172,49381.4516,negative
+RS1080,VR,9,ScatterplotQ4,11069.9191,32235.9747,remaining stable
+RS1080,VR,10,ScatterplotQ5,5417.5732,77127.1165,have an high income and watch for ied attacks
+RS1080,VR,11,SurfacePlotQ1,2960.7399,38960.0109,when religious homogeneity and crime incidents are high 
+RS1080,VR,12,SurfacePlotQ2,9148.0101,27454.1986,raises positive sentiment 
+RS1080,VR,13,SurfacePlotQ3,8958.6735,28394.2673,stays about the same
+RS1080,VR,14,BarChartQ1,5551.812,21612.9334,north 2010
+RS1080,VR,15,BarChartQ2,4780.4533,11739.562,remain stable
+RS1080,VR,16,BarChartQ3,3676.2263,20854.3393,north neighborhood
+RS1080,VR,17,BarChartQ4,4613.0796,10253.9932,west neighborhood

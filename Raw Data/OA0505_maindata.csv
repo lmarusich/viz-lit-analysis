@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OA0505,VR Monitor Stereo,1,LineChartQ1,9595.259,72825.6801,2
+OA0505,VR Monitor Stereo,2,LineChartQ2,6167.0352,21882.3389,6
+OA0505,VR Monitor Stereo,3,LineChartQ3,11315.2639,21089.4501,neighborhood 3
+OA0505,VR Monitor Stereo,4,LineChartQ4,14721.7642,17850.0036,neighborhood 2
+OA0505,VR Monitor Stereo,5,LineChartQ5,33018.5686,40356.7816,neighborhood 1
+OA0505,VR Monitor Stereo,6,ScatterplotQ1,13560.5377,33487.5328,blue
+OA0505,VR Monitor Stereo,7,ScatterplotQ2,10579.1239,38692.2978,2010
+OA0505,VR Monitor Stereo,8,ScatterplotQ3,9583.1982,61901.8851,no relationship
+OA0505,VR Monitor Stereo,9,ScatterplotQ4,8220.7833,13314.5593,decreasing
+OA0505,VR Monitor Stereo,10,ScatterplotQ5,4390.2013,73898.8317,increase time for high income people, and encourage low income group to have more ied explosions
+OA0505,VR Monitor Stereo,11,BarChartQ1,4110.7893,44857.4613,north in 2010
+OA0505,VR Monitor Stereo,12,BarChartQ2,8947.4543,15068.315,stayed the same/stable
+OA0505,VR Monitor Stereo,13,BarChartQ3,13896.0022,25344.0627,north neighborhood
+OA0505,VR Monitor Stereo,14,BarChartQ4,3563.395,19446.6927,west neighborhood
+OA0505,VR Monitor Stereo,15,SurfacePlotQ1,2982.1442,21244.8512,high religious homogeneity and high crime incidents
+OA0505,VR Monitor Stereo,16,SurfacePlotQ2,8668.556,41451.2778,when religious homogeneity is high, therefore people agree to commit crime
+OA0505,VR Monitor Stereo,17,SurfacePlotQ3,5775.1195,13247.7099,when you have religious diversity, they may not agree, so they may not agree on sentiment towards us 

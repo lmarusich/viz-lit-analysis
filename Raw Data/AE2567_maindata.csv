@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AE2567,VR Monitor,1,ScatterplotQ1,15493.3991,26538.6733,blue
+AE2567,VR Monitor,2,ScatterplotQ2,9974.6212,19726.5686,red
+AE2567,VR Monitor,3,ScatterplotQ3,6847.3827,23266.1017,no relationship
+AE2567,VR Monitor,4,ScatterplotQ4,8310.3177,27589.1899,increasing
+AE2567,VR Monitor,5,ScatterplotQ5,7864.0814,40869.6929,more attacks on middle and lower income
+AE2567,VR Monitor,6,LineChartQ1,4524.2831,78747.0367,1 and 2
+AE2567,VR Monitor,7,LineChartQ2,8110.7775,35531.514,6 months
+AE2567,VR Monitor,8,LineChartQ3,4110.8631,21233.6305,3
+AE2567,VR Monitor,9,LineChartQ4,5874.5779,22205.1587,1
+AE2567,VR Monitor,10,LineChartQ5,9796.1484,24339.3306,3
+AE2567,VR Monitor,11,SurfacePlotQ1,4926.6829,40724.4588,high religious homogeneity and high crime incidents
+AE2567,VR Monitor,12,SurfacePlotQ2,7104.8078,83862.595,increasing crime influence increases religious homogeneity
+AE2567,VR Monitor,13,SurfacePlotQ3,10109.0142,59033.0444,when crime is low increase homogeneity decreases positive sentiment
+AE2567,VR Monitor,14,BarChartQ1,2860.3982,14554.2307,north 2010
+AE2567,VR Monitor,15,BarChartQ2,4435.8228,11393.1879,remain stable
+AE2567,VR Monitor,16,BarChartQ3,5127.2248,18586.5654,north
+AE2567,VR Monitor,17,BarChartQ4,2559.1284,8712.8385,west

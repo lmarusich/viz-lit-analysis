@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+UO5311,VR,1,LineChartQ1,7793.7982,55442.5553,1 and 2
+UO5311,VR,2,LineChartQ2,7462.1169,15683.2601,6
+UO5311,VR,3,LineChartQ3,10623.2149,23601.6766,neighborhood 3
+UO5311,VR,4,LineChartQ4,7830.1738,12476.8264,neighborhood 2
+UO5311,VR,5,LineChartQ5,13572.3751,62606.9302,neighborhood 3
+UO5311,VR,6,BarChartQ1,5037.6003,18274.3778,2010 north
+UO5311,VR,7,BarChartQ2,6232.4284,10588.8531,relatively stable
+UO5311,VR,8,BarChartQ3,8935.7379,13235.8001,north
+UO5311,VR,9,BarChartQ4,5015.6331,9248.3628,west
+UO5311,VR,10,SurfacePlotQ1,3026.4453,34949.5922,crime incidents 1000, religious homogeneity at 100%
+UO5311,VR,11,SurfacePlotQ2,11940.2143,29722.9279,as crime increases, positive sentiment towards the us increases if religious homogeneity is high 
+UO5311,VR,12,SurfacePlotQ3,13962.8681,36972.6802,positive sentiment towards the us is relatively constant at 50
+UO5311,VR,13,ScatterplotQ1,11226.143,14140.3991,blue
+UO5311,VR,14,ScatterplotQ2,11528.3423,47036.4249,2010
+UO5311,VR,15,ScatterplotQ3,11315.909,20798.7059,negative correlation
+UO5311,VR,16,ScatterplotQ4,14845.4639,35096.1324,as ones income level decreases, IED attacks increase
+UO5311,VR,17,ScatterplotQ5,7930.9093,52096.4478,reduce IED attacks and move their income level up

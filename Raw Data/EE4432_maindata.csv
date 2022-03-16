@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EE4432,VR,1,LineChartQ1,17012.7279,96035.6228,group 1 and 2
+EE4432,VR,2,LineChartQ2,8534.8087,63467.2817,20 months
+EE4432,VR,3,LineChartQ3,7886.0334,46634.0115,group 3
+EE4432,VR,4,LineChartQ4,5708.3119,11940.762,group 2
+EE4432,VR,5,LineChartQ5,11170.3098,22474.2466,group 2
+EE4432,VR,6,BarChartQ1,5841.4179,35486.6105,north neighborhood 2010
+EE4432,VR,7,BarChartQ2,5305.8953,12734.156,stable
+EE4432,VR,8,BarChartQ3,5965.1267,14319.8844,north
+EE4432,VR,9,BarChartQ4,3932.5327,10946.8863,west
+EE4432,VR,10,ScatterplotQ1,10422.302,23154.9208,blue
+EE4432,VR,11,ScatterplotQ2,7741.4211,11583.6997,red
+EE4432,VR,12,ScatterplotQ3,9371.0432,32638.1835,no relationship
+EE4432,VR,13,ScatterplotQ4,5641.5089,40121.8625,decreasing
+EE4432,VR,14,ScatterplotQ5,8445.5052,39095.0287,first decreasing IED attacks, and support high income groups
+EE4432,VR,15,SurfacePlotQ1,4468.1229,94060.4392,less crime and high religious homogeneity
+EE4432,VR,16,SurfacePlotQ2,12554.6231,38066.8034,after increasing crime, sentiment towards the US is higher
+EE4432,VR,17,SurfacePlotQ3,5808.5748,33464.0096,positive sentiment is increasing after decreasing. 

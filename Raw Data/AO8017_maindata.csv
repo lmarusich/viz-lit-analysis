@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AO8017,VR Monitor,1,SurfacePlotQ1,8106.4492,74385.6524,Sentiment is at highest when religious homogenighty is at highet
+AO8017,VR Monitor,2,SurfacePlotQ2,8477.4569,135498.554,The higher the crime incendent the higher the homogeniety
+AO8017,VR Monitor,3,SurfacePlotQ3,11460.0426,61243.0932,Does have an effect
+AO8017,VR Monitor,4,BarChartQ1,4568.8494,33542.803,North in 2010 had the highest
+AO8017,VR Monitor,5,BarChartQ2,4512.979,15794.947,Stable over time
+AO8017,VR Monitor,6,BarChartQ3,5330.3328,32727.4167,North
+AO8017,VR Monitor,7,BarChartQ4,3631.3463,11348.8387,West
+AO8017,VR Monitor,8,ScatterplotQ1,6358.09,58395.6589,Blue
+AO8017,VR Monitor,9,ScatterplotQ2,6120.7178,52218.5842,2010
+AO8017,VR Monitor,10,ScatterplotQ3,5630.0341,38088.6623,No relationship
+AO8017,VR Monitor,11,ScatterplotQ4,7250.1987,81427.9107,Increasing
+AO8017,VR Monitor,12,ScatterplotQ5,5786.6196,96696.8371,Increasing ied levels in highincome and lowering ied  levels in high income
+AO8017,VR Monitor,13,LineChartQ1,4814.6629,42668.9877,1 and 2
+AO8017,VR Monitor,14,LineChartQ2,6400.4801,31677.2689,Six months
+AO8017,VR Monitor,15,LineChartQ3,4568.827,32113.0818,2
+AO8017,VR Monitor,16,LineChartQ4,11371.2454,43037.5227,2
+AO8017,VR Monitor,17,LineChartQ5,10722.4631,38099.6707,3

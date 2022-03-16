@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AR0044,VR,1,ScatterplotQ1,18368.2151,36182.465,high income
+AR0044,VR,2,ScatterplotQ2,7305.9474,62528.4589,2011
+AR0044,VR,3,ScatterplotQ3,19011.5175,40401.0528,no relationship
+AR0044,VR,4,ScatterplotQ4,12029.4758,41439.4063,decreasing
+AR0044,VR,5,ScatterplotQ5,11561.191,25645.5709,stopping ied attacks
+AR0044,VR,6,LineChartQ1,8154.6006,71318.7205,neighborhoods 1 and 2
+AR0044,VR,7,LineChartQ2,7305.9186,38591.3128,6 months
+AR0044,VR,8,LineChartQ3,5954.2791,52799.9026,neighborhood 3
+AR0044,VR,9,LineChartQ4,5239.1488,10444.1953,neighborhood 2
+AR0044,VR,10,LineChartQ5,23323.0937,61500.9685,neighborhood 1
+AR0044,VR,11,SurfacePlotQ1,2882.1916,32805.4131,higher number of crime incidents 
+AR0044,VR,12,SurfacePlotQ2,23870.3897,103331.5104,increasing crime makes the positive sentiment go up
+AR0044,VR,13,SurfacePlotQ3,10187.1119,48901.2741,positive sentiment stays the same
+AR0044,VR,14,BarChartQ1,4144.7185,25545.2439,north in 2010
+AR0044,VR,15,BarChartQ2,4043.5652,16162.2132,remained stable
+AR0044,VR,16,BarChartQ3,5707.8564,15470.3176,north neighborhood
+AR0044,VR,17,BarChartQ4,3798.0433,11615.9549,west neighborhood

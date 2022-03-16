@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+EM8130,VR Monitor,1,SurfacePlotQ1,6658.262,66190.0748,positive sentiment towards us is 100% and religious at 100% and crime incidents at 1000
+EM8130,VR Monitor,2,SurfacePlotQ2,10354.6141,80645.6213,it also increases
+EM8130,VR Monitor,3,SurfacePlotQ3,8495.2772,41986.9091,about the same
+EM8130,VR Monitor,4,ScatterplotQ1,7216.91,30684.6538,high income
+EM8130,VR Monitor,5,ScatterplotQ2,4602.3472,30169.686,2016
+EM8130,VR Monitor,6,ScatterplotQ3,10053.1126,40155.5609,no relationship
+EM8130,VR Monitor,7,ScatterplotQ4,6221.4893,51023.0161,decreasing
+EM8130,VR Monitor,8,ScatterplotQ5,4546.4723,52118.2693,decrease ied attacks and allow time to pass
+EM8130,VR Monitor,9,BarChartQ1,4144.9276,15447.9755,north 2010
+EM8130,VR Monitor,10,BarChartQ2,5351.9767,11225.7944,remain stable
+EM8130,VR Monitor,11,BarChartQ3,6792.0929,18765.678,north
+EM8130,VR Monitor,12,BarChartQ4,4363.1204,8857.1392,west
+EM8130,VR Monitor,13,LineChartQ1,6344.692,26371.8679,neighborhoods 1 and 2
+EM8130,VR Monitor,14,LineChartQ2,4881.7708,20909.9794,ten months
+EM8130,VR Monitor,15,LineChartQ3,9182.1588,24316.9038,neighborhood 3
+EM8130,VR Monitor,16,LineChartQ4,3742.5749,8991.8868,neighborhood 2
+EM8130,VR Monitor,17,LineChartQ5,12241.9723,28929.5384,neighborhood 2

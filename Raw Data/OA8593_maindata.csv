@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+OA8593,VR,1,BarChartQ1,25400.9579,59489.3085,north 2010
+OA8593,VR,2,BarChartQ2,6680.2368,25847.2572,primarily stable with slight increase/decrease
+OA8593,VR,3,BarChartQ3,7048.2594,15157.6973,north
+OA8593,VR,4,BarChartQ4,3943.0254,8008.6831,west
+OA8593,VR,5,SurfacePlotQ1,5707.8246,61712.957,religious homogeneity
+OA8593,VR,6,SurfacePlotQ2,10444.2493,75777.0417,as crime increases positive sentiment goes down
+OA8593,VR,7,SurfacePlotQ3,7833.1754,64963.2674,when crime is low, decreasing religious homogeneity it is either stable or decreasing
+OA8593,VR,8,ScatterplotQ1,7718.4345,18798.497,high income
+OA8593,VR,9,ScatterplotQ2,9003.0706,84108.329,2011
+OA8593,VR,10,ScatterplotQ3,7830.1865,38144.5859,no relationship
+OA8593,VR,11,ScatterplotQ4,4936.8684,51056.7416,decreasing
+OA8593,VR,12,ScatterplotQ5,3697.187,89190.3264,lower IED attacks, and not sure on second way
+OA8593,VR,13,LineChartQ1,3329.1446,30828.9937,neighborhoods 1 and 2
+OA8593,VR,14,LineChartQ2,5619.544,33040.6174,6 months
+OA8593,VR,15,LineChartQ3,3206.4736,42255.6524,neighborhood 2
+OA8593,VR,16,LineChartQ4,4601.7676,8042.6142,neighborhood 1
+OA8593,VR,17,LineChartQ5,8857.9061,79059.2477,neighborhood 3

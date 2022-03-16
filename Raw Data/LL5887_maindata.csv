@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+LL5887,VR,1,LineChartQ1,9763.9832,47605.5005,1 and 2
+LL5887,VR,2,LineChartQ2,6312.1573,45439.1132,5 months
+LL5887,VR,3,LineChartQ3,9852.2635,61366.3002,neighborhood 3
+LL5887,VR,4,LineChartQ4,5630.1327,34504.7042,neighborhood 2
+LL5887,VR,5,LineChartQ5,17257.0089,26215.3943,neighborhood 1
+LL5887,VR,6,SurfacePlotQ1,6646.8104,119884.2328,the religious homogeneity
+LL5887,VR,7,SurfacePlotQ2,5171.7903,103588.9518,increasing crime with religious homogeneity high
+LL5887,VR,8,SurfacePlotQ3,4691.8086,64214.5898,decreases positive sentiment towards the us
+LL5887,VR,9,ScatterplotQ1,7974.7222,23802.2598,high income has highest sentiment
+LL5887,VR,10,ScatterplotQ2,9114.309,22674.9612,2010
+LL5887,VR,11,ScatterplotQ3,6578.6933,59668.4913,no relationship
+LL5887,VR,12,ScatterplotQ4,7618.0519,56854.0119,remianing stable
+LL5887,VR,13,ScatterplotQ5,4200.631,188221.6323,further investigation/preventions of ied and appeal to everything
+LL5887,VR,14,BarChartQ1,2826.2442,29734.7052,north 2010
+LL5887,VR,15,BarChartQ2,4043.9006,16385.6943,remains stable over time
+LL5887,VR,16,BarChartQ3,4077.6691,15536.8221,north neighborhood
+LL5887,VR,17,BarChartQ4,3395.8102,16106.2715,the west

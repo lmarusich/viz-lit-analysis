@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AC9337,VR Monitor Stereo,1,SurfacePlotQ1,20318.8258,159122.8352,religious homogeneity
+AC9337,VR Monitor Stereo,2,SurfacePlotQ2,12655.5266,114824.8535,negatively effects
+AC9337,VR Monitor Stereo,3,SurfacePlotQ3,8713.1606,74435.2538,positively affects it
+AC9337,VR Monitor Stereo,4,LineChartQ1,6276.8579,52709.5708,neighborhoods 1 and 2
+AC9337,VR Monitor Stereo,5,LineChartQ2,7562.204,64762.3472,6
+AC9337,VR Monitor Stereo,6,LineChartQ3,9003.1365,59233.5137,neighborhood 3
+AC9337,VR Monitor Stereo,7,LineChartQ4,4536.0332,11628.3512,neighborhood 2
+AC9337,VR Monitor Stereo,8,LineChartQ5,10322.1359,27389.5185,neighborhood 3
+AC9337,VR Monitor Stereo,9,ScatterplotQ1,9337.8306,33632.0537,high income
+AC9337,VR Monitor Stereo,10,ScatterplotQ2,12308.6596,70782.4887,2011
+AC9337,VR Monitor Stereo,11,ScatterplotQ3,15024.3882,66839.6659,no relationship
+AC9337,VR Monitor Stereo,12,ScatterplotQ4,8445.118,76301.2689,decreasing
+AC9337,VR Monitor Stereo,13,ScatterplotQ5,6992.8643,78312.0464,increase income and decrease attacks
+AC9337,VR Monitor Stereo,14,BarChartQ1,5931.5185,70827.1902,north neighborhood in 2010
+AC9337,VR Monitor Stereo,15,BarChartQ2,5049.4686,18530.8842,it remained stable
+AC9337,VR Monitor Stereo,16,BarChartQ3,5059.2641,28739.1929,north neighborhood
+AC9337,VR Monitor Stereo,17,BarChartQ4,5483.7132,18842.732,west neighborhood

@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+II7116,VR Monitor,1,ScatterplotQ1,17969.2012,60491.1585,blue, high income
+II7116,VR Monitor,2,ScatterplotQ2,4825.678,35084.2592,2011
+II7116,VR Monitor,3,ScatterplotQ3,15838.8777,68436.5356,not sure
+II7116,VR Monitor,4,ScatterplotQ4,6020.9927,18452.9172,remaining stable
+II7116,VR Monitor,5,ScatterplotQ5,7115.0959,68604.5619,not sure
+II7116,VR Monitor,6,BarChartQ1,4457.1529,40333.2393,north 2010
+II7116,VR Monitor,7,BarChartQ2,4680.5635,18386.1299,stable
+II7116,VR Monitor,8,BarChartQ3,5809.049,13236.2867,north
+II7116,VR Monitor,9,BarChartQ4,4826.1734,9483.7937,west
+II7116,VR Monitor,10,LineChartQ1,7015.3515,42456.607,1 and 2
+II7116,VR Monitor,11,LineChartQ2,5552.2365,27712.3097,6
+II7116,VR Monitor,12,LineChartQ3,4524.4682,15269.8693,1
+II7116,VR Monitor,13,LineChartQ4,4401.3024,14710.8931,2
+II7116,VR Monitor,14,LineChartQ5,24015.1365,74312.4604,3
+II7116,VR Monitor,15,SurfacePlotQ1,3775.9765,53011.09,when religious homogeneity is high
+II7116,VR Monitor,16,SurfacePlotQ2,15984.5211,44969.9364,positive sentiment increases as crime increases
+II7116,VR Monitor,17,SurfacePlotQ3,5473.4389,54932.9623,not sure.

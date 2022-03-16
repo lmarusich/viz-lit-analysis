@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+HA1682,VR Monitor Stereo,1,ScatterplotQ1,9272.346,76624.2704,Blue
+HA1682,VR Monitor Stereo,2,ScatterplotQ2,3686.6838,121415.1136,2010
+HA1682,VR Monitor Stereo,3,ScatterplotQ3,33610.6042,93155.7445,Neither
+HA1682,VR Monitor Stereo,4,ScatterplotQ4,9170.6167,21781.5815,Decreasing
+HA1682,VR Monitor Stereo,5,ScatterplotQ5,12957.5532,13114.1348,Decrease IEDs and Invest more money
+HA1682,VR Monitor Stereo,6,BarChartQ1,10231.8042,61779.7474,North 2010
+HA1682,VR Monitor Stereo,7,BarChartQ2,4423.7252,9818.8634,Crime remained stable
+HA1682,VR Monitor Stereo,8,BarChartQ3,7864.0879,20832.0518,2016 North
+HA1682,VR Monitor Stereo,9,BarChartQ4,5529.3125,21557.667,2016 West
+HA1682,VR Monitor Stereo,10,SurfacePlotQ1,13179.4665,46409.582,Crime
+HA1682,VR Monitor Stereo,11,SurfacePlotQ2,8802.0978,47471.7924,Decrease
+HA1682,VR Monitor Stereo,12,SurfacePlotQ3,7451.1798,81271.4064,Positive
+HA1682,VR Monitor Stereo,13,LineChartQ1,5472.9567,29644.67,Neighborhood 1
+HA1682,VR Monitor Stereo,14,LineChartQ2,5529.285,21513.7487,6
+HA1682,VR Monitor Stereo,15,LineChartQ3,4579.8252,18843.8995,Neighborhood 1
+HA1682,VR Monitor Stereo,16,LineChartQ4,9964.473,24283.4134,Neighbi=orhood 1
+HA1682,VR Monitor Stereo,17,LineChartQ5,16398.4158,28360.5977,Neighborhood 2

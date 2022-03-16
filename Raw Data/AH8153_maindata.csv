@@ -1,0 +1,18 @@
+ParticipantId,Condition,TrialNumber,TrialName,TimeToReadQuestion,TimeToBeginInput,UserInput
+AH8153,VR,1,BarChartQ1,6384.9937,23471.5245,2010
+AH8153,VR,2,BarChartQ2,8556.2181,56262.3072,it increased and decreased
+AH8153,VR,3,BarChartQ3,7674.0948,61221.0995,north
+AH8153,VR,4,BarChartQ4,7138.0321,25220.9453,west
+AH8153,VR,5,ScatterplotQ1,9058.898,69521.0551,high income
+AH8153,VR,6,ScatterplotQ2,8221.1282,33051.0456,2013
+AH8153,VR,7,ScatterplotQ3,11047.1286,75440.2906,no relationship
+AH8153,VR,8,ScatterplotQ4,12734.1376,51828.6491,decreasing
+AH8153,VR,9,ScatterplotQ5,14622.0704,55882.3496,decrease ied attacks and give the low income people more money
+AH8153,VR,10,LineChartQ1,8567.2085,55412.5997,neighborhood 1 and 2
+AH8153,VR,11,LineChartQ2,7986.7311,47225.4012,6
+AH8153,VR,12,LineChartQ3,7439.714,56541.6107,april to may, neighborhood 3
+AH8153,VR,13,LineChartQ4,5150.3111,24931.6575,neighborhood 2
+AH8153,VR,14,LineChartQ5,37519.1924,85314.05,neighborhood 3
+AH8153,VR,15,SurfacePlotQ1,5049.0586,38613.2319,when crime incidents are at their lowest
+AH8153,VR,16,SurfacePlotQ2,23378.817,57702.9666,it lowers it
+AH8153,VR,17,SurfacePlotQ3,32392.3738,125514.1148,it brings it to a 10
