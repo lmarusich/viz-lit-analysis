@@ -1,15 +1,17 @@
 ---
 title: "Visualization Literacy Analysis"
 author: "Laura Marusich"
-date: "3/8/2022"
+date: "3/22/2022"
 output: pdf_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix
+pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix, emmeans
                # knitr, rmarkdown, yaml, tidyverse, plyr, psych, foreign, stats, lme4,
                #              RColorBrewer, pals, car, ez, devtools, MBESS, apaTables, gridExtra, plyr,
                #              cowplot, Rmisc, afex, lsmeans, emmeans, ggsignif, effsize, TOSTER
@@ -255,7 +257,20 @@ answer_rt_anova <- ezANOVA(rt_data_no_outliers2,
 )
 aovEffectSize(answer_rt_anova, effectSize = "pes")$ANOVA
 
-
+#Post-hoc tests
+#Remove Within Factor of TrialName (17 repeated question levels), causes problems with emmeans?
+answer_rt_anova2 <- ezANOVA(rt_data_no_outliers2,
+                      dv = AnswerRT,
+                      wid = ParticipantId,
+                      #within = TrialName, 
+                      between = Condition,
+                      type = 3,
+                      detailed = F,
+                      return_aov = T
+)
+emm.RT.answer <- emmeans(answer_rt_anova2$aov, ~ Condition)
+emm.RT.answer
+pairs(emm.RT.answer, adjust = "Tukey")
 ```
 
 ## Compare conditions for question type (instead of by individual question)
