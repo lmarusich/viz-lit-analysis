@@ -1,6 +1,6 @@
 ---
 title: "Visualization Literacy Analysis"
-author: "Laura Marusich"
+author: "Laura Marusich, Jonathan Bakdash"
 date: "3/22/2022"
 output: pdf_document
 editor_options: 
@@ -11,7 +11,7 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix, emmeans
+pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix, emmeans, afex
                # knitr, rmarkdown, yaml, tidyverse, plyr, psych, foreign, stats, lme4,
                #              RColorBrewer, pals, car, ez, devtools, MBESS, apaTables, gridExtra, plyr,
                #              cowplot, Rmisc, afex, lsmeans, emmeans, ggsignif, effsize, TOSTER
@@ -111,8 +111,31 @@ trial_type_key <- read.csv("trial_type_key.csv", stringsAsFactors = F)
 
 rt_data <- rt_data %>%
   mutate(TrialType = trial_type_key$TrialType[match(TrialName, trial_type_key$TrialName)]) %>%
-  mutate(TrialType = as.factor(TrialType))
+  mutate(TrialType = paste0("Type",TrialType))
 
+
+```
+
+## Basic checks
+```{r}
+#does everyone have 17 trials
+
+dim(rt_data)[1]
+#122 participants, 17 trials
+122*17
+
+trials_per_participant <- rt_data %>% 
+  group_by(ParticipantId, Condition) %>%
+  summarize(n = n()) 
+
+all(trials_per_participant$n == 17)
+
+#how many participants per condition
+subs_per_condition <- trials_per_participant %>%
+  group_by(Condition) %>%
+  summarize(nsubs = n())
+#why is the balance so off?
+kable(subs_per_condition)
 
 ```
 
@@ -120,10 +143,7 @@ rt_data <- rt_data %>%
 
 ```{r}
 
-dim(rt_data)[1]
-#122 participants, 17 trials
-122*17
-
+#removing on trial-by-trial basis
 
 #remove answerRTs below 2000ms first
 rt_data_remove <- rt_data %>%
@@ -154,128 +174,14 @@ rt_data_no_outliers %>%
 
 ```
 
-## Compare conditions using individual questions
+
+
+## Compare conditions for question type (three types: identify, relate, predict)
 
 ```{r}
-
 #compare read times (should be no differences of condition)
-#compare answer times (potentially a difference)
+#compare answer times (potentially a difference) 
 
-# first, make .csv files in wide format to double check in statview
-read_rt_wider <- rt_data_no_outliers %>%
-  select(ParticipantId, Condition, TrialName, readRT) %>%
-  pivot_wider(names_from = TrialName,values_from = readRT) %>%
-  mutate(noutliers = rowSums(is.na(across(3:19))))
-
-answer_rt_wider <- rt_data_no_outliers %>%
-  select(ParticipantId, Condition, TrialName, AnswerRT) %>%
-  pivot_wider(names_from = TrialName,values_from = AnswerRT) %>%
-  mutate(noutliers = rowSums(is.na(across(3:19))),
-         mean_all = rowMeans(across(3:19), na.rm = T))
-
-write.csv(read_rt_wider, file = "readRTs.csv", row.names = F)
-write.csv(answer_rt_wider, file = "answerRTs.csv", row.names = F)
-
-
-#within ANOVA can't run with missing cells, so remove participants that had outliers removed
-#this loses a lot of data. would probably be better to replace outliers with means, but 
-#i figure we don't really want to use individual question as the within variable anyway
-#see below for analysis with question TYPE as the within variable
-rt_data_no_outliers2 <- rt_data_no_outliers %>%
-  group_by(ParticipantId) %>%
-  filter(n() > 16)
-
-#READING RTs
-
-#make a little plot
-readplot1 <- rt_data_no_outliers2 %>%
-  group_by(ParticipantId, Condition) %>%
-  summarize(overallmean = mean(readRT)) %>%
-  group_by(Condition) %>%
-  summarize(overall_condition_mean = mean(overallmean),
-            se = std.error(overallmean),
-            n = n(),
-            CI = qt(0.975,df=n-1)*se)
-
-ggplot(readplot1, aes(Condition,
-                      overall_condition_mean,
-                      group = 1,
-                      ymin = overall_condition_mean - CI,
-                      ymax = overall_condition_mean + CI)) +
-  theme_classic() + 
-  geom_point(size = 4) +
-  geom_errorbar(width = .15, size = 0.85) + 
-  geom_line(size = 0.85) +
-  labs(y = "Reading RTs (ms)", title = "Read RTs")
-
-
-read_rt_anova <- ezANOVA(rt_data_no_outliers2,
-                      dv = readRT,
-                      wid = ParticipantId,
-                      within = TrialName,
-                      between = Condition,
-                      type = 3,
-                      detailed = TRUE,
-                      return_aov = T
-)
-#get the partial eta-squared too
-aovEffectSize(read_rt_anova, effectSize = "pes")$ANOVA
-
-#no significant effect of condition on read times
-
-#ANSWERING RTs
-
-#make a little plot
-answerplot1 <- rt_data_no_outliers2 %>%
-  group_by(ParticipantId, Condition) %>%
-  summarize(overallmean = mean(AnswerRT)) %>%
-  group_by(Condition) %>%
-  summarize(overall_condition_mean = mean(overallmean),
-            se = std.error(overallmean),
-            n = n(),
-            CI = qt(0.975,df=n-1)*se)
-
-ggplot(answerplot1, aes(Condition,
-                      overall_condition_mean,
-                      group = 1,
-                      ymin = overall_condition_mean - CI,
-                      ymax = overall_condition_mean + CI)) +
-  theme_classic() + 
-  geom_point(size = 4) +
-  geom_errorbar(width = .15, size = 0.85) + 
-  geom_line(size = 0.85) +
-  labs(y = "Answering RTs (ms)", title = "Answer RTs")
-
-answer_rt_anova <- ezANOVA(rt_data_no_outliers2,
-                      dv = AnswerRT,
-                      wid = ParticipantId,
-                      within = TrialName,
-                      between = Condition,
-                      type = 3,
-                      detailed = TRUE,
-                      return_aov = T
-)
-aovEffectSize(answer_rt_anova, effectSize = "pes")$ANOVA
-
-#Post-hoc tests
-#Remove Within Factor of TrialName (17 repeated question levels), causes problems with emmeans?
-answer_rt_anova2 <- ezANOVA(rt_data_no_outliers2,
-                      dv = AnswerRT,
-                      wid = ParticipantId,
-                      #within = TrialName, 
-                      between = Condition,
-                      type = 3,
-                      detailed = F,
-                      return_aov = T
-)
-emm.RT.answer <- emmeans(answer_rt_anova2$aov, ~ Condition)
-emm.RT.answer
-pairs(emm.RT.answer, adjust = "Tukey")
-```
-
-## Compare conditions for question type (instead of by individual question)
-
-```{r}
 
 trial_type_means <- rt_data_no_outliers %>%
   group_by(ParticipantId, Condition, TrialType) %>%
@@ -283,19 +189,43 @@ trial_type_means <- rt_data_no_outliers %>%
             mean_answerRT = mean(AnswerRT),
             n = n())
 
+# first, make .csv files in wide format to double check in statview
 read_rt_type_wider <- trial_type_means %>%
   select(ParticipantId, Condition, TrialType, mean_readRT) %>%
-  pivot_wider(names_from = TrialType,values_from = mean_readRT, names_prefix="Type")
+  pivot_wider(names_from = TrialType,values_from = mean_readRT)
 answer_rt_type_wider <- trial_type_means %>%
   select(ParticipantId, Condition, TrialType, mean_answerRT) %>%
-  pivot_wider(names_from = TrialType,values_from = mean_answerRT, names_prefix="Type")
-
+  pivot_wider(names_from = TrialType,values_from = mean_answerRT)
 write.csv(read_rt_type_wider, file = "readtypeRTs.csv", row.names = F)
 write.csv(answer_rt_type_wider, file = "answertypeRTs.csv", row.names = F)
 
-#READ RTs
 
-#make the little plot
+#### READ RTs ####
+
+#make some plots
+
+#just condition main effect
+readplot1 <- rt_data_no_outliers %>% 
+   group_by(ParticipantId, Condition) %>% 
+   summarize(overallmean = mean(readRT)) %>% 
+   group_by(Condition) %>% 
+   summarize(overall_condition_mean = mean(overallmean), 
+             se = std.error(overallmean), 
+             n = n(), 
+             CI = qt(0.975,df=n-1)*se) 
+
+ ggplot(readplot1, aes(Condition, 
+                       overall_condition_mean, 
+                       group = 1, 
+                       ymin = overall_condition_mean - CI, 
+                       ymax = overall_condition_mean + CI)) + 
+   theme_classic() +  
+   geom_point(size = 4) + 
+   geom_errorbar(width = .15, size = 0.85) +  
+   geom_line(size = 0.85) + 
+   labs(y = "Reading RTs (ms)", title = "Read RTs") 
+
+#make a little plot using wide format
 superbPlot(read_rt_type_wider,
     BSFactors   = "Condition", 
     WSFactors   = "QuestionType(3)", 
@@ -314,21 +244,46 @@ theme_classic() +
 facet_wrap(vars(QuestionType))+
 labs(y = "Reading RTs (ms)", title = "Read RTs")
 
-read_rt_type_anova <- ezANOVA(trial_type_means,
-                              dv = mean_readRT,
-                              wid = ParticipantId,
-                              within = TrialType,
-                              between = Condition,
-                              type = 3,
-                              detailed = TRUE,
-                              return_aov = T
+read_rt_type_anova <- aov_ez(id = "ParticipantId",
+                             dv = "mean_readRT",
+                             data = trial_type_means,
+                              within = "TrialType",
+                              between = "Condition",
+                             anova_table = list(es = "pes") #might want to double-check these
 )
 
-#get the partial eta-squared too
-aovEffectSize(read_rt_type_anova, effectSize = "pes")$ANOVA
+read_rt_type_anova
 
-#ANSWER RTx
+#posthoc test for trial type
+pairs(emmeans(read_rt_type_anova, "TrialType"), adjust = "Tukey")
+#Question Type 2 slower than Type 1, marginally slower than Type 3 (for reading times)
 
+
+#### ANSWER RTs ####
+
+#make some plots
+
+#just condition main effect
+answerplot1 <- rt_data_no_outliers %>% 
+   group_by(ParticipantId, Condition) %>% 
+   summarize(overallmean = mean(AnswerRT)) %>% 
+   group_by(Condition) %>% 
+   summarize(overall_condition_mean = mean(overallmean), 
+             se = std.error(overallmean), 
+             n = n(), 
+             CI = qt(0.975,df=n-1)*se) 
+
+ ggplot(readplot1, aes(Condition, 
+                       overall_condition_mean, 
+                       group = 1, 
+                       ymin = overall_condition_mean - CI, 
+                       ymax = overall_condition_mean + CI)) + 
+   theme_classic() +  
+   geom_point(size = 4) + 
+   geom_errorbar(width = .15, size = 0.85) +  
+   geom_line(size = 0.85) + 
+   labs(y = "Answering RTs (ms)", title = "Answer RTs") 
+ 
 #make the little plot
 superbPlot(answer_rt_type_wider,
     BSFactors   = "Condition", 
@@ -348,20 +303,148 @@ theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
 facet_wrap(vars(QuestionType))+
 labs(y = "Answering RTs (ms)", title = "Answer RTs")
 
-answer_rt_type_anova <- ezANOVA(trial_type_means,
-                              dv = mean_answerRT,
-                              wid = ParticipantId,
-                              within = TrialType,
-                              between = Condition,
-                              type = 3,
-                              detailed = TRUE,
-                              return_aov = T
+answer_rt_type_anova <- aov_ez(id = "ParticipantId",
+                             dv = "mean_answerRT",
+                             data = trial_type_means,
+                              within = "TrialType",
+                              between = "Condition",
+                             anova_table = list(es = "pes") #might want to double-check these
 )
 
-#get the partial eta-squared too
-aovEffectSize(answer_rt_type_anova, effectSize = "pes")$ANOVA
+answer_rt_type_anova
+
+#posthoc test for trial type
+pairs(emmeans(answer_rt_type_anova, "TrialType"), adjust = "Tukey")
+#Question Type 3 much faster than Type 1/Type 2 (this is answering times)
+
+ref <- emmeans(answer_rt_type_anova,~Condition|TrialType)
+
+pairs(ref, adjust = "Tukey")
+
+#plot and interaction suggests that the conditions have different effects for different
+#question types. posthoc tests indicate a difference between VR and VRMonitor for QType 1
+
 
 
 
 ```
+
+<!-- ## Compare conditions using individual questions -->
+
+<!-- ```{r} -->
+
+<!-- #compare read times (should be no differences of condition) -->
+<!-- #compare answer times (potentially a difference) -->
+
+<!-- # first, make .csv files in wide format to double check in statview -->
+<!-- read_rt_wider <- rt_data_no_outliers %>% -->
+<!--   select(ParticipantId, Condition, TrialName, readRT) %>% -->
+<!--   pivot_wider(names_from = TrialName,values_from = readRT) %>% -->
+<!--   mutate(noutliers = rowSums(is.na(across(3:19)))) -->
+
+<!-- answer_rt_wider <- rt_data_no_outliers %>% -->
+<!--   select(ParticipantId, Condition, TrialName, AnswerRT) %>% -->
+<!--   pivot_wider(names_from = TrialName,values_from = AnswerRT) %>% -->
+<!--   mutate(noutliers = rowSums(is.na(across(3:19))), -->
+<!--          mean_all = rowMeans(across(3:19), na.rm = T)) -->
+
+<!-- write.csv(read_rt_wider, file = "readRTs.csv", row.names = F) -->
+<!-- write.csv(answer_rt_wider, file = "answerRTs.csv", row.names = F) -->
+
+
+<!-- #within ANOVA can't run with missing cells, so remove participants that had outliers removed -->
+<!-- #this loses a lot of data. would probably be better to replace outliers with means, but  -->
+<!-- #i figure we don't really want to use individual question as the within variable anyway -->
+<!-- #see below for analysis with question TYPE as the within variable -->
+<!-- rt_data_no_outliers2 <- rt_data_no_outliers %>% -->
+<!--   group_by(ParticipantId) %>% -->
+<!--   filter(n() > 16) -->
+
+<!-- #READING RTs -->
+
+<!-- #make a little plot -->
+<!-- readplot1 <- rt_data_no_outliers2 %>% -->
+<!--   group_by(ParticipantId, Condition) %>% -->
+<!--   summarize(overallmean = mean(readRT)) %>% -->
+<!--   group_by(Condition) %>% -->
+<!--   summarize(overall_condition_mean = mean(overallmean), -->
+<!--             se = std.error(overallmean), -->
+<!--             n = n(), -->
+<!--             CI = qt(0.975,df=n-1)*se) -->
+
+<!-- ggplot(readplot1, aes(Condition, -->
+<!--                       overall_condition_mean, -->
+<!--                       group = 1, -->
+<!--                       ymin = overall_condition_mean - CI, -->
+<!--                       ymax = overall_condition_mean + CI)) + -->
+<!--   theme_classic() +  -->
+<!--   geom_point(size = 4) + -->
+<!--   geom_errorbar(width = .15, size = 0.85) +  -->
+<!--   geom_line(size = 0.85) + -->
+<!--   labs(y = "Reading RTs (ms)", title = "Read RTs") -->
+
+
+<!-- read_rt_anova <- ezANOVA(rt_data_no_outliers2, -->
+<!--                       dv = readRT, -->
+<!--                       wid = ParticipantId, -->
+<!--                       within = TrialName, -->
+<!--                       between = Condition, -->
+<!--                       type = 3, -->
+<!--                       detailed = TRUE, -->
+<!--                       return_aov = T -->
+<!-- ) -->
+<!-- #get the partial eta-squared too -->
+<!-- aovEffectSize(read_rt_anova, effectSize = "pes")$ANOVA -->
+
+<!-- #no significant effect of condition on read times -->
+
+<!-- #ANSWERING RTs -->
+
+<!-- #make a little plot -->
+<!-- answerplot1 <- rt_data_no_outliers2 %>% -->
+<!--   group_by(ParticipantId, Condition) %>% -->
+<!--   summarize(overallmean = mean(AnswerRT)) %>% -->
+<!--   group_by(Condition) %>% -->
+<!--   summarize(overall_condition_mean = mean(overallmean), -->
+<!--             se = std.error(overallmean), -->
+<!--             n = n(), -->
+<!--             CI = qt(0.975,df=n-1)*se) -->
+
+<!-- ggplot(answerplot1, aes(Condition, -->
+<!--                       overall_condition_mean, -->
+<!--                       group = 1, -->
+<!--                       ymin = overall_condition_mean - CI, -->
+<!--                       ymax = overall_condition_mean + CI)) + -->
+<!--   theme_classic() +  -->
+<!--   geom_point(size = 4) + -->
+<!--   geom_errorbar(width = .15, size = 0.85) +  -->
+<!--   geom_line(size = 0.85) + -->
+<!--   labs(y = "Answering RTs (ms)", title = "Answer RTs") -->
+
+<!-- answer_rt_anova <- ezANOVA(rt_data_no_outliers2, -->
+<!--                       dv = AnswerRT, -->
+<!--                       wid = ParticipantId, -->
+<!--                       within = TrialName, -->
+<!--                       between = Condition, -->
+<!--                       type = 3, -->
+<!--                       detailed = TRUE, -->
+<!--                       return_aov = T -->
+<!-- ) -->
+<!-- aovEffectSize(answer_rt_anova, effectSize = "pes")$ANOVA -->
+
+<!-- #Post-hoc tests -->
+<!-- #Remove Within Factor of TrialName (17 repeated question levels), causes problems with emmeans? -->
+<!-- answer_rt_anova2 <- ezANOVA(rt_data_no_outliers2, -->
+<!--                       dv = AnswerRT, -->
+<!--                       wid = ParticipantId, -->
+<!--                       #within = TrialName,  -->
+<!--                       between = Condition, -->
+<!--                       type = 3, -->
+<!--                       detailed = F, -->
+<!--                       return_aov = T -->
+<!-- ) -->
+<!-- emm.RT.answer <- emmeans(answer_rt_anova2$aov, ~ Condition) -->
+<!-- emm.RT.answer -->
+<!-- pairs(emm.RT.answer, adjust = "Tukey") -->
+<!-- ``` -->
 
