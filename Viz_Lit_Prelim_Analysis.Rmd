@@ -252,7 +252,7 @@ read_rt_type_anova <- aov_ez(id = "ParticipantId",
                              anova_table = list(es = "pes") #might want to double-check these
 )
 
-read_rt_type_anova
+kable(nice(read_rt_type_anova))
 
 #posthoc test for trial type
 pairs(emmeans(read_rt_type_anova, "TrialType"), adjust = "Tukey")
@@ -311,7 +311,7 @@ answer_rt_type_anova <- aov_ez(id = "ParticipantId",
                              anova_table = list(es = "pes") #might want to double-check these
 )
 
-answer_rt_type_anova
+kable(nice(answer_rt_type_anova))
 
 #posthoc test for trial type
 pairs(emmeans(answer_rt_type_anova, "TrialType"), adjust = "Tukey")
