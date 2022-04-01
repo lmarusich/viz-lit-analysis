@@ -1,0 +1,371 @@
+---
+title: "Visualization Literacy Analysis"
+author: "Laura Marusich, Jonathan Bakdash"
+date: "3/22/2022"
+output: pdf_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix, emmeans, afex, readxl,
+               irr
+               # knitr, rmarkdown, yaml, tidyverse, plyr, psych, foreign, stats, lme4,
+               #              RColorBrewer, pals, car, ez, devtools, MBESS, apaTables, gridExtra, plyr,
+               #              cowplot, Rmisc, afex, lsmeans, emmeans, ggsignif, effsize, TOSTER
+) 
+
+knitr::opts_chunk$set(echo = TRUE, tidy = FALSE)
+options(width = 90)
+
+dir.create(file.path(getwd(),"/plots"), showWarnings = F)
+```
+
+
+## Read in data files
+
+```{r, warning=F, message=F}
+
+#grab files from google drive (only have to do this once)
+# source("getFromGoogleDrive.R")
+
+#get the first 6? characters of each data file
+#get unique values of these
+# this is list of subject ids
+
+raw_file_names <- list.files("AccData")
+first_six <- substr(raw_file_names, 1, 6)
+sub_ids <- unique(first_six)
+
+
+# fast_RTs <- data.frame(ParticipantId = character(),
+#                        TrialName = character(),
+#                        type = character(),
+#                        time = numeric()
+# )
+
+all_data <- NULL
+
+for (i in 1:length(sub_ids)){
+  
+  if (grepl("~$", sub_ids[i], fixed = T)){
+    next
+  }
+  
+  temp_file1 <- read_xlsx(paste0("AccData/", sub_ids[i], "_1.xlsx")) %>%
+    slice(1:17) %>%
+    select(-starts_with("Order")) %>%
+    rename(correct = 8)
+  
+  temp_file2 <- read_xlsx(paste0("AccData/", sub_ids[i], "_2.xlsx")) %>%
+    slice(1:17) %>%
+     select(-starts_with("Order")) %>%
+    rename(correct = 8)
+  
+  new_temp <- temp_file1 %>%
+    bind_cols(temp_file2$correct) %>%
+    rename(Correct_1 = correct, Correct_2 = "...9") %>%
+    mutate(AnswerRT = TimeToBeginInput - TimeToReadQuestion)
+
+
+  all_data <- all_data %>%
+    bind_rows(new_temp)
+  
+}
+
+all_data <- all_data %>%
+  rename(readRT = TimeToReadQuestion, totalRT = TimeToBeginInput)
+
+#read in trialtype key (I created this from an early version of the previous paper)
+trial_type_key <- read.csv("trial_type_key.csv", stringsAsFactors = F)
+
+all_data <- all_data %>%
+  mutate(TrialType = trial_type_key$TrialType[match(TrialName, trial_type_key$TrialName)]) %>%
+  mutate(TrialType = paste0("Type",TrialType))
+
+
+```
+
+## Basic checks
+```{r}
+
+#how many participants per condition
+all_data %>%
+  group_by(ParticipantId, Condition) %>%
+  summarize(ntrials = n()) %>%
+  group_by(Condition) %>%
+  summarize(nsubs = n()) %>%
+  kable()
+
+#why is the balance so off?
+
+
+```
+
+## Remove outliers based on RT
+
+```{r}
+
+#removing on trial-by-trial basis
+
+
+#remove answerRTs below 2000ms first
+all_data_remove <- all_data %>%
+  filter(AnswerRT >= 2000)
+dim(all_data)[1]
+dim(all_data_remove)[1]
+#drops 7 trials
+
+rt_data_summary <- all_data %>%
+  group_by(TrialName) %>%
+  summarize(meanAnswerRT = mean(AnswerRT, na.rm = T),
+            sdAnswerRT = sd(AnswerRT, na.rm = T),
+            UB = meanAnswerRT + 3*sdAnswerRT,
+            LB = meanAnswerRT - 3*sdAnswerRT)
+rt_data_summary
+
+all_data_no_outliers <- all_data_remove %>%
+  group_by(TrialName) %>%
+  filter((!(abs(AnswerRT - mean(AnswerRT)) > 3*sd(AnswerRT))))
+dim(all_data_no_outliers)[1]
+#drops 47 more trials
+
+all_data_no_outliers %>%
+  group_by(ParticipantId) %>%
+  summarize(ntrials = n()) %>%
+  with(hist(ntrials, breaks = 0:17))
+
+##maybe consider replacing outliers with means instead of removing them?
+
+```
+
+
+
+## Compare RTs for conditions and question type (three types: identify, relate, predict)
+
+```{r}
+#compare read times (should be no differences of condition)
+#compare answer times (potentially a difference) 
+
+
+trial_type_means <- all_data_no_outliers %>%
+  group_by(ParticipantId, Condition, TrialType) %>%
+  summarize(mean_readRT = mean(readRT),
+            mean_answerRT = mean(AnswerRT),
+            n = n())
+
+# first, make .csv files in wide format to double check in statview
+read_rt_type_wider <- trial_type_means %>%
+  select(ParticipantId, Condition, TrialType, mean_readRT) %>%
+  pivot_wider(names_from = TrialType,values_from = mean_readRT)
+answer_rt_type_wider <- trial_type_means %>%
+  select(ParticipantId, Condition, TrialType, mean_answerRT) %>%
+  pivot_wider(names_from = TrialType,values_from = mean_answerRT)
+write.csv(read_rt_type_wider, file = "readtypeRTs.csv", row.names = F)
+write.csv(answer_rt_type_wider, file = "answertypeRTs.csv", row.names = F)
+
+
+#### READ RTs ####
+
+#make some plots
+
+#just condition main effect
+readplot1 <- all_data_no_outliers %>% 
+   group_by(ParticipantId, Condition) %>% 
+   summarize(overallmean = mean(readRT)) %>% 
+   group_by(Condition) %>% 
+   summarize(overall_condition_mean = mean(overallmean), 
+             se = std.error(overallmean), 
+             n = n(), 
+             CI = qt(0.975,df=n-1)*se) 
+
+ ggplot(readplot1, aes(Condition, 
+                       overall_condition_mean, 
+                       group = 1, 
+                       ymin = overall_condition_mean - CI, 
+                       ymax = overall_condition_mean + CI)) + 
+   theme_classic() +  
+   geom_point(size = 4) + 
+   geom_errorbar(width = .15, size = 0.85) +  
+   geom_line(size = 0.85) + 
+   labs(y = "Reading RTs (ms)", title = "Read RTs") 
+
+#make a little plot using wide format
+superbPlot(read_rt_type_wider,
+    BSFactors   = "Condition", 
+    WSFactors   = "QuestionType(3)", 
+    variables   = c("Type1", "Type2", "Type3"),
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "difference"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "QuestionType")
+) + 
+theme_classic() + 
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+facet_wrap(vars(QuestionType))+
+labs(y = "Reading RTs (ms)", title = "Read RTs")
+
+read_rt_type_anova <- aov_ez(id = "ParticipantId",
+                             dv = "mean_readRT",
+                             data = trial_type_means,
+                              within = "TrialType",
+                              between = "Condition",
+                             anova_table = list(es = "pes") #might want to double-check these
+)
+
+kable(nice(read_rt_type_anova))
+
+#posthoc test for trial type
+pairs(emmeans(read_rt_type_anova, "TrialType"), adjust = "Tukey")
+#Question Type 2 slower than Type 1, marginally slower than Type 3 (for reading times)
+
+
+#### ANSWER RTs ####
+
+#make some plots
+
+#just condition main effect
+answerplot1 <- all_data_no_outliers %>% 
+   group_by(ParticipantId, Condition) %>% 
+   summarize(overallmean = mean(AnswerRT)) %>% 
+   group_by(Condition) %>% 
+   summarize(overall_condition_mean = mean(overallmean), 
+             se = std.error(overallmean), 
+             n = n(), 
+             CI = qt(0.975,df=n-1)*se) 
+
+ ggplot(answerplot1, aes(Condition, 
+                       overall_condition_mean, 
+                       group = 1, 
+                       ymin = overall_condition_mean - CI, 
+                       ymax = overall_condition_mean + CI)) + 
+   theme_classic() +  
+   geom_point(size = 4) + 
+   geom_errorbar(width = .15, size = 0.85) +  
+   geom_line(size = 0.85) + 
+   labs(y = "Answering RTs (ms)", title = "Answer RTs") 
+ 
+#make the little plot
+superbPlot(answer_rt_type_wider,
+    BSFactors   = "Condition", 
+    WSFactors   = "QuestionType(3)", 
+    variables   = c("Type1", "Type2", "Type3"),
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "difference"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "QuestionType")
+) + 
+theme_classic() + 
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+facet_wrap(vars(QuestionType))+
+labs(y = "Answering RTs (ms)", title = "Answer RTs")
+
+answer_rt_type_anova <- aov_ez(id = "ParticipantId",
+                             dv = "mean_answerRT",
+                             data = trial_type_means,
+                              within = "TrialType",
+                              between = "Condition",
+                             anova_table = list(es = "pes") #might want to double-check these
+)
+
+kable(nice(answer_rt_type_anova))
+
+#posthoc test for trial type
+pairs(emmeans(answer_rt_type_anova, "TrialType"), adjust = "Tukey")
+#Question Type 3 much faster than Type 1/Type 2 (this is answering times)
+
+ref <- emmeans(answer_rt_type_anova,~Condition|TrialType)
+
+pairs(ref, adjust = "Tukey")
+
+#plot and interaction suggests that the conditions have different effects for different
+#question types. posthoc tests indicate a difference between VR and VRMonitor for QType 1
+
+
+```
+
+## Accuracy
+```{r}
+# do interrater reliability?
+# account for non-independence? idk
+icc(select(ungroup(all_data_no_outliers), Correct_1, Correct_2))
+
+all_data_no_outliers <- all_data_no_outliers %>%
+  rowwise() %>%
+  mutate(Correct_Avg = mean(c(Correct_1, Correct_2)))
+
+#just condition main effect
+accplot1 <- all_data_no_outliers %>% 
+   group_by(ParticipantId, Condition) %>% 
+   summarize(overallmean = mean(Correct_Avg)) %>% 
+   group_by(Condition) %>% 
+   summarize(overall_condition_mean = mean(overallmean), 
+             se = std.error(overallmean), 
+             n = n(), 
+             CI = qt(0.975,df=n-1)*se) 
+
+ ggplot(accplot1, aes(Condition, 
+                       overall_condition_mean, 
+                       group = 1, 
+                       ymin = overall_condition_mean - CI, 
+                       ymax = overall_condition_mean + CI)) + 
+   theme_classic() +  
+   geom_point(size = 4) + 
+   geom_errorbar(width = .15, size = 0.85) +  
+   geom_line(size = 0.85) + 
+   labs(y = "Accuracy", title = "Accuracy") 
+
+trial_type_mean_acc <- all_data_no_outliers %>%
+  group_by(ParticipantId, Condition, TrialType) %>%
+  summarize(mean_acc = mean(Correct_Avg),
+            n = n())
+
+acc_type_wider <- trial_type_mean_acc %>%
+  select(ParticipantId, Condition, TrialType, mean_acc) %>%
+  pivot_wider(names_from = TrialType,values_from = mean_acc)
+write.csv(acc_type_wider, file = "typeacc.csv", row.names = F)
+
+#make the little plot
+superbPlot(acc_type_wider,
+    BSFactors   = "Condition", 
+    WSFactors   = "QuestionType(3)", 
+    variables   = c("Type1", "Type2", "Type3"),
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "difference"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "QuestionType")
+) + 
+theme_classic() + 
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+facet_wrap(vars(QuestionType))+
+labs(y = "Accuracy", title = "Accuracy")
+
+acc_type_anova <- aov_ez(id = "ParticipantId",
+                             dv = "mean_acc",
+                             data = trial_type_mean_acc,
+                              within = "TrialType",
+                              between = "Condition",
+                             anova_table = list(es = "pes") #might want to double-check these
+)
+
+kable(nice(acc_type_anova))
+
+
+
+```
+
