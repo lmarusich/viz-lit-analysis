@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix, emmeans, afex, readxl,
-               irr
+               irr, cccrm #lcc
                # knitr, rmarkdown, yaml, tidyverse, plyr, psych, foreign, stats, lme4,
                #              RColorBrewer, pals, car, ez, devtools, MBESS, apaTables, gridExtra, plyr,
                #              cowplot, Rmisc, afex, lsmeans, emmeans, ggsignif, effsize, TOSTER
@@ -224,8 +224,6 @@ kable(nice(read_rt_type_anova))
 
 #posthoc test for trial type
 pairs(emmeans(read_rt_type_anova, "TrialType"), adjust = "Tukey")
-#Question Type 2 slower than Type 1, marginally slower than Type 3 (for reading times)
-
 
 #### ANSWER RTs ####
 
@@ -297,9 +295,69 @@ pairs(ref, adjust = "Tukey")
 
 ## Accuracy
 ```{r}
-# do interrater reliability?
-# account for non-independence? idk
-icc(select(ungroup(all_data_no_outliers), Correct_1, Correct_2))
+# do interrater reliability: Fits each trial as independent with two raters
+# That is, this ignores participants (complete pooling, which may be problematic)
+# 1410 trials from N = 85 participants, not exactly 17 trials per participant
+# b/c of excluded trials
+  irr::icc(select(ungroup(all_data_no_outliers), Correct_1, Correct_2))
+
+  head(all_data_no_outliers)
+
+# account for non-independence? 
+  #Data has to be narrow
+#https://cran.r-project.org/web/packages/cccrm/index.html
+icc.dat.narrow <- all_data_no_outliers %>% 
+                    pivot_longer(cols = c('Correct_1', 'Correct_2'))
+
+colnames(icc.dat.narrow)[10] <- "Rater"
+icc.dat.narrow$Rater <- as.factor(icc.dat.narrow$Rater)
+
+#Longitudinal concordance for two raters
+#By all 17 trials (by items)
+ icc.rm.trial.name <- ccclon(icc.dat.narrow, 
+                             "value", "ParticipantId", "TrialName", "Rater")
+  icc.rm.trial.name
+  summary(icc.rm.trial.name)
+  
+#By time using trial numbers (by time)
+ icc.rm.trial.number <- ccclon(icc.dat.narrow, 
+                               "value", "ParticipantId", "TrialNumber", "Rater" )
+ icc.rm.trial.number
+ summary(icc.rm.trial.number)
+
+
+# A similar approach            
+#https://peerj.com/articles/9850/
+# test.mod <- 
+#  lcc(data = hue, subject = "Fruit", resp = "H_mean",
+#                  method = "Method", time = "Time", qf = 2, qr = 1)
+# summary(test.mod) 
+
+# icc.dat.narrow$ParticipantId <- as.factor(icc.dat.narrow$ParticipantId)
+# icc.dat.narrow$Rater <- as.factor(icc.dat.narrow$Rater)
+# 
+# 
+# icc.rm.another <- 
+# lcc(data = icc.dat.narrow, 
+#       subject = "ParticipantId", 
+#       resp = "value",
+#       method = "Rater",
+#       time = "TrialNumber", 
+#       qf = 1, #polynomial trends (1 to 3)
+#       qr = 0, #random effects (0 is random int only, default)
+#       components = TRUE)
+# 
+# #LCC = Longitudinal Concordance Correlation
+# #LPC = Longitudinal Pearson Correlation
+# #LA  = Longitudinal Accuracy
+# icc.rm.another
+# 
+# #Model coefficients near 1 but only the the last one has a correctly
+# #estimated model. Maybe because it's more or less flat over TrialNumber? 
+# lccPlot(icc.rm.another, type = "lpc")  
+# lccPlot(icc.rm.another, type = "lcc")   
+# lccPlot(icc.rm.another, type = "la")   
+
 
 all_data_no_outliers <- all_data_no_outliers %>%
   rowwise() %>%
