@@ -1,0 +1,669 @@
+---
+title: "Visualization Literacy"
+author: "Jon Bakdash"
+date: "May 10, 2019"
+output: 
+  pdf_document: 
+    keep_tex: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(knitr, rmarkdown, yaml, tidyverse, plyr, psych, foreign, stats, lme4,
+               RColorBrewer, pals, car, ez, devtools, MBESS, apaTables, gridExtra, plyr,
+               cowplot, Rmisc, afex, lsmeans, emmeans, ggsignif, effsize, TOSTER) 
+
+knitr::opts_chunk$set(echo = TRUE, tidy = FALSE)
+options(width = 90)
+
+dir.create(file.path(getwd(),"/plots"), showWarnings = F)
+
+sessionInfo()
+
+#Functions in separate R files
+source(file = "multiplot.R")
+source(file = "summarySEwithin.R")
+source(file = "normDataWithin.R")
+
+data <- read.spss(file = "Raw Data.sav", to.data.frame = TRUE)
+#head(data)
+```
+
+### 1. ANOVAs: Reproduce SPSS results
+#### a)2D graph lit
+##### Accuracy
+```{r, echo = TRUE}
+#ANOVA: 2 Between Display (VR or desktop) x 3 Within for 2D stimuli (for three types of questions) 
+display.acc2D <- data.frame(cbind(data$Participant, data$M_Condition, 
+                                  data$TwoDtype1_acc, data$TwoDtype2_acc, data$TwoDtype3_acc))
+
+colnames(display.acc2D) <- c("Participant", "M_Condition", 
+                             "TwoDtype1_acc", "TwoDtype2_acc", "TwoDtype3_acc")
+
+
+#Wide to narrow 
+#M_condition = 2 is VR
+#            = 1 is desktop monitor
+display.acc2D.narrow <- gather(display.acc2D, Dtype, acc, c(TwoDtype1_acc, TwoDtype2_acc, TwoDtype3_acc))
+display.acc2D.narrow$M_Condition <- as.factor(display.acc2D.narrow$M_Condition)
+levels(display.acc2D.narrow$M_Condition) <- c("Desktop", "VR")
+head(display.acc2D.narrow)
+
+#Not even close to normal, hitting ceiling 
+hist(display.acc2D.narrow$acc)
+range(display.acc2D.narrow$acc)
+
+summary.acc2D <- summarySEwithin(display.acc2D.narrow, 
+                                         measurevar  = "acc", 
+                                         withinvars  = "Dtype", 
+                                         betweenvars = "M_Condition", 
+                                         idvar       = "Participant")
+summary.acc2D
+
+#Fix Within SE for Question Type 1 desktop
+Acc.2D.plot <- ggplot(summary.acc2D, aes(Dtype, acc, fill = M_Condition)) + 
+                      geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                      geom_errorbar(position = position_dodge(),
+                                    aes(ymin = acc - se, 
+                                        ymax = acc + se)) 
+set.seed(4231)
+ Acc.2D.plot +
+      geom_jitter(data = display.acc2D.narrow, 
+                 aes(Dtype, acc, alpha = 0.4), width = 0.4)
+
+#ANOVA to match SPSS
+#Santiy checks for uncorrected df
+  #k = number of repeated measures (3)
+  #N = sample size (22)
+  #numerator for within factor (Dytpe): df = (k-1) = 2
+  #numerator for between factor (Monitor): df = (N - 2) = 20
+  #error df for main effects = (k-1)*(N-2) = 2*20 = 40
+
+#F-values match SPSS
+#M_condition: F = 0.003
+#Dtype:       F = 6.815 (large effect)
+ 
+#Generalized eta-squared guidelines
+ #Small:  Eta-squared = 0.01
+ #Medium: Eta-squared = 0.06
+ #Large:  Eta-squared = 0.14
+ 
+ANOVA.2D.acc <- 
+aov_ez("Participant", "acc", display.acc2D.narrow, 
+       between = "M_Condition", 
+       within = "Dtype", 
+       return = afex_options("return_aov")#, 
+       #anova_table = list(correction = "none") #No GG correction
+       )
+
+ANOVA.2D.acc
+
+Acc.2D.qtype <- emmeans(ANOVA.2D.acc, ~ Dtype) 
+pairs(Acc.2D.qtype)
+```
+
+##### Response times
+```{r, echo = TRUE}
+#ANOVA: 2 Between Display (VR or desktop) x 3 Within for 2D stimuli (for three types of questions) 
+display.RT2D <- data.frame(cbind(data$Participant, data$M_Condition, 
+                                 data$X.2DTimeInput_IDm, data$X.2DTimeInput_Relm, data$X.2DTimeInput_Predm))
+
+colnames(display.RT2D) <- c("Participant", "M_Condition", 
+                            "Type1_RT", "Type2_RT", "Type3_RT")
+
+
+#Wide to narrow 
+#M_condition = 2 is VR
+#            = 1 is desktop monitor
+display.RT2D.narrow <- gather(display.RT2D, Dtype, RT, c(Type1_RT, Type2_RT, Type3_RT))
+display.RT2D.narrow$M_Condition <- as.factor(display.RT2D.narrow$M_Condition)
+levels(display.RT2D.narrow$M_Condition) <- c("Desktop", "VR")
+head(display.RT2D.narrow)
+
+#Somewhat normal
+hist(display.RT2D.narrow$RT)
+
+#Ladder of transformations
+  #Introduces positive skew 
+  hist(1/display.RT2D.narrow$RT)
+  
+  #Better
+  hist(log(display.RT2D.narrow$RT))
+
+range(display.RT2D.narrow$RT)
+
+
+
+summary.RT2D <- summarySEwithin(display.RT2D.narrow, 
+                                         measurevar  = "RT", 
+                                         withinvars  = "Dtype", 
+                                         betweenvars = "M_Condition", 
+                                         idvar       = "Participant")
+summary.RT2D
+
+
+RT.2D.plot <- ggplot(summary.RT2D, aes(Dtype, RT, fill = M_Condition)) + 
+                      geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                      geom_errorbar(position = position_dodge(),
+                                    aes(ymin = RT - se, 
+                                        ymax = RT + se)) 
+set.seed(4231)
+RT.2D.plot +
+      geom_jitter(data = display.RT2D.narrow, 
+                 aes(Dtype, RT, alpha = 0.4), width = 0.4)
+
+
+#F-values match SPSS
+#M_condition: F = 1.639 
+#Dtype:       F = 43.118 (very large effect)
+
+ANOVA.2D.RT <- 
+aov_ez("Participant", "RT", display.RT2D.narrow, 
+       between = "M_Condition", 
+       within = "Dtype", 
+       return = afex_options("return_aov")#, 
+       #anova_table = list(correction = "none") #No GG correction
+       )
+
+ANOVA.2D.RT
+
+RT.2D.qtype <- emmeans(ANOVA.2D.RT, ~ Dtype) 
+pairs(RT.2D.qtype)
+```
+
+#### b)3D graph lit
+###### Accuracy
+```{r, echo = TRUE}
+#ANOVA: 2 Between Display (VR or desktop) x 3 Within for 3D stimuli (for three types of questions) 
+display.acc3D <- data.frame(cbind(data$Participant, data$M_Condition, 
+                                  data$ThreeDtype1_acc, data$ThreeDtype2_acc, data$ThreeDtype3_acc))
+
+colnames(display.acc3D) <- c("Participant", "M_Condition", 
+                             "ThreeDtype1_acc", "ThreeDtype2_acc", "ThreeDtype3_acc")
+
+
+#Wide to narrow 
+#M_condition = 2 is VR
+#            = 1 is desktop monitor
+display.acc3D.narrow <- gather(display.acc3D, Dtype, acc, c(ThreeDtype1_acc, ThreeDtype2_acc, ThreeDtype3_acc))
+display.acc3D.narrow$M_Condition <- as.factor(display.acc3D.narrow$M_Condition)
+levels(display.acc3D.narrow$M_Condition) <- c("Desktop", "VR")
+head(display.acc3D.narrow)
+
+#Not even close to normal, hitting ceiling 
+hist(display.acc3D.narrow$acc)
+range(display.acc3D.narrow$acc)
+
+summary.acc3D <- summarySEwithin(display.acc3D.narrow, 
+                                         measurevar  = "acc", 
+                                         withinvars  = "Dtype", 
+                                         betweenvars = "M_Condition", 
+                                         idvar       = "Participant")
+summary.acc3D
+
+#Fix Within SE for Question Type 1 desktop
+Acc.3D.plot <- ggplot(summary.acc3D, aes(Dtype, acc, fill = M_Condition)) + 
+                      geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                      geom_errorbar(position = position_dodge(),
+                                    aes(ymin = acc - se, 
+                                        ymax = acc + se)) 
+set.seed(4231)
+ Acc.3D.plot +
+      geom_jitter(data = display.acc3D.narrow, 
+                 aes(Dtype, acc, alpha = 0.4), width = 0.4)
+
+
+#F-values match SPSS
+#M_condition: F = 0.081
+#Dtype:       F = 6.549 (very close to a large effect)
+
+ANOVA.3D.acc <- 
+aov_ez("Participant", "acc", display.acc3D.narrow, 
+       between = "M_Condition", 
+       within = "Dtype", 
+       return = afex_options("return_aov")#, 
+       #anova_table = list(correction = "none") #No GG correction
+       )
+ANOVA.3D.acc
+
+Acc.3D.qtype <- emmeans(ANOVA.3D.acc, ~ Dtype) 
+pairs(Acc.3D.qtype)
+
+#Effect sizes
+#90% CI for ANOVA can be equivalent to 95% CI in other tests (e.g., t-tests) 
+#because F is a non-central distribution
+#Ref: http://www.statpower.net/Steiger%20Biblio/Steiger04.pdf
+#Perm link: http://psycnet.apa.org/record/2004-14114-002
+
+#Confidence interveral for question type effect:
+#generalized eta-squared = 0.15
+get.ci.partial.eta.squared(F.value = ANOVA.3D.acc$anova_table$F[2], 
+                           df1 = ANOVA.3D.acc$anova_table$`num Df`[2], 
+                           df2 = ANOVA.3D.acc$anova_table$`den Df`[2], 
+                           conf.level = .90)
+```
+
+##### Response times
+```{r, echo = TRUE}
+#ANOVA: 2 Between Display (VR or desktop) x 3 Within for 3D stimuli (for three types of questions) 
+display.RT3D <- data.frame(cbind(data$Participant, data$M_Condition, 
+                                 data$X.3DTimeInput_IDm, data$X.3DTimeInput_Relm, data$X.3DTimeInput_Predm))
+
+colnames(display.RT3D) <- c("Participant", "M_Condition", 
+                            "Type1_RT", "Type2_RT", "Type3_RT")
+
+
+#Wide to narrow 
+#M_condition = 2 is VR
+#            = 1 is desktop monitor
+display.RT3D.narrow <- gather(display.RT3D, Dtype, RT, c(Type1_RT, Type2_RT, Type3_RT))
+display.RT3D.narrow$M_Condition <- as.factor(display.RT3D.narrow$M_Condition)
+levels(display.RT3D.narrow$M_Condition) <- c("Desktop", "VR")
+head(display.RT3D.narrow)
+
+#Somewhat normal
+hist(display.RT3D.narrow$RT)
+
+#Ladder of transformations
+#Introduces positive skew 
+hist(1/display.RT3D.narrow$RT)
+
+#Better
+hist(log(display.RT3D.narrow$RT))
+
+range(display.RT3D.narrow$RT)
+
+
+
+summary.RT3D <- summarySEwithin(display.RT3D.narrow, 
+                                        measurevar  = "RT", 
+                                        withinvars  = "Dtype", 
+                                        betweenvars = "M_Condition", 
+                                        idvar       = "Participant")
+summary.RT3D
+
+
+RT.3D.plot <- ggplot(summary.RT3D, aes(Dtype, RT, fill = M_Condition)) + 
+  geom_bar(colour = "black", 
+           stat = "identity", 
+           position = position_dodge(), size = 0.35) +
+  geom_errorbar(position = position_dodge(),
+                aes(ymin = RT - se, 
+                    ymax = RT + se)) 
+set.seed(4231)
+RT.3D.plot +
+  geom_jitter(data = display.RT3D.narrow, 
+              aes(Dtype, RT, alpha = 0.4), width = 0.4)
+
+
+#ANOVA to match SPSS
+#Santiy checks for df
+#k = number of repeated measures (3)
+#N = sample size (22)
+#numerator for within factor (Dytpe): df = (k-1) = 2
+#numerator for between factor (Monitor): df = (N - 2) = 20
+#error df for main effects = (k-1)*(N-2) = 2*20 = 40
+
+#F-values match SPSS
+#M_condition: F = 6.853 (large effect)
+#Dtype:       F = 13.402 (very large effect)
+
+#ANOVA.3D.RT <- ezANOVA(data = display.RT3D.narrow, wid = Participant, dv = RT, 
+#                       within = Dtype, between = M_Condition, type = "III",
+#                       detailed = TRUE)
+
+#df are adjusted, but F, ges, and p-value are the same as ezANOVA
+#b/c of spericity correction 
+ANOVA.3D.RT <- 
+aov_ez("Participant", "RT", display.RT3D.narrow, 
+       between = "M_Condition", 
+       within = "Dtype", 
+       return = afex_options("return_aov")#, 
+       #anova_table = list(correction = "none")
+       )
+
+RT.3D.qtype <- emmeans(ANOVA.3D.RT, ~ Dtype)
+
+#Tukey post-hocs
+pairs(RT.3D.qtype)
+
+#Confidence interveral for display effect:
+#generalized eta-squared = 0.17
+get.ci.partial.eta.squared(F.value = ANOVA.3D.RT$anova_table$F[1], 
+                           df1 = ANOVA.3D.RT$anova_table$`num Df`[1], 
+                           df2 = ANOVA.3D.RT$anova_table$`den Df`[1], 
+                           conf.level = .90)
+
+
+#Confidence interveral for question type effect:
+#generalized eta-squared = 0.21
+get.ci.partial.eta.squared(F.value = ANOVA.3D.RT$anova_table$F[2], 
+                           df1 = ANOVA.3D.RT$anova_table$`num Df`[2], 
+                           df2 = ANOVA.3D.RT$anova_table$`den Df`[2], 
+                           conf.level = .90)
+
+
+
+```
+
+
+### 2. Compare effects for 2D vs 3D graphs/stimuli
+#### a) Accuracy and RT by display type (monitor vs. VR HMD)  
+##### 2D graph lit
+```{r, echo = TRUE}
+#Means and SEs for display factor *only*
+#Note N = 33 is incorrect, it's N = 11
+#Neverthelss, the dv and its sd, se, and ci are all correct
+summary.display.acc2D <- summarySE(display.acc2D.narrow, 
+                                   measurevar  = "acc", 
+                                   groupvars   = "M_Condition"
+                                   )
+summary.display.acc2D
+
+summary.display.RT2D <- summarySE(display.RT2D.narrow, 
+                                   measurevar  = "RT", 
+                                   groupvars   = "M_Condition"
+                                   )
+summary.display.RT2D
+
+#Bar graphs
+TwoD.Acc <-
+ggplot(summary.display.acc2D, aes(x = M_Condition, y = acc, fill = M_Condition)) + 
+    geom_bar(position = position_dodge(), colour = "black", stat="identity") +
+    geom_errorbar(aes(ymin = acc - se, ymax = acc + se),
+                  width=.2,                    # Width of the error bars
+                  position=position_dodge(.9)) +
+   scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+   xlab("Display") +
+   ylab("Accuracy") +
+   guides(fill=FALSE) +
+   #guides(fill=guide_legend(title="Display")) +
+   theme_bw(base_size = 12) 
+
+TwoD.RT <-
+ggplot(summary.display.RT2D, aes(x = M_Condition, y = RT/1000, fill = M_Condition)) + 
+    geom_bar(position = position_dodge(), colour = "black", stat="identity") +
+    geom_errorbar(aes(ymin = RT/1000 - se/1000, ymax = RT/1000 + se/1000),
+                  width=.2,                    # Width of the error bars
+                  position=position_dodge(.9)) +
+   scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+   xlab("Display") +
+   ylab("Response Time (seconds)") +
+   guides(fill=FALSE) +
+   #guides(fill=guide_legend(title="Display")) +
+   theme_bw(base_size = 12) 
+
+title <- ggdraw() + draw_label("2D Graphs (Experiment 1a)", fontface = 'bold')
+TwoD.Display <- ggdraw(plot_grid(plot_grid(TwoD.Acc, TwoD.RT, ncol = 2, align = 'h'),
+                     rel_widths=c(1, 0.2)))
+
+plot_grid(title, TwoD.Display, ncol = 1, rel_heights=c(0.1, 1))
+ggsave("FigX_TwoD_Display.pdf", width = 5, height = 5)
+dev.off()
+
+
+#Print in knitr
+# multiplot(TwoD.Acc, TwoD.RT, cols = 2)
+# 
+# #Save pdf of figure
+# pdf("FigX_TwoD_summary.pdf", width = 5, height = 5)
+# grid.arrange(TwoD.Acc, TwoD.RT, top = "2D Graphs", ncol = 2)
+# dev.off()
+```
+
+##### 3D graph lit
+```{r, echo = TRUE}
+#Means and SEs for display factor *only*
+#Note N = 33 is incorrect, it's N = 11
+#Neverthelss, the dv and its sd, se, and ci are all correct
+summary.display.acc3D <- summarySE(display.acc3D.narrow, 
+                                   measurevar  = "acc", 
+                                   groupvars   = "M_Condition"
+                                   )
+summary.display.acc3D
+
+summary.display.RT3D <- summarySE(display.RT3D.narrow, 
+                                   measurevar  = "RT", 
+                                   groupvars   = "M_Condition"
+                                   )
+summary.display.RT3D
+
+ThreeD.Acc <-
+ggplot(summary.display.acc3D, aes(x = M_Condition, y = acc, fill = M_Condition)) + 
+    geom_bar(position = position_dodge(), colour = "black", stat="identity") +
+    geom_errorbar(aes(ymin = acc - se, ymax = acc + se),
+                  width=.2,                    # Width of the error bars
+                  position=position_dodge(.9)) +
+   scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+   xlab("Display") +
+   ylab("Accuracy") +
+   guides(fill=FALSE) +
+   ylim(0, 1) +
+   #guides(fill=guide_legend(title="Display")) +
+   theme_bw(base_size = 12) 
+
+ThreeD.RT <-
+ggplot(summary.display.RT3D, aes(x = M_Condition, y = RT/1000, fill = M_Condition)) + 
+    geom_bar(position = position_dodge(), colour = "black", stat="identity") +
+    geom_errorbar(aes(ymin = RT/1000 - se/1000, ymax = RT/1000 + se/1000),
+                  width=.2,                    # Width of the error bars
+                  position=position_dodge(.9)) +
+   scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+   xlab("Display") +
+   ylab("Response Time (seconds)") +
+   guides(fill=FALSE) +
+   #guides(fill=guide_legend(title="Display")) +
+   theme_bw(base_size = 12) 
+
+title <- ggdraw() + draw_label("3D Graphs (Experiment 1b)", fontface = 'bold')
+ThreeD.Display <- ggdraw(plot_grid(plot_grid(ThreeD.Acc, ThreeD.RT, ncol = 2, align = 'h'),
+                     rel_widths=c(1, 0.2)))
+
+plot_grid(title, ThreeD.Display, ncol = 1, rel_heights=c(0.1, 1))
+ggsave("FigX_ThreeD_Display.pdf", width = 5, height = 5)
+dev.off()
+```
+
+#### b) Summary figures by question type  
+##### 2D graph lit
+```{r, echo = TRUE}
+#Add bars and * for sig post-hoc tests
+#Use Tukey HSD? 
+
+#Kludge to correctly make SE = 0 for 100% accuracy in Desktop, Question Type 1
+summary.acc2D$se[1] <- 0
+
+Acc.2D.qtype <- ggplot(summary.acc2D, aes(Dtype, acc, fill = M_Condition)) + 
+                       geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                       geom_errorbar(position = position_dodge(),
+                                    aes(ymin = acc - se, 
+                                        ymax = acc + se)) +
+                       scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+                       #guides(fill=guide_legend(title="Display")) +
+                       guides(fill=FALSE) +
+                       theme_bw(base_size = 12) +
+                       scale_x_discrete("Question Type", labels = c("Identify", "Relate", "Predict")) +
+                       scale_y_continuous("Accuracy", breaks = seq(0, 1, by = 0.25), limits = c(0, 1.10)) +
+                       geom_signif(comparisons = list(c("TwoDtype1_acc", "TwoDtype3_acc")),
+                                  annotation = "**",
+                                  tip_length = 0.40,
+                                  margin_top = 0.55) +
+                       geom_signif(comparisons = list(c("TwoDtype2_acc", "TwoDtype3_acc")),
+                                  annotation = c("*"),
+                                  tip_length = 0.20,
+                                  margin_top = 0.25)  
+
+
+RT.2D.qtype <- ggplot(summary.RT2D, aes(Dtype, RT/1000, fill = M_Condition)) + 
+                       geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                       geom_errorbar(position = position_dodge(),
+                                    aes(ymin = RT/1000 - se/1000, 
+                                        ymax = RT/1000 + se/1000)) +
+                       scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+                       guides(fill=guide_legend(title="Display")) +
+                       theme_bw(base_size = 12) +
+                       scale_x_discrete("Question Type", labels = c("Identify", "Relate", "Predict")) +
+                       ylab("Response Time (seconds)") +
+                       geom_signif(comparisons = list(c("Type1_RT", "Type2_RT")),
+                                  annotation = "**",
+                                  tip_length = 0.40,
+                                  margin_top = 0.55) +
+                       geom_signif(comparisons = list(c("Type2_RT", "Type3_RT")),
+                                  annotation = c("*"),
+                                  tip_length = 0.20,
+                                  margin_top = 0.25)  
+
+
+legend <- get_legend(RT.2D.qtype + theme(legend.position=c(0.50,1.1)))
+
+RT.2D.qtype <- RT.2D.qtype + theme(legend.position = 'none')
+
+#Print in knitr
+title <- ggdraw() + draw_label("2D Graphs (Experiment 1a)", fontface = 'bold')
+TwoD.Qtype <- ggdraw(plot_grid(plot_grid(Acc.2D.qtype, RT.2D.qtype, ncol = 2, align = 'h'),
+                     plot_grid(NULL, legend, ncol =  1),
+                     rel_widths=c(1, 0.2)))
+
+plot_grid(title, TwoD.Qtype, ncol = 1, rel_heights=c(0.1, 1)) 
+ggsave("FigX_TwoD_qtype.pdf", width = 7.5, height = 5)
+dev.off()  
+```
+
+##### 3D graph lit
+```{r, echo = TRUE}
+Acc.3D.qtype <- ggplot(summary.acc3D, aes(Dtype, acc, fill = M_Condition)) + 
+                       geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                       geom_errorbar(position = position_dodge(),
+                                    aes(ymin = acc - se, 
+                                        ymax = acc + se)) +
+                       scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+                       #guides(fill=guide_legend(title="Display")) +
+                       guides(fill=FALSE) +
+                       theme_bw(base_size = 12) +
+                       scale_x_discrete("Question Type", labels = c("Identify", "Relate", "Predict")) +
+                       scale_y_continuous("Accuracy", breaks = seq(0, 1, by = 0.25), limits = c(0, 1.10)) +
+                       geom_signif(comparisons = list(c("ThreeDtype1_acc", "ThreeDtype2_acc")),
+                                  annotation = "**",
+                                  tip_length = 0.20,
+                                  margin_top = 0.30) +
+                       geom_signif(comparisons = list(c("ThreeDtype2_acc", "ThreeDtype3_acc")),
+                                  annotation = c("*"),
+                                  tip_length = 0.40,
+                                  margin_top = 0.50) 
+
+RT.3D.qtype <- ggplot(summary.RT3D, aes(Dtype, RT/1000, fill = M_Condition)) + 
+                       geom_bar(colour = "black", 
+                               stat = "identity", 
+                               position = position_dodge(), size = 0.35) +
+                       geom_errorbar(position = position_dodge(),
+                                    aes(ymin = RT/1000 - se/1000, 
+                                        ymax = RT/1000 + se/1000)) +
+                       scale_fill_manual(values=c("#CCCCCC","#FFFFFF")) + 
+                       guides(fill=guide_legend(title="Display")) +
+                       theme_bw(base_size = 12) +
+                       scale_x_discrete("Question Type", labels = c("Identify", "Relate", "Predict")) +
+                       scale_y_continuous("Response Time (seconds)", breaks = seq(0, 50, by = 10), limits = c(0, 55)) + 
+                       geom_signif(comparisons = list(c("Type1_RT", "Type2_RT")),
+                             annotation = "**",
+                             tip_length = 0.10,
+                             margin_top = 0.15) +
+                       geom_signif(comparisons = list(c("Type1_RT", "Type3_RT")),
+                             annotation = c("***"),
+                             tip_length = 0.10,
+                             margin_top = 0.25) 
+          
+legend <- get_legend(RT.3D.qtype + theme(legend.position=c(0.50,1.1)))
+                     
+RT.3D.qtype <- RT.3D.qtype + theme(legend.position = 'none')
+
+#Print in knitr
+title <- ggdraw() + draw_label("3D Graphs (Experiment 1b)", fontface = 'bold')
+ThreeD.Qtype <- ggdraw(plot_grid(plot_grid(Acc.3D.qtype, RT.3D.qtype, ncol = 2, align = 'h'),
+                     plot_grid(NULL, legend, ncol =  1),
+                     rel_widths=c(1, 0.2)))
+
+plot_grid(title, ThreeD.Qtype, ncol = 1, rel_heights=c(0.1, 1)) 
+ggsave("FigX_ThreeD_qtype.pdf", width = 7.5, height = 5)
+dev.off()  
+```
+
+### 3. Compare time to read questions 
+```{r, echo = TRUE}
+#2D graphs
+TimeRead2D <-  summarySE(data, 
+                         measurevar  = "X.2DReadTime_mean", 
+                         groupvars   = "M_Condition"
+                        )
+
+TimeRead2D
+
+#3D graphs
+TimeRead3D <-  summarySE(data, 
+                         measurevar  = "X.3DReadTime_mean", 
+                         groupvars   = "M_Condition"
+                        )
+#Note the lower SD for VR condition, but we don't have enough data for 
+#an inferential comparison
+TimeRead3D
+
+
+#Independent samples t-test
+#2D graphs
+TwoD.read.t   <- t.test(X.2DReadTime_mean ~ M_Condition, data)
+TwoD.read.t
+TwoD.read.ef  <- cohen.d(data$X.2DReadTime_mean~data$M_Condition)
+d.ci(TwoD.read.ef$estimate, n = 11)
+
+#3D graphs
+ThreeD.read.t   <- t.test(X.3DReadTime_mean ~ M_Condition, data)
+ThreeD.read.t
+ThreeD.read.ef  <- cohen.d(data$X.3DReadTime_mean~data$M_Condition)
+d.ci(ThreeD.read.ef$estimate, n = 11)
+
+#Equivalence Tests
+#2D graphs
+TOSTtwo.raw(m1  = TimeRead2D$X.2DReadTime_mean[1], m2  = TimeRead2D$X.2DReadTime_mean[2], 
+            sd1 = TimeRead2D$sd[1], sd2 = TimeRead2D$sd[2], 
+            n1  = 11,   n2 = 11, 
+            low_eqbound = -0.8, high_eqbound = 0.8, 
+            #Using Cohen's d = 0.8
+            #For N = 22 (n1 = 11, n2 =11) only have suff power for a large effect
+            #because we are simplyfing by using the means
+            alpha = 0.05, var.equal = F)
+
+#2D graphs
+TOSTtwo.raw(m1  = TimeRead3D$X.3DReadTime_mean[1], m2  = TimeRead3D$X.3DReadTime_mean[2], 
+            sd1 = TimeRead3D$sd[1], sd2 = TimeRead3D$sd[2], 
+            n1  = 11,   n2 = 11, 
+            low_eqbound = -0.8, high_eqbound = 0.8, 
+            #Using Cohen's d = 0.8
+            #For N = 22 (n1 = 11, n2 =11) only have suff power for a large effect
+            #because we are simplyfing by using the means
+            alpha = 0.05, var.equal = F)
+
+```
+
+###3. Exploratory Analyeses
+```{r, echo = TRUE}
+#Time to read and acc/RT?
+
+#Speed-accuracy tradeoff? b/w vs within?
+
+#Individual diff variables? 
+```

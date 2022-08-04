@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, knitr, ez, psychReport, superb, plotrix, emmeans, afex, readxl,
-               irr, cccrm) 
+               irr, cccrm, foreign, stringr) 
 
 knitr::opts_chunk$set(echo = TRUE, tidy = FALSE)
 options(width = 90)
@@ -566,8 +566,91 @@ qualtrics %>%
   print(n = Inf)
 
 vr_times <- qualtrics %>%
-  mutate(vr.times = replace_na(vr.times, 0)) %>%
+  mutate(vr.times. = replace_na(vr.times., 0))
+
+ggplot(vr_times, aes(vr.times.)) +
+  theme_classic(base_size = 20) +
+  geom_histogram(breaks = seq(0,100,by=2), color = "black") +
+  labs(y = "Number of Participants", x = "Number of Times in HMD VR") +
+  scale_y_continuous(expand=expansion(mult=c(0,0.15)))
 
 
 ```
 
+## Compare Exp 1 and Exp 2
+```{r}
+
+exp1_data <- read.spss(file = "Experiment 1/Raw Data.sav", 
+                       to.data.frame = TRUE) %>%
+  select(Participant, M_Condition, ThreeDtype1_acc, ThreeDtype2_acc, ThreeDtype3_acc,
+         X.3DTimeInput_IDm, X.3DTimeInput_Relm, X.3DTimeInput_Predm) %>%
+  mutate(Condition = str_trim(paste0("Exp 1 ", M_Condition)),
+         Participant = as.character(Participant))
+
+exp1_rt_wide <- exp1_data %>%
+  dplyr::rename(ParticipantId = Participant, 
+                Type1 = X.3DTimeInput_IDm, 
+                Type2 = X.3DTimeInput_Relm,
+                Type3 = X.3DTimeInput_Predm) %>%
+  select(ParticipantId, Condition, Type1, Type2, Type3) %>%
+  filter(Condition == "Exp 1 VR")
+
+compare_RT <- bind_rows(answer_rt_type_wider, exp1_rt_wide)
+
+#make the little plot
+superbPlot(compare_RT,
+    BSFactors   = "Condition", 
+    WSFactors   = "QuestionType(3)", 
+    variables   = c("Type1", "Type2", "Type3"),
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "difference"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "QuestionType")
+) + 
+theme_classic() + 
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+facet_wrap(vars(QuestionType))+
+labs(y = "Answering RTs (ms)", title = "Answer RTs")
+
+exp1_acc_wide <- exp1_data %>%
+  dplyr::rename(ParticipantId = Participant, 
+                Type1 = ThreeDtype1_acc, 
+                Type2 = ThreeDtype2_acc,
+                Type3 = ThreeDtype3_acc) %>%
+  select(ParticipantId, Condition, Type1, Type2, Type3) %>%
+  filter(Condition == "Exp 1 VR")
+
+compare_acc <- bind_rows(acc_type_wider, exp1_acc_wide)
+
+#make the little plot
+superbPlot(compare_acc,
+    BSFactors   = "Condition", 
+    WSFactors   = "QuestionType(3)", 
+    variables   = c("Type1", "Type2", "Type3"),
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "difference"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "QuestionType")
+) + 
+theme_classic() + 
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+facet_wrap(vars(QuestionType))+
+labs(y = "Accuracy", title = "Accuracy")
+
+
+
+# display.acc3D <- data.frame(cbind(data$Participant, data$M_Condition, 
+#                                   data$ThreeDtype1_acc, data$ThreeDtype2_acc, data$ThreeDtype3_acc))
+# display.RT3D <- data.frame(cbind(data$Participant, data$M_Condition, 
+#                                  data$X.3DTimeInput_IDm, data$X.3DTimeInput_Relm, data$X.3DTimeInput_Predm))
+
+
+```
