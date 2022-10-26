@@ -290,6 +290,83 @@ pairs(ref, adjust = "Tukey")
 ```
 
 ## Exploratory: Compare RTs for graph type
+Definite differences in performance for different graph types, but no interaction with condition
+```{r}
+
+all_data_no_outliers <- all_data_no_outliers %>%
+  mutate(graph.type = strsplit(TrialName, "Q")[[1]][1])
+
+graph_type_means <- all_data_no_outliers %>%
+  group_by(ParticipantId, Condition, graph.type) %>%
+  summarize(mean_readRT = mean(readRT),
+            mean_answerRT = mean(AnswerRT),
+            n = n())
+
+graph_type_wider <- graph_type_means %>%
+  select(ParticipantId, Condition, graph.type, mean_answerRT) %>%
+  pivot_wider(names_from = graph.type,values_from = mean_answerRT)
+
+superbPlot(graph_type_wider,
+    BSFactors   = "Condition", 
+    WSFactors   = "GraphType(4)", 
+    variables   = c("BarChart", "LineChart", "Scatterplot", "SurfacePlot"),
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "difference"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "GraphType")
+) + 
+theme_classic() + 
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+# facet_wrap(vars(GraphType))+
+labs(y = "Answering RTs (ms)", title = "Answer RTs")
+
+answer_rt_graph_type_anova <- aov_ez(id = "ParticipantId",
+                             dv = "mean_answerRT",
+                             data = graph_type_means,
+                              within = "graph.type",
+                              between = "Condition",
+                             anova_table = list(es = "pes") #might want to double-check these
+)
+kable(nice(answer_rt_graph_type_anova))
+
+
+
+```
+
+## Exploratory: Compare RTs for first graph
+```{r}
+first_graph <- all_data_no_outliers %>%
+  group_by(ParticipantId, Condition) %>%
+  mutate(first.graph.type = first(graph.type)) %>%
+  filter(graph.type == first.graph.type) %>%
+  summarize(
+    first.graph = first(first.graph.type),
+    mean_RT_first = mean(AnswerRT))
+
+superbPlot(first_graph,
+    BSFactors   = c("Condition", "first.graph"), 
+    variables   = "mean_RT_first",
+    statistic   = "mean",
+    errorbar    = "CI",
+    gamma       = 0.95,
+    adjustments = list(
+        purpose       = "tryon"
+    ),
+    plotStyle = "line",
+    factorOrder = c("Condition", "first.graph")
+) + 
+theme_classic() + 
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+# facet_wrap(vars(GraphType))+
+labs(y = "Answering RTs (ms)", title = "Answer RTs")
+  
+
+```
+
 
 ## Accuracy
 ```{r}
@@ -307,7 +384,7 @@ pairs(ref, adjust = "Tukey")
 icc.dat.narrow <- all_data_no_outliers %>% 
                     pivot_longer(cols = c('Correct_1', 'Correct_2'))
 
-colnames(icc.dat.narrow)[10] <- "Rater"
+colnames(icc.dat.narrow)[11] <- "Rater"
 icc.dat.narrow$Rater <- as.factor(icc.dat.narrow$Rater)
 
 #Longitudinal concordance for two raters
